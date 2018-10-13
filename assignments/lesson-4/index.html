@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <title>Weather in Salt Lake City, Utah</title>
+    <meta name="description" content="Start the Town Page Build for Artem Karpikov Student || Where the 7-Day Weather Forecasts Comes First">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather+Sans%7CRoboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >   
+    <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <header>
+        <img src="images/weather.png" alt="The weather site logo">
+        
+        <div class="headertext">
+        <h1>Salt Lake City, Utah</h1>
+        <div class="subheading">Where the 7-Day Weather Forecasts Comes First</div>
+        </div>
+        <img id = "sunnyimage" src="images/Sunny.png" alt="current condititon">
+        <div class="currentconditions">
+        <p>Sunny</p>
+    </div>
+        
+
+        </header>
+        <nav>
+
+
+        </nav>        
+        <main>
+
+        </main>
+        <button type="button" onclick="UpdateInfo()">Update</button>
+        <span>
+            <b>Last updated:</b> <span id="date"></span>
+        </span>
+        <br><br>
+        <table>
+            <tr>
+                <th id="Sunday" onclick="ShowDetails(this.id)">SUNDAY</th>
+                <th id="Monday" onclick="ShowDetails(this.id)">MONDAY</th>
+                <th id="Tuesday" onclick="ShowDetails(this.id)">TUESDAY</th>
+                <th id="Wednesday" onclick="ShowDetails(this.id)">WEDNESDAY</th>
+                <th id="Thursday" onclick="ShowDetails(this.id)">THURSDAY</th>
+                <th id="Friday" onclick="ShowDetails(this.id)">FRIDAY</th>
+                <th id="Saturday" onclick="ShowDetails(this.id)">SATURDAY</th>
+            </tr>
+            <tr class="condition">
+                <td id="Sunday" onclick="ShowDetails(this.id)">
+                    <img src="images/Rainy.png">
+                </td>
+                <td id="Monday" onclick="ShowDetails(this.id)">
+                    <img src="images/Cloudy.png">
+                </td>
+                <td id="Tuesday" onclick="ShowDetails(this.id)">
+                    <img src="images/Cloudy.png">
+                </td>
+                <td id="Wednesday" onclick="ShowDetails(this.id)">
+                    <img src="images/Cloudy.png">
+                </td>
+                <td id="Thursday" onclick="ShowDetails(this.id)">
+                    <img src="images/Sunny.png">
+                </td>
+                <td id="Friday" onclick="ShowDetails(this.id)">
+                    <img src="images/Sunny.png">
+                </td>
+                <td id="Saturday" onclick="ShowDetails(this.id)">
+                    <img src="images/Cloudy.png">
+                </td>
+            </tr>
+            <tr class="temperature">
+                <td id="Sunday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>3&#8451</span>
+                </td>
+                <td id="Monday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>5&#8451</span>
+                </td>
+                <td id="Tuesday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>4&#8451</span>
+                </td>
+                <td id="Wednesday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>5&#8451</span>
+                </td>
+                <td id="Thursday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>6&#8451</span>
+                </td>
+                <td id="Friday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>7&#8451</span>
+                </td>
+                <td id="Saturday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>5&#8451</span>
+                </td>
+            </tr>
+            <tr class="temperature">
+                <td id="Sunday" onclick="ShowDetails(this.id)">
+                    LOW: <span>0&#8451</span>
+                </td>
+                <td id="Monday" onclick="ShowDetails(this.id)">
+                    LOW: <span>1&#8451</span>
+                </td>
+                <td id="Tuesday" onclick="ShowDetails(this.id)">
+                    LOW: <span>1&#8451</span>
+                </td>
+                <td id="Wednesday" onclick="ShowDetails(this.id)">
+                    LOW: <span>2&#8451</span>
+                </td>
+                <td id="Thursday" onclick="ShowDetails(this.id)">
+                    LOW: <span>4&#8451</span>
+                </td>
+                <td id="Friday" onclick="ShowDetails(this.id)">
+                    LOW: <span>3&#8451</span>
+                </td>
+                <td id="Saturday" onclick="ShowDetails(this.id)">
+                    LOW: <span>0&#8451</span>
+                </td>
+            </tr>
+            <tr class="windspeed">
+                <td id="Sunday" onclick="ShowDetails(this.id)">
+                    5 mph &#8599
+                </td>
+                <td id="Monday" onclick="ShowDetails(this.id)">
+                    6 mph &#8599
+                </td>
+                <td id="Tuesday" onclick="ShowDetails(this.id)">
+                    4 mph &#8599
+                </td>
+                <td id="Wednesday" onclick="ShowDetails(this.id)">
+                    5 mph &#8593
+                </td>
+                <td id="Thursday" onclick="ShowDetails(this.id)">
+                    3 mph &#8593
+                </td>
+                <td id="Firday" onclick="ShowDetails(this.id)">
+                    4 mph &#8599
+                </td>
+                <td id="Saturday" onclick="ShowDetails(this.id)">
+                    5 mph &#8594
+                </td>
+            </tr>
+        </table>
+        <script src="index.js"></script>
+    <aside>
+    </aside>
+        <footer>
+        </footer>>
+    </body>
+</html>

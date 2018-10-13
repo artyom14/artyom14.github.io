@@ -1,0 +1,55 @@
+body {
+    background-color: royalblue;
+}
+
+h1 {
+    text-shadow: 2px 1px #222222;
+}
+
+span, span#date {
+    font-size: 12px;
+    font-family: "Arial";
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    background-color: white;
+}
+
+tr.condition {
+    height: 124px;
+}
+
+tr.temperature, tr.windspeed {
+    height: 50px;
+    font-weight: bold;
+}
+
+th:hover, td:hover {
+    background-color: grey;
+}
+
+th {
+    font-size: 12pt;
+    font-family: "Arial";
+    color: #222222;
+    text-align: left;
+    vertical-align: top;
+    padding: 5px;
+    width: 190px;
+    height: 50px;
+    border: solid 1px grey;
+}
+
+td {
+    width: 200px;
+    font-family: "Arial";
+    border: solid grey 1px;
+}
+
+tr.temperature td span {
+    font-size: 24px;
+}
