@@ -84,11 +84,14 @@ tr.temperature td span {
     padding: 10px;
     border-radius: 5px;
 
-   .article {
-    float: left;
-    width: 150px;
-    height: 150px;
-    margin-right: 30px;
+   .halloween picture {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20.75%;
+  padding: 5px;
+  float:right;
+  top:20%;
+  z-index: +1;
 }
  
 
