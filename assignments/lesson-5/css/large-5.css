@@ -7,9 +7,11 @@ header {
     }    
 
 header > img {
-    width: 150px;
-    height: auto;
-    vertical-align: middle;
+vertical-align: middle;
+width: 300px;
+ padding-right: 125px;
+ padding-bottom: 50px;
+ height: 100px;
 }
     
     .headertext{
