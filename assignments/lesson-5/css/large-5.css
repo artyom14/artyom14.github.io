@@ -79,8 +79,8 @@ tr.temperature td span {
     font-size: 24px;
 }
 article > p {
-    line-height: 4;
-    word-spacing: 0.2rem;
+    line-height: 3;
+    word-spacing: 0.1rem;
 }
 .image1 {
     padding: 10px;
