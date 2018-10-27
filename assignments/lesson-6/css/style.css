@@ -1,79 +1,200 @@
-
 body {
-    background-color: royalblue;
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    height: 100%;
+    
 }
+
 header {
+    background-color: black;
+    position: fixed;
+    top: 0px;
     text-align: center;
-    display: inline-block;
-    }    
+    height: 150px;
+    width: 100%;
+    z-index: +2;
+    
+}
 
 header > img {
-    width: 150px;
+ width: 100px;
+ padding-right: 80px;
+ padding-bottom: 20px;
+ height: auto;
+ 
+ }
+.subheading {
+   padding-bottom: 5px;
+
+}
+
+ .headertext {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    display: inline-block;
+ }     
+
+ .headertext h1 {
+    position: relative; 
+    font-size: 50px;
+ }
+ .currentconditions {
+    display: inline-block;
+    padding-inline-start: 70px;
+    width: 100px;
     height: auto;
-    vertical-align: middle;
+    vertical-align: right;
+ }
+
+ul {
+    list-style-type: inline block;
+    position: fixed;
+    top: 150px;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    z-index: +4;
 }
+li {
+    display: inline-block;
     
-    .headertext{
+}
+
+
+li a {
     display: inline-block;
-    vertical-align: middle;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+     
+}
+
+
+li a:hover {
+    background-color:green;
+    
+}
+h6 { text-align: center;
+    position: absolute;
+    padding: 20px;
+    top: 140px;
+    left: 0;
+    height: 35px;
+    width: 100%;
+    background-color: green;
+    color:white; 
+    text-align: center;
+    font-size: 24px; 
+    z-index: 0;
+    
+    
+}
+
+ .value{
+     color: white;
+ }   
+
+
+.news {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+    bottom: 20px;
+    height: 10px;
+    width: 100%;
+    background-color:green;
+    color:black; 
+    text-align: center; 
+    z-index: 0;
+   
     }
-  th
-currentconditions{
+ table{
     display: inline-block;
-    margin: 1rem 0 1rem 5rem;
-    padding: 5px;
-    vertical-align: middle;
-    border: 1px solid black; 
-    background-color: blue; 
-}
-h1 {
-    text-shadow: 2px 1px #222222;
-}
-
-span, span#date {
-    font-size: 12px;
-    font-family: "Arial";
-}
-
-table {
-    border-collapse: collapse;
-}
-
-tr {
-    background-color: white;
-}
-
-tr.condition {
-    height: 124px;
-}
-
-tr.temperature, tr.windspeed {
-    height: 50px;
-    font-weight: bold;
-}
-
-th:hover, td:hover {
-    background-color: grey;
-}
-
+    color:black;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 0px;
+ }   
 th {
-    font-size: 12pt;
-    font-family: "Arial";
-    color: #222222;
-    text-align: left;
-    vertical-align: top;
-    padding: 5px;
-    width: 190px;
-    height: 50px;
-    border: solid 1px grey;
+    font-size: 15px;
 }
 
-td {
-    width: 200px;
-    font-family: "Arial";
-    border: solid grey 1px;
+ .image {
+    position: relative;
+    height: auto;
+    width: 100%;
+    z-index: -2;
+}
+aside{
+  
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 10em;
+  padding: 0px;
+  float:right;
+  z-index: +1;
+}
+aside img{
+    height: auto;
+    width: 35em;
+    float: right;
 }
 
-tr.temperature td span {
+.franklin{
+    position: static;
+    top: 0%;
+    height: 0%;
+    bottom:50px;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    background:orange;
+    size: 20px;
+    size: 50px;
+   
     font-size: 24px;
+    
 }
+.image3{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20.75%;
+  padding: 5px;
+  float:right;
+  top:20%;
+  z-index: +1;
+}
+
+article{
+    position: relative;
+    left: 50%;
+    
+    bottom:6.5em;
+    width: 50%;
+    background-color:green;
+    color:black; 
+    text-align: center;
+
+}
+p {
+    text-indent: 50px;
+ 
+    line-height: 3px;
+    text-align: center;
+    
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    background-color:black;
+    color: white; 
+    text-align: center; 
+    z-index: +4;
+}
+  
+  
