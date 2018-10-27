@@ -13,6 +13,10 @@ vertical-align: middle;
  padding-bottom: 50px;
  height: 100px;
 }
+
+.subheading {
+ padding-bottom: 10px;
+}
     
     .headertext{
     display: inline-block;
