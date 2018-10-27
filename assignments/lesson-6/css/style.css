@@ -20,7 +20,11 @@ header > img {
  padding-right: 80px;
  padding-bottom: 20px;
  height: auto;
- 
+ .
+    {
+ padding-bottom: 5px;
+        
+    }
  }
 .subheading {
    padding-bottom: 5px;
