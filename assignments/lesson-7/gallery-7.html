@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tri-City Weather Bureau</title>
+        <meta name="author" content="Rachel Holmstrom">
+        <meta name="description" content="Weather for Everyone">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+
+    </head>
+
+    <body>
+        <header>
+
+            <h1>Tri-City Weather Bureau</h1>
+        </header>
+
+        <nav>
+            <button onclick="toggleHam()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-7.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springville</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <img class="Large" src="images/franklin-large.jpg" alt="trees and sky">
+        <img class="Medium" src="images/franklin-medium.jpg" alt="trees and sky">
+        <img class="Small" src="images/franklin-small.jpg" alt="trees and sky">
+        <main>
+            <section class="gallery">
+            <figure>
+                <img class="FullImg" src="images/autumn%20colors.jpg" alt="autumn"><figcaption>Autumn</figcaption></figure>
+            <figure>
+                <img class="FullImg" src="images/beautiful-bloom-blooming-414180.jpg" alt="flowers"><figcaption>Spring</figcaption></figure>
+            <figure>
+                <img class="FullImg" src="images/freezing%20cold%20day.jpg" alt="winter"><figcaption>Winter</figcaption></figure>
+            <figure>
+                <img class="FullImg" src="images/week5sky.jpg" alt="sky"><figcaption>Sky</figcaption></figure>
+            <figure>
+                <img class="FullImg" src="images/yellow%20blossom.jpg" alt="leisure"><figcaption>leisure day</figcaption></figure>
+            <figure>
+                <img class="FullImg" src="images/week5daisies.jpg" alt="summer"><figcaption>Summer</figcaption></figure>
+            </section>
+        </main>
+        <footer>
+            <section class="contact">
+                <h2>Contact Info:</h2>
+                Tri-City Weather Bureau<br>999.999.9999<br>123 Main St.<br>Anytown,US 99999
+                GoogleMap
+            </section>
+
+            <section class="footer-bar">
+                <h2>&copy;2018 | All Rights Reserved |Tri-City Weather Bureau | <span id="currentdate">Current Date Placeholder</span></h2>
+            </section>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>

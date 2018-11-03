@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+    <meta charset="utf-8">
+<head>
+    <title>Preston-City Weather Bureau</title>
+    <meta name="author" content="Artem Karpikov">
+    <meta name="description" content="Weather Town Page ">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+    <header>
+	     <img src="images/weather.png" alt="The weather site logo">
+        
+        <div class="headertext">
+        <h1>Preston-City Weather Bureau</h1>
+        <div class="subheading">Where the 7-Day Weather Forecasts Comes First</div>
+        </div>
+        <img id = "sunnyimage" src="images/Sunny.png" alt="current condititon">
+        <div class="currentconditions">
+    </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleHam()">&#9776;</button>
+       <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Franklin</a></li>
+        <li><a href="#">Greenville</a></li>
+        <li><a href="#">Springville</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <img class="Large" src="images/franklin-large.jpg" alt="trees and sky">
+    <img class="Medium" src="images/franklin-medium.jpg" alt="trees and sky">
+    <img class="Small" src="images/franklin-small.jpg" alt="trees and sky">
+    <main>
+        <h2>Preston City</h2>
+        <section class="weather summary">
+            <div class="highlow">
+                <h3>Weather Summary</h3>
+                <p>High: 90 F</p>
+                <p>Low: 66 F</p>
+                <p>Preciptation: 0%</p>
+                <p>Wind Speed: 5mph SW</p>
+                <p id="windchill">Wind Chill: </p>
+            </div>
+            <div class="current">
+            <h3>Current Weather</h3>
+                <p>Sunny</p>
+                <img src="images/week5sunny.jpg" alt="Sunny Day" class="Tinyimg">
+            </div>
+        </section>
+
+        <section class="forcast">
+         <h6> The Town of Preston </h6>  
+        <button type="button" onclick="UpdateInfo()">Update</button>
+        <span>
+            <b>Last updated:</b> <span id="date"></span>
+        </span>
+        <br><br>           
+		<table>
+				<tr>
+                <th id="Monday" onclick="ShowDetails(this.id)">MONDAY</th>
+                <th id="Tuesday" onclick="ShowDetails(this.id)">TUESDAY</th>
+                <th id="Wednesday" onclick="ShowDetails(this.id)">WEDNESDAY</th>
+                <th id="Thursday" onclick="ShowDetails(this.id)">THURSDAY</th>
+                <th id="Friday" onclick="ShowDetails(this.id)">FRIDAY</th>
+            </tr>
+            <tr class="condition">
+                <td id="Monday" onclick="ShowDetails(this.id)">
+                    <img src="images/Cloudy.png">
+                </td>
+                <td id="Tuesday" onclick="ShowDetails(this.id)">
+                    <img src="images/Cloudy.png">
+                </td>
+                <td id="Wednesday" onclick="ShowDetails(this.id)">
+                    <img src="images/Cloudy.png">
+                </td>
+                <td id="Thursday" onclick="ShowDetails(this.id)">
+                    <img src="images/Sunny.png">
+                </td>
+                <td id="Friday" onclick="ShowDetails(this.id)">
+                    <img src="images/Sunny.png">
+                </td>
+            </tr>
+            <tr class="temperature">
+                <td id="Monday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>5&#8451</span>
+                </td>
+                <td id="Tuesday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>4&#8451</span>
+                </td>
+                <td id="Wednesday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>5&#8451</span>
+                </td>
+                <td id="Thursday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>6&#8451</span>
+                </td>
+                <td id="Friday" onclick="ShowDetails(this.id)">
+                    HIGH: <span>7&#8451</span>
+                </td>
+            </tr>
+            <tr class="temperature">
+                <td id="Monday" onclick="ShowDetails(this.id)">
+                    LOW: <span>1&#8451</span>
+                </td>
+                <td id="Tuesday" onclick="ShowDetails(this.id)">
+                    LOW: <span>1&#8451</span>
+                </td>
+                <td id="Wednesday" onclick="ShowDetails(this.id)">
+                    LOW: <span>2&#8451</span>
+                </td>
+                <td id="Thursday" onclick="ShowDetails(this.id)">
+                    LOW: <span>4&#8451</span>
+                </td>
+                <td id="Friday" onclick="ShowDetails(this.id)">
+                    LOW: <span>3&#8451</span>
+                </td>
+            </tr>
+            <tr class="windspeed">
+                              <td id="Monday" onclick="ShowDetails(this.id)">
+                    6 mph &#8599
+                </td>
+                <td id="Tuesday" onclick="ShowDetails(this.id)">
+                    4 mph &#8599
+                </td>
+                <td id="Wednesday" onclick="ShowDetails(this.id)">
+                    5 mph &#8593
+                </td>
+                <td id="Thursday" onclick="ShowDetails(this.id)">
+                    3 mph &#8593
+                </td>
+                <td id="Firday" onclick="ShowDetails(this.id)">
+                    4 mph &#8599
+                </td>
+            </tr>
+            </table>
+        </section>
+
+        <article class="town-article">
+            <h3>HALLOWEEN TRICK OR TREAT</h3>
+            <img src="images/HALLOWEEN.jpg" alt="halloween picture" class="images-HalfImg">
+             <p>Come join the community for a spooky-fun activity for the entire family! Main Street Businesses will be providing treats, <br> activities and photo opportunities! Bring your entire family <br> for a free and safe Halloween night!
+            <br> October 31, 2018
+            <br> 4:30-6:00
+            <br> Preston Main Street
+            <br> (From Stokes to Big J’s)
+			</p>
+        </article>
+    </main>
+
+    <footer>
+        <section class="contact">
+            <h2>Contact Info:</h2>
+            Preston-City Weather Bureau<br>777.999.888<br>777 Main St.<br>Anytown,US 99999
+            GoogleMap
+        </section>
+
+        <section class="footer-bar">
+            <h2>&copy;2018 | All Rights Reserved |Preston-City Weather Bureau | <br> <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning <br><span id="currentdate">Current Date Placeholder </span></h2>
+        </section>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+ </body>
+</html>
