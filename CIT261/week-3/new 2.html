@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <h2>Stringify</h2>
+    <p>What is Stringify</p>
+    <p>Sending data to a web server is commonly sent as a string.</p>
+    <p>Use JSON.stringify() to convert JavaScript objects into a string.</p>
+    <p>Functions are omitted by stringify, however, converting them into a string before submission is possible.</p>
+    <p id="user"></p>
+
+    <script>
+        var myInfo = { "fname": "Julian", "lname": "Romero", "dob": "1983-11-22", "city": "Bakersfield", "state": "California", "infoDate":new Date(), "children":"function() {return 4;}"};
+        //Convert object myInfo.children's value into a string with the .toString() method
+        myInfo.children = myInfo.children.toString();
+        //Convert object myInfo into a web server friendly string with stringify
+        var myJSON = JSON.stringify(myInfo);
+        document.getElementById("user").innerHTML = myJSON;
+    </script>
+</head>
+<body>
+
+</body>
+</html>

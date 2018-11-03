@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Methods</title>
+ <meta name="description" content="CIT 261: Artem karpikov">
+<h2>Methods</h2>
+</head>
+<body>
+    <h3>In this example, I create an object for a person and a method within it.</h3>
+    <p id="personId"></p>
+    <p id="dob"></p>
+    <p id="type"></p>
+
+    <script>
+        var person =
+            {
+                firstName: "Artem",
+                lastName: "Karpikov",
+                month: 04,
+                day: 14,
+                year: 1991,
+                nationality: "Finnish",
+                religion: "Latter-day Saint",
+                //create method within object
+                fullName: function () {
+                    return this.firstName + " " + this.lastName;
+                },
+                dateOfBirth: function () {
+                    return this.month + "/" + this.day + "/" + this.year;
+                }
+            };
+        document.getElementById("personId").innerHTML = "My name is: " + person.fullName();
+        document.getElementById("dob").innerHTML = "My date of birth is: " + person.dateOfBirth();
+        //adding method after object has been created
+        person.middle = function () {
+            return this.nationality + " " + this.religion;
+        }
+        document.getElementById("type").innerHTML = "I am a declared " + person.middle();
+    </script>
+</body>
+</html>

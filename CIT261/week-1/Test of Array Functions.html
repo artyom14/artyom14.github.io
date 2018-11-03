@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Test of Array Functions</title>
+ <meta name="description" content="CIT 261: Artem karpikov">
+<script>
+function countEvens(list)
+{
+/*
+/ input: an array of integers
+/ processing: checks each elements of the array and counts the number that are even
+/ output: the count
+*/
+var count = 0;
+
+for (var i = list.length-1; 0 <= i; --i)
+{
+count += Math.abs((list[i] + 1) % 2);
+} 
+
+return count;
+}
+
+function multiply(list, multiplier)
+{
+/*
+/ input: an array of integers and a multiplier
+/ processing: multiplies each element of the array by the multiplier
+/ output: a new array
+*/
+
+for (var i = list.length-1; 0 <= i; --i)
+{
+list[i] *= multiplier;
+} 
+
+return list;
+}
+
+function listArray(list)
+{
+/*
+/ input: an array
+/ processing: iterates the items of a list
+/ output: the a comma separated list inside brackets
+*/
+var output = "";
+
+var length = list.length;
+for (var i = 0; i < length; ++i)
+{
+output += list[i] + ", ";
+} 
+output = "[" + output.slice(0, -2) + "]";
+
+return output;
+}
+
+function createRandomIntArray(minLength, maxLength, minValue, maxValue)
+{
+/*
+/ input: the range of acceptable array lengths and the range of acceptable values 
+/ processing: creates an array of random length within the range, filled with random integers within the range
+/ output: the array
+*/
+var randomArray = [];
+var arrayLength = getRandomInt(minLength, maxLength);
+for (var i = 0; i < arrayLength; ++i)
+{
+randomArray[i] = getRandomInt(minValue,maxValue);
+}
+return randomArray;
+}
+
+function getRandomInt(min, max)
+{
+/*
+/ input: a range in which you would like a random integer 
+/ processing: computes a random integer within the range
+/ output: the integer
+*/
+return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+// driver to test array functions and output to html
+function driver()
+{
+var arraysToTest = getRandomInt(3,6);
+var output = "";
+
+for (var i = 0; i < arraysToTest; ++i)
+{
+var tempArray = createRandomIntArray(2,3,-100,100);
+var multiplier = getRandomInt(-10,10);
+output += "<hr>"
+output += "Array Length: " + tempArray.length + "<br>";
+output += "Array Contents: " + listArray(tempArray) + "<br>";
+output += "Count of Evens: " + countEvens(tempArray) + "<br>";
+output += "Multiplied by " + multiplier + ": " + listArray(multiply(tempArray, multiplier)) + "<br>";
+}
+
+document.getElementById('outputDiv').innerHTML = output;
+}
+</script>
+</head>
+<body onload="driver()">
+<h1>Test of Array Functions</h1>
+<div id="outputDiv">
+</div>
+</body>
+</html>

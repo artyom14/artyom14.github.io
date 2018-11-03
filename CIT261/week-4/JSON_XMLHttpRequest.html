@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>JSON_XMLHttpRequest</title>
+ <meta name="description" content="CIT 261: Artem karpikov"><head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        p {
+            font-family: 'Segoe UI Emoji';
+            font-size: 3.5em;
+        }
+    </style>
+    <script src="emoji_xmlhttpreq.js"></script>
+</head>
+<body>
+    <script src="JSON_XMLHttpRequest.js"></script>
+    <h2>JSON Http Request</h2>
+    <strong>Study Sources:</strong><br />
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">MDN web docs - XMLHttpRequest</a><br />
+    <a href="https://www.w3schools.com/js/js_json_http.asp">W3Schools - XMLHttpRequest</a>
+    <h3>Scope:</h3>
+    <p>In order to read data from a server, JSON (JavaScript Object Notation) webservice is used to convert/display the data to a web page.</p>
+    <p>The text file called "httpRequestData.json" is parsed with JSON and stored within an array and displayed below.</p>
+
+    <h3>XMLHttpRequest Properties and Methods</h3>
+
+    <table class="standard-table">
+        <tr>
+            <th style="width:30%">Method</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>new XMLHttpRequest()</td>
+            <td>Creates a new XMLHttpRequest object</td>
+        </tr>
+        <tr>
+            <td>open(<i>method, url, async</i>)</td>
+            <td>
+                Specifies the type of request<br>
+                <i>method</i>: the type of request: GET or POST<br>
+                <i>url</i>: the file location<br>
+                <i>async</i>: true (asynchronous) or false (synchronous)
+            </td>
+        </tr>
+        <tr>
+            <td>send()</td>
+            <td>Sends a request to the server (used for GET)</td>
+        </tr>
+        <tr>
+            <td>send(<i>string</i>)</td>
+            <td>Sends a request string to the server (used for POST)</td>
+        </tr>
+        <tr>
+            <td>onreadystatechange</td>
+            <td>A function to be called when the readyState property changes</td>
+        </tr>
+        <tr>
+            <td>readyState</td>
+            <td>
+                The status of the XMLHttpRequest<br>
+                0: request not initialized <br>
+                1: server connection established<br>
+                2: request received <br>
+                3: processing request <br>
+                4: request finished and response is ready
+            </td>
+        </tr>
+        <tr>
+            <td>status</td>
+            <td>
+                200: OK<br>
+                404: Page not found
+            </td>
+        </tr>
+        <tr>
+            <td>responseText</td>
+            <td>The response data as a string</td>
+        </tr>
+        <tr>
+            <td>responseXML</td>
+            <td>The response data as XML data</td>
+        </tr>
+
+    </table>
+
+
+    <h3>Here are some of my favorite scriptures from a JSON file.</h3>
+    <div id="favScripts"></div>
+    <br />
+<h3>Emoji List</h3>
+    <div id="emojis">Emojis go here.</div>
+</body>
+</html>

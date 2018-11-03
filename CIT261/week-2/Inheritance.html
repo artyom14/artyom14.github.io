@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Inheritance</title>
+<meta name="description" content="CIT 261: Artem karpikov">
+</head>
+<body>
+<h2>Inheritance</h2><h3>By Artem Karpikov</h3>
+<script>
+//Start Parent Function//
+   //Parent function defined
+   var Employee = function (name) //name is common to all functions
+   {
+      this.name = name;
+   }
+   //Parent function method definition
+   Employee.prototype.getName = function ()
+   {
+      return this.name;
+   }
+   //Parent function method definition
+   Employee.prototype.getNameLength = function()
+   {
+      return this.name.length;
+   }
+//End Parent Function//
+//Start Child Function//
+   //Child function method definition
+   var PermanentEmployee = function (annualSalary) //annualSalary is only found in PermanentEmployee
+   {
+      this.annualSalary = annualSalary;
+   }
+   //Instantiated object of Parent function
+   var employee = new Employee("Artem");
+   //Inheritance relationship establish here. Employee will now point to PermanentEmployee as a parent.
+   PermanentEmployee.prototype = employee;
+   var pe = new PermanentEmployee(150000);
+   //Even though PermanentEmployee 'pe' does not have a .getName(), because of inheritance, it will.
+   document.write("The permanent employee is: ",pe.getName(), "<br>");
+   document.write("The lenth of the employee name is: ", pe.getNameLength(), "<br>");
+   //Test to see if pe is related to Employee or PermanentEmployee.
+   document.write("Is 'pe' related to Employee? ", pe instanceof Employee, "<br>");
+   document.write("What about PermanentEmployee? ", pe instanceof PermanentEmployee, "<br><br>");
+   //Test to see if employee has specific properties
+   document.write("Does employee.name exist? ", employee.hasOwnProperty('name'), "<br>");
+   document.write("Does employee.annualSalary exist? ", employee.hasOwnProperty('annualSalary'), "<br>");
+   document.write("Does pe.annualSalary exist? ", pe.hasOwnProperty('annualSalary'), "<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<meta charset="utf-8">
+ <title>Arrays</title>
+ <meta name="description" content="CIT 261: Artem karpikov">
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+<!--
+//ARRAYS
+   //Name Array
+   
+   function nameSet()
+   {
+      var myNameAry = ["Artem", "Karpikov"];
+      var fullName = "";
+       for (i=0; i < myNameAry.length; i++)
+       {
+         fullName += myNameAry[i];
+         fullName += " ";
+       }
+      return fullName;
+   }
+   //Name Last, First Order with Associated Array
+   function lastFirst()
+   {
+      var NameAssocAry = {"first" : "Artem", "middle" : "Dmitrievich", "last" : "Karpikov"};
+      var reverseName = NameAssocAry["last"]+", "+NameAssocAry["first"]+" "+NameAssocAry["middle"];
+      return reverseName;
+   }
+   
+   //Objects in Associated Array
+   function assocAryCont()
+   {
+      var ascAry = new Object();
+      ascAry["A"] = "is for apple.";
+      ascAry["B"] = "is for bacon.";
+      ascAry["C"] = "is for coconut.";
+      ascAry["D"] = "is for donut.";
+      var holder = "";
+      for(var i in ascAry)
+      {
+         holder += i + " " + ascAry[i] + '<br>';
+      }
+      return holder;
+   }
+   
+   //Sort Array
+   var groceryAry = ["Cherries", "Oranges", "Apples", "Kiwi", "Grapes ", "Banana"];
+   
+   function groceries()
+   {
+      var srtary = "";
+      for (i=0; i < groceryAry.length; i++)
+      {
+         srtary += groceryAry[i];
+         if (i+1 < groceryAry.length ){srtary += ", ";}
+      }
+      return srtary;
+   }
+   
+   function sortedGroceries()
+   {
+      var newList = groceryAry.slice(); //creates a copy of the array; otherwise it's a pointer
+      newList.sort();
+      var srtary = "";
+      for (i=0; i < newList.length; i++)
+      {
+         srtary += newList[i];
+         if (i+1 < newList.length ){srtary += ", ";}
+      }
+      return srtary;
+   }
+//-->
+</script>
+
+<h2>Arrays<br></h2>
+    <p><a href="https://www.w3schools.com/js/js_array_methods.asp">Array Methods</a></p>
+<h3>Name Array</h3>
+<button type="button" onclick="document.getElementById('myname').innerHTML = nameSet()")">
+Click to see my name.</button>
+<br />
+
+<h3>Rearranged Associated Array</h3>
+<button type="button" onclick="document.getElementById('myname').innerHTML = lastFirst()")">
+Click to see my name in reverse.</button>
+<p id="myname"></p>
+<br />
+
+<h3>Associated Array Contents</h3>
+<button type="button" onclick="document.getElementById('contents').innerHTML = assocAryCont()")">
+Click to see Associated Array Contents.</button>
+<p id="contents"></p>
+<br />
+
+
+
+<h3>Unsorted an Array</h3>
+<button type="button" onclick="document.getElementById('groceries').innerHTML = groceries()")">
+Click to see unsorted grocery list.</button>
+<br />
+
+<h3>Sort an Array</h3>
+<button type="button" onclick="document.getElementById('groceries').innerHTML = sortedGroceries()")">
+Click to see sorted grocery list.</button>
+<p id="groceries"></p>
+<br />
+
+</body>
+</html>

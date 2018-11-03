@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>JSON Parse</title>
+ <meta name="description" content="CIT 261: Artem karpikov">
+ </head>
+<body>
+    <h2>JSON Parse</h2>
+    <p>What is JSON?</p>
+    <p>Used to exchange data to and from a web server.</p>
+    <p>What is Parsing?</p>
+    <p>Parsing JSON is a function that allows us to convert text from one source to be converted to a JavaScript object.</p>
+    <p id="fullName"></p>
+    <p id="dateOfBirth"></p>
+    <p id="myHeight"></p>
+    <script>
+        //assigning sting text to object requires text in JSON formatting
+        var text = '{"fname":"Artem","mname":"Dmitrievich", "lname":"Karpikov", "age":27, "dob":"1991-04-14", "height":"function() {return 5.9;}", "city":"Vantaa"}'
+        var userInfo = JSON.parse(text);
+        document.getElementById("fullName").innerHTML = "User information for: " + userInfo.fname + " " + userInfo.lname;
+        //convert function-text into function
+        userInfo.height = eval("(" + userInfo.height + ")");
+        document.getElementById("myHeight").innerHTML = "User height function: " + userInfo.height();
+        //convert dob to date value in JSON parse text
+        userInfo.dob = new Date(userInfo.dob);
+        document.getElementById("dateOfBirth").innerHTML = ("User date of birth is: " + userInfo.dob);
+    </script>
+
+</body >
+</html >

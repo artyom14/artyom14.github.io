@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<meta charset="utf-8">
+ <title>loop, conditions</title>
+ <meta name="description" content="CIT 261: Artem karpikov">
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+<!--
+   //FUNCTIONS
+   document.write("FUNCTIONS<br>");
+   var globalVar = "That's all folks!";
+   function myFunction()
+   {
+      alert("myFunction was executed successfully!");
+   }
+   //PASSING a parameter
+   
+   function attackFunction(fav)
+   {
+      alert("My favorite prophet is president " + fav);
+      fav = "Russell M. Nelson";
+      alert("Actually, it's president " + fav);
+      fav = "all of them!"
+      alert("I love " + fav);
+   }
+   
+   //PASSING multiple parameters
+   function multiParFunc(lp1, lp2, lp3)
+   {
+      var princ = lp1 + ", " + lp2 + ", and " + lp3;
+      return princ;
+      //document.write("The success of this class relies on the BYU-I teaching model. <br>")
+      //document.write("We must: ", principles);
+   }
+   
+   //MULTIPLY variables
+   function multiplyThis(num1, num2)
+   {
+      return num1 * num2;
+   }
+   
+   //POWER function
+   function power(base, exp)
+   {
+      var result = 1;
+      var i = 0;
+      while (i < exp) 
+      {
+         result *= base;
+         i++;
+      }
+      return result;
+   }
+   
+   //Global Variable
+   function exit(){return globalVar;}
+//-->
+</script>
+
+<form>
+<input type = "button" value="myFunction" onclick="myFunction()">
+</form>
+<br />
+
+<form>
+<input type = "button" value="attackFunction" onclick="attackFunction('Monson')">
+</form>
+<br />
+
+<h4>The success of this class relies on the BYU-I learning model. <br></h4>
+<button type="button" onclick="document.getElementById('principles').innerHTML = multiParFunc('Prepare','Teach', 'Ponder')")">
+Click to see BYU-I Learning Model.</button>
+<p id="principles"></p>
+<br />
+<button type="button" onclick="document.getElementById('product').innerHTML = multiplyThis(12,15)")">
+12 X 15 =</button>
+<p id="product"></p>
+<br />
+
+<button type="button" onclick="document.getElementById('exponent').innerHTML = power(2,3)")">
+2 to the 3 power =</button>
+<p id="exponent"></p>
+<br />
+<button type="button" onclick="document.getElementById('porky').innerHTML = exit()")">
+Th-the-a-th-the-a</button>
+<p id="porky"></p>
+
+</body>
+</html>

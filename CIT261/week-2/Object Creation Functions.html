@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Test of Array Functions</title>
+ <meta name="description" content="CIT 261: Artem karpikov">
+</head>
+<body>
+
+<script type="text/javascript">
+<!--
+//Object Creation Functions
+   //Create myself with properties
+   function myInfo()
+   {
+   var user = {
+       firstname: "Artem",
+       lastname: "Karpikov",
+       age: 2018-1991,
+       occupation: "Auditor"
+   };
+      
+      if ((user.firstname == "Artem" && user.lastname == "Karpikov"))
+      {
+         user.nationality = "Finnish";
+         var userInfo = user.firstname + " " 
+                     + user.lastname + " is "
+                     + user.age + " years old and works as an "
+                     + user.occupation + ". "
+                     + "He is also " + user.nationality + "!";
+         return userInfo;
+      } else {return "That's not me!"};
+   }
+//-->
+</script>
+<h2>Object Creation <br></h2>
+<h3>Properties</h3>
+<button type="button" onclick="document.getElementById('myinfo').innerHTML = myInfo()")">
+Click to see my information.</button>
+<p id="myinfo"></p>
+<br />
+<h1>My Family Tree</h1>
+<h2 id="member1a"></h2>
+   <ul>
+       <li id="member1b"></li>
+       <li id="member1c"></li>
+       <li id="member1d"></li>
+       <li id="member1e"></li>
+   </ul>
+<h2 id="member2a"></h2>
+   <ul>
+       <li id="member2b"></li>
+       <li id="member2c"></li>
+       <li id="member2d"></li>
+       <li id="member2e"></li>
+   </ul>
+<h2 id="member3a"></h2>
+   <ul>
+       <li id="member3b"></li>
+       <li id="member3c"></li>
+       <li id="member3d"></li>
+       <li id="member3e"></li>
+   </ul>
+<script>
+   
+   var member1 = {
+       name: "Catherine",
+       color: "Blue",
+       age: 58,
+       gender: "Girl",
+       reads: "Yes",
+   };
+   
+   var member2 = {
+       name: "Denis",
+       color: "Green",
+       age: 13,
+       gender: "Boy",
+       reads: "yes",
+   };
+   
+   var member3 = {
+       name: "Alex",
+       color: "Orange",
+       age: 11,
+       gender: "Boy",
+       reads: "yes",
+   };
+   
+   document.getElementById("member1a").innerHTML = member1.name.toUpperCase();//Method toUpperCase capitalizes name
+   document.getElementById("member1b").innerHTML = "Favorite Color: " + member1.color;
+   document.getElementById("member1c").innerHTML = "Age: " + member1.age;
+   document.getElementById("member1d").innerHTML = "Gender: " + member1.gender;
+   document.getElementById("member1e").innerHTML = "Likes to read: " + member1.reads;
+   
+   document.getElementById("member2a").innerHTML = member2.name.toUpperCase();
+   document.getElementById("member2b").innerHTML = "Favorite Color: " + member2.color;
+   document.getElementById("member2c").innerHTML = "Age: " + member2.age;
+   document.getElementById("member2d").innerHTML = "Gender: " + member2.gender;
+   document.getElementById("member2e").innerHTML = "Likes to read: " + member2.reads;
+   
+   document.getElementById("member3a").innerHTML = member3.name.toUpperCase();
+   document.getElementById("member3b").innerHTML = "Favorite Color: " + member3.color;
+   document.getElementById("member3c").innerHTML = "Age: " + member3.age;
+   document.getElementById("member3d").innerHTML = "Gender: " + member3.gender;
+   document.getElementById("member3e").innerHTML = "Likes to read: " + member3.reads;
+</script>
+</body>
+</html>
