@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <link rel="stylesheet" href="localStorageHTML.css" />
+    <script src="localStorageAPI.js"></script>
+    <h2>Local Storage API</h2>
+    <strong>Study Sources:</strong><br />
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage">MDN web docs - Local Storage</a><br />
+    <a href="https://www.w3schools.com/html/html5_webstorage.asp">W3Schools - Local Storage API</a>
+    <h3>Scope:</h3>
+    <p>HTML web storage allows us to store data within the user's browser; additionally, it is not sent to the web server.</p>
+    <h4>HTML Web Storage Objects</h4>
+    <ul>
+        <li><strong>window.localStorage</strong> : stores data with no expiration date</li>
+        <li><strong>window.sessionStorage</strong> : stores data for one session (data is lost when the browser tab is closed)</li>
+    </ul>
+    <hr />
+
+    <form>
+        <p class="demo"></p>
+        <script>
+            localStorage.setItem('CIT261', ['is', 'a', 'fun', 'class']);
+            var arryArtem = localStorage.getItem("CIT261").split(',');
+            document.write("The local storage key value at for CIT261: "
+                + arryArtem
+                + "<br /> arryArtem[0] = " + arryArtem[0]
+                + "<br /> arryArtem[1] = " + arryArtem[1]
+                + "<br /> arryArtem[2] = " + arryArtem[2]
+                + "<br /> arryArtem[3] = " + arryArtem[3]);
+        </script>
+    </form>
+    <hr />
+
+    <h3>Local Storage Example</h3>
+    <section id="leftbox">
+        <form>
+            <p>Name (key): <input type="text" id="person" /></p>
+            <p>Age (value): <input type="text" id="age" /></p>
+            <p>
+                <input type="button" id="saveButton" value="Save Item" title="Save Name and Age to Local Storage" />
+                <input type="button" id="remButton" value="Remove Item" title="Remove Item by Name Entered from Local Storage" />
+                <input type="button" id="clrButton" value="Clear Items" title="Clear Local Storage Items" />
+                <input type="button" id="loadButton" value="PreLoad Items" title="Preload Items into Local Storage" />
+            </p>
+        </form>
+    </section>
+    <section id="rightbox">
+        Stored Data
+    </section>
+
+
+</body>
+</html>

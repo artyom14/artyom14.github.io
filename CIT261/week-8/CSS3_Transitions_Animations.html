@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS3_Transitions_Animations.css" />
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <h2>
+        CSS3 Transitions and Animations in CSS with JavaScript
+    </h2>
+    <h3>Transform Object with CSS3</h3>
+    <section>
+        <h4>Hover over each square to flip it!</h4>
+        <div class="flip3d">
+            <div class="back">Box 1 - Back</div>
+            <div class="front">Box 1 - Front</div>
+        </div>
+        <div class="flip3d">
+            <div class="back">Box 2 - Back</div>
+            <div class="front">Box 2 - Front</div>
+        </div>
+        <div class="flip3d">
+            <div class="back">Box 3 - Back</div>
+            <div class="front">Box 3 - Front</div>
+        </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h3>Transition, Transform and Animate an Object.</h3>
+    <h4>Hover over box to view transition animation.</h4>
+    <div class="transition1">Transition</div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h3>Triggering change in animation with JavaScript</h3>
+    <script>
+        function changeAnim() {
+            var div = document.getElementById("obj1");
+            if (div.className == "anim1")
+                { div.className = "anim2"; }
+            else div.className = "anim1";
+        }
+    </script>
+    <button onclick="changeAnim()" style="margin:10px">Change Animation</button>
+    <br />
+    <div class="animation">
+        <div id="obj1" class="anim1">Transform</div>
+    </div>
+
+</body>
+</html>

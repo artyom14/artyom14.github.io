@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<body>
+    <h3>DOM Manipulation</h3>
+    <strong>Study Sources:</strong><br />
+    <a href="https://www.w3schools.com/js/js_htmldom.asp">W3Schools - JavaScript HTML DOM</a><br />
+    <a href="https://www.w3schools.com/js/js_htmldom_document.asp">W3Schools - DOM Interaction with Elements</a>
+    <p><b>DOM - Document Object Model</b> is created when a web page is loaded by the browser.</p>
+    <p>
+        With DOM, HTML elements and attributes can be created, edited, retrieved and deleted. HTML elements and attributes include: <br />
+        <ul><li>Head</li><li>Title</li><li>Body</li><li>Anchors</li><li>Headings</li><li>HTML Tags</li></ul>
+    </p>
+    <p>With DOM, we can program various types of event handlers.</p>
+
+    <h4>Simple DOM getElementById and innerHTML methods</h4>
+    <p id="demoDId">This text is replaced by DOM reassignment script.</p>
+    <script>document.getElementById("demoDId").innerHTML = "This text was inserted using DOM getElementById and innerHTML.";</script>
+    <hr />
+    <h4>DOM querySelectorAll</h4>
+    <p class="findMe">Waldo</p>
+    <p id="demoDTag">TEXT</p>
+    <script>
+        var tagVal = document.querySelectorAll("p.findMe");
+        document.getElementById("demoDTag").innerHTML = "Found " + tagVal[0].innerHTML + " with querySelectorAll!";
+    </script>
+    <hr />
+    <div id="div1">The text above was created in javascript using createElement.</div>
+    <script>
+        document.body.onload = addElement;
+        function addElement() {
+            //create a new DIV element
+            var myDiv = document.createElement("DIV");
+            //insert content into the new DIV element
+            var myContent = document.createTextNode("I was created using the DOM createElement method!");
+            //finally, add the text node to the new DIV element
+            myDiv.appendChild(myContent);
+            //now, add new element and content into the DOM
+            var currentDiv = document.getElementById("div1");
+            document.body.insertBefore(myDiv, currentDiv);
+        }
+    </script>
+
+    <hr />
+    <h3>The following paragraph tags are removed using an array.</h3>
+    <p id="p01">This is my first paragraph.</p>
+    <p id="p02">This is my second paragraph.</p>
+    <p id="p03">This is my third paragraph.</p>
+    <input type="button" id="remElements" value="Remove Text" title="Remove the text above"/>
+
+    <script>
+        //create evenlistener for remove elements button
+        var remButton = document.getElementById("remElements");
+        remButton.addEventListener("click", remElements, false);
+        //load the array with tag id's to remove
+        function remElements() {
+            var arry = ["p01", "p02", "p03"];
+            for (i = 0; i < arry.length; i++) {
+                let el = document.getElementById(arry[i]);
+                el.remove();
+            }
+        }
+    </script>
+
+    <hr />
+    <h3>The following list itmes are replaced with the DOM .replaceChild method.</h3>
+    <ul id="myList"><li>Bannanas</li><li>Lemons</li><li>Milk</li></ul>
+    <input type="button" id="repElement" value="Replace Item" title="Replace an item above" />
+
+    <script>
+        var repButton = document.getElementById("repElement");
+        repButton.addEventListener("click", replaceChild, false);
+        function replaceChild() {
+            var textnode = document.createTextNode("Tortillas");
+            var item = document.getElementById("myList").childNodes[0];
+            item.replaceChild(textnode, item.childNodes[0]);
+        }
+    </script>
+
+</body>
+</html>

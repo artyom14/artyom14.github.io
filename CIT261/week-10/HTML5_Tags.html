@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script>
+        function draw(x, y) {
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            var ntd = canvas.getContext('2d');
+            var btw = canvas.getContext('2d');
+            var mtx = canvas.getContext('2d');
+            ctx.save();
+            ctx.clearRect(0, 0, 600, 200);
+            ctx.fillStyle = "rgba(255,0,0,1)";
+            ctx.fillRect(300, x, 80, 100);
+            ctx.restore();
+            ntd.fillStyle = "rgba(0,0,225,1)";
+            ntd.fillRect(200, 50, 100, x);
+            ntd.restore();
+            btw.save();
+            btw.fillStyle = "rgba(0,255,0,1)";
+            btw.fillRect(275, 20, x, 75);
+            btw.restore();
+            mtx.beginPath();
+            mtx.arc(500, 145, 40, 0, 2 * Math.PI);
+            mtx.stroke();
+            x += 2;
+            var loopTimer = setTimeout('draw(' + x + ',' + y + ')', 30);
+        }
+    </script>
+</head>
+<body>
+    <h3>HTML5 Tags - Audio, Video and Canvas</h3>
+    <h4>HTML5 can embed video, audio and create images with tags.</h4>
+    <p> Video Tag: &lt;Video&gt;</p>
+    <ul>
+        <li>autoplay</li>
+        <li>controls</li>
+        <li>height</li>
+        <li>loop</li>
+        <li>muted</li>
+        <li>poster="image.jpg" thumbnail</li>
+        <li>preload</li>
+        <li>src</li>
+        <li>width</li>
+    </ul>
+    <p>Example video tag: </p>
+    <pre>&lt;video src="Discovering-Truth-360.mp4" width="600" controls autoplay loop muted&gt;&lt;/video&gt;</pre>
+    <p>Default settings for videos when browser doesn't support video format or HTML 5.</p>
+    <pre>
+		&lt;video controls&gt;
+		&lt;source src="movie.mp4" type="video/mp4; codecs='avc1, mp4a'"&gt;
+		&lt;source src="movie.webm" type="video/webm; codecs='vp8.0, vorbis'"&gt;
+		&lt;p&gt;Browser does not support the video tag.&lt;/p&gt;
+		&lt;/video&gt;
+	</pre>
+    <h4>Discovering Truth by President Uchtdorf</h4>
+    <video src="Discovering-Truth-360.mp4" controls autoplay loop height="400"></video>
+    <hr>
+
+    <h4>Audio Tag: &lt;Audio&gt;</h4>
+    <p>HTML5 can embed audio files using src, controls, autoplay and loop attributes. This provides user options how to control audio files.</p>
+    <p>Sample HTML5 audio tag:</p>
+    <pre>&lt;audio src="Zelda-Theme.m4a" controls &gt;&lt;/audio&gt;</pre>
+
+    <h4>Legend of Zelda - Main Theme Song</h4>
+    <image src="link.png"></image>
+    <br />
+    <audio src="Zelda-Theme.m4a" controls></audio>
+    <hr>
+
+    <h2>Canvas Tag</h2>
+    <p>
+        <strong>Canvas</strong> tags can be used to draw graphics on a webpage with code (typically JavaScript). The element is a container for graphics. <br />
+        Canvas has several methods for drawing paths, boxes, circles, text, and adding images. Canvas can be animated, interactive, and can also be used in website games.
+    </p>
+    <canvas id="canvas" width="600" height="200" style="border:3px solid"></canvas><br>
+    <button onclick="draw(0,0)">Use Canvas</button>
+
+
+    <h4>Code Sample</h4>
+<pre>
+    function draw(x, y) {
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var ntd = canvas.getContext('2d');
+        var btw = canvas.getContext('2d');
+        var mtx = canvas.getContext('2d');
+        ctx.save();
+        ctx.clearRect(0, 0, 600, 200);
+        ctx.fillStyle = "rgba(255,0,0,1)";
+        ctx.fillRect(10, x, 80, 100);
+        ctx.restore();
+        ntd.fillStyle = "rgba(0,0,225,1)";
+        ntd.fillRect(200, 50, 100, x);
+        ntd.restore();
+        btw.save();
+        btw.fillStyle = "rgba(0,255,0,1)";
+        btw.fillRect(275, 20, x, 75);
+        btw.restore();
+        mtx.beginPath();
+        mtx.arc(500, 145, 40, 0, 2 * Math.PI);
+        mtx.stroke();
+        x += 2;
+        var loopTimer = setTimeout('draw(' + x + ',' + y + ')', 30);
+    }
+</pre>
+</body>
+</html>

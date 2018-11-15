@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <title>Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</title>
+</head>
+<body onload="get()">
+<header><a href="index.html">Back</a></header>
+<main>
+    <section class="topic">
+        <div class="date">February 19 2018</div>
+        <h2>Topic#5</h2>
+        <h3 class="quote">Local Storage API</h3>
+        <p>The Web Storage API provides mechanisms by which browsers can securely store key/value pairs, in a much more
+            intuitive fashion than using cookies. This article provides a walkthrough of how to make use of this simple
+            technology.
+        </p>
+        <p><strong>Basics</strong></p>
+        <p>Storage objects are simple key-value stores, similar to objects, but they stay intact through page loads. The
+            keys and the values are always strings (note that integer keys will be automatically converted to strings,
+            just like what objects do). You can access these values like an object, or with the Storage.getItem() and
+            Storage.setItem() methods. These three lines all set the colorSetting entry in the same way:
+        </p>
+        <pre>
+            localStorage.colorSetting = '#a4509b';
+            localStorage['colorSetting'] = '#a4509b';
+            localStorage.setItem('colorSetting', '#a4509b');
+        </pre>
+        <p><strong>Note:</strong> It's recommended to use the Web Storage API (setItem, getItem, removeItem, key,
+            length) to prevent
+            the pitfalls associated with using plain objects as key-value stores.</p>
+        <ul>
+            <li>sessionStorage maintains a separate storage area for each given origin that's available for the duration
+                of the page session (as long as the browser is open, including page reloads and restores).
+            </li>
+            <li>localStorage does the same thing, but persists even when the browser is closed and reopened.</li>
+        </ul>
+        <p>These mechanisms are available via the Window.sessionStorage and Window.localStorage properties (to be more
+            precise, in supporting browsers the Window object implements the WindowLocalStorage and WindowSessionStorage
+            objects, which the localStorage and sessionStorage properties hang off) — invoking one of these will create
+            an instance of the Storage object, through which data items can be set, retrieved, and removed. A different
+            Storage object is used for the sessionStorage and localStorage for each origin — they function and are
+            controlled separately.
+        </p>
+        <h3 class="quote">Getting values from storage</h3>
+        <p>Values can be retrieved from storage using Storage.getItem(). This takes the key of the data
+            item as an argument, and returns the data value. For example:</p>
+        <pre>function setStyles() {
+  var currentColor = localStorage.getItem('bgcolor');
+  var currentFont = localStorage.getItem('font');
+  var currentImage = localStorage.getItem('image');
+
+  document.getElementById('bgcolor').value = currentColor;
+  document.getElementById('font').value = currentFont;
+  document.getElementById('image').value = currentImage;
+
+  htmlElem.style.backgroundColor = '#' + currentColor;
+  pElem.style.fontFamily = currentFont;
+  imgElem.setAttribute('src', currentImage);
+}</pre>
+        <p>Here, the first three lines grab the values from local storage. Next, we set the values displayed in the form
+            elements to those values, so that they keep in sync when you reload the page. Finally, we update the
+            styles/decorative image on the page, so your customization options come up again on reload.</p>
+        <h3 class="quote">Setting values in storage</h3>
+        <p>Storage.setItem() is used both to create new data items, and (if the data item already exists) update
+            existing values. This takes two arguments — the key of the data item to create/modify, and the value to
+            store in it.</p>
+        <pre>function populateStorage() {
+  localStorage.setItem('bgcolor', document.getElementById('bgcolor').value);
+  localStorage.setItem('font', document.getElementById('font').value);
+  localStorage.setItem('image', document.getElementById('image').value);
+
+  setStyles();
+}</pre>
+        <p>The populateStorage() function sets three items in local storage — the background color, font, and image
+            path. It then runs the setStyles() function to update the page styles, etc.
+
+            We've also included an onchange handler on each form element so that the data and styling are updated
+            whenever a form value is changed:</p>
+        <pre>bgcolorForm.onchange = populateStorage;
+fontForm.onchange = populateStorage;
+imageForm.onchange = populateStorage;</pre>
+        <h3 class="quote">Responding to storage changes with the StorageEvent</h3>
+        <p>The StorageEvent is fired whenever a change is made to the Storage object (note that this event is not fired
+            for sessionStorage changes). This won't work on the same page that is making the changes — it is really a
+            way for other pages on the domain using the storage to sync any changes that are made. Pages on other
+            domains can't access the same storage objects.
+
+            On the events page (see events.js) the only JavaScript is as follows:</p>
+        <pre>window.addEventListener('storage', function(e) {
+  document.querySelector('.my-key').textContent = e.key;
+  document.querySelector('.my-old').textContent = e.oldValue;
+  document.querySelector('.my-new').textContent = e.newValue;
+  document.querySelector('.my-url').textContent = e.url;
+  document.querySelector('.my-storage').textContent = JSON.stringify(e.storageArea);
+});</pre>
+        <p>Here we add an event listener to the window object that fires when the Storage object associated with the
+            current origin is changed. As you can see above, the event object associated with this event has a number of
+            properties containing useful information — the key of the data that changed, the old value before the
+            change, the new value after that change, the URL of the document that changed the storage, and the storage
+            object itself (which we've stringified so you can see its content).</p>
+        <h3 class="quote">Deleting data records</h3>
+        <p>Web Storage also provides a couple of simple methods to remove data. We don't use these in our demo, but they
+            are very simple to add to your project:</p>
+        <ul>
+            <li>Storage.removeItem() takes a single argument — the key of the data item you want to remove — and removes
+                it from the storage object for that domain.
+            </li>
+            <li>Storage.clear() takes no arguments, and simply empties the entire storage object for that domain.</li>
+        </ul>
+        <p>Here is the simple test section to store data in Local Storage. Local Storage is accessed by pressing option
+            + CMD + i on a Mac in resources.</p>
+        <form action="set">
+            <input id="saveData" type="text">
+            <button type="button" onclick="set()">Clicker</button>
+        </form>
+        <p>It saves the data to local storage and prevents the data in input from getting lost.</p>
+        <hr>
+        <p><strong>For more experience with Local Storage:</strong></p>
+        <a href="localStorage.html">VIP Lists - Tickets Giveaway</a>
+    </section>
+
+</main>
+<script src="scripts/topic5/localStorageEx.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        #text {
+            width: 450px;
+            height: 30px;
+            color: deeppink;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h2>Manipulate CSS Class using JavaScript</h2>
+    <p>CSS Class can be changed using DOM in JavaScript.</p>
+    <hr />
+    <h3>Change basic HTML Style</h3>
+    <div id="text" onclick="changeColor()">Please <em><b>click me</b></em> to change my color and font.</div>
+    <button type="button" onclick="hideMe()">Hide</button>
+    <button type="button" onclick="showMe()">Show</button>
+    <script>
+        //Global objects containing CSS style values.
+        var i = 0;
+        var colors = ['blue', 'red', 'gold', 'orange', 'purple'];
+        var fonts = ['Sans-serif', 'Verdana', 'Times New Roman', 'Courier New', 'Lucida Console'];
+        var bgcolors = ['red', 'gold', 'green', 'purple', 'teal'];
+        function changeColor() {
+            if (i > colors.length) { i = 0; }
+            document.getElementById("text").style.color = colors[i];
+            document.getElementById("text").style.fontFamily = fonts[i];
+            document.getElementById("text").style.backgroundColor = bgcolors[i];
+            ++i;
+        }
+        function hideMe() {
+            document.getElementById("text").style.visibility = "hidden";
+        }
+        function showMe() {
+            document.getElementById("text").style.visibility = "visible";
+        }
+    </script>
+    <hr />
+    <h3>Change div text with mouseover and mouseout</h3>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+         style="background-color:#3b34e2;width:120px;height:20px;padding:10px;">
+        Mouse Over Me
+    </div>
+
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "You rang?"
+            obj.style.width = "240px";
+            obj.style.height = "40px";
+            obj.style.color = "white"
+        }
+        function mOut(obj) {
+            obj.innerHTML = "Mouse Over Me"
+            obj.style.width = "120px";
+            obj.style.height = "20px";
+            obj.style.color = "pink";
+        }
+    </script>
+
+    <hr />
+    <h3>Update content of text box using onchange</h3>
+    <p>Enter your name below and then click anywhere else</p>
+    <input type="text" id="fname" oninput="upperCase()">
+    <script>
+        function upperCase() {
+            var input = document.getElementById("fname");
+            input.value = input.value.toUpperCase();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <title>Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation
+        and Transition Events</title>
+</head>
+<body>
+<header><a href="index.html">Back</a></header>
+<main>
+    <section class="topic">
+        <div class="date">2018</div>
+        <h2>Topic#9</h2>
+        <h3 class="quote">JavaScript Events</h3>
+        <p>JavaScript lets you execute code when events are detected.
+            HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+        </p>
+        <p><strong>What can JavaScript Do?</strong></p>
+        <p>Event handlers can be used to handle, and verify, user input, user actions, and browser actions:
+        <ul>
+            <li>Things that should be done every time a page loads</li>
+            <li>Things that should be done when the page is closed</li>
+            <li>Action that should be performed when a user clicks a button</li>
+            <li>Content that should be verified when a user inputs data
+            </li>
+            <li>And more ...</li>
+        </ul>
+        </p>
+        <p>Many different methods can be used to let JavaScript work with events:
+        <ul>
+            <li>HTML event attributes can execute JavaScript code directly</li>
+            <li>HTML event attributes can call JavaScript functions</li>
+            <li>You can assign your own event handler functions to HTML elements</li>
+            <li>You can prevent events from being sent or being handled
+            </li>
+            <li>And more ...</li>
+        </ul>
+        </p>
+        <p><strong>Ways of using web events</strong></p>
+        <p>There are a number of different ways in which you can add event listener code to web pages so that it will be
+            run when the associated event fires. In this section we will review the different mechanisms and discuss
+            which ones you should use.
+        </p>
+        <p><strong>Event handler properties</strong></p>
+        <p>The onclick property is the event handler property being used in this situation. It is essentially a property
+            like any other available on the button (e.g. <span style="color: slateblue">btn.textContent</span>, or <span
+                    style="color: #408bb5">btn.style</span>), but it is a special type — when
+            you set it to be equal to some code, that code will be run when the event fires on the button.
+        </p>
+        <pre>var btn = document.querySelector('button');
+             function bgChange() {
+             var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+             document.body.style.backgroundColor = rndCol;
+}
+
+btn.onclick = bgChange;</pre>
+        <p><span style="color: salmon">btn.onfocus</span> and <span style="color: forestgreen">btn.onblur</span> — The
+            color will change when the button is focused and unfocused (try pressing tab
+            to tab on to the button and off again). These are often used to display information about how to fill in
+            form fields when they are focused, or display an error message if a form field has just been filled in with
+            an incorrect value.</p>
+        <p><span style="color: #854629">btn.ondblclick</span> — The color will change only when it is double-clicked.
+        </p>
+        <p><span style="color: #7fd470">window.onkeypress</span>, <span style="color: #bc3315">window.onkeydown</span>
+            or <span style="color: #99940d">window.onkeyup</span>, — The color will change when a key is pressed on the
+            keyboard. keypress refers to a general press (button down and then up), while keydown and keyup refer to
+            just the key down and key up parts of the keystroke, respectively. Note that it doesn't work if you try to
+            register this event handler on the button itself — we've had to register it on the window object, which
+            represents the entire browser window.</p>
+        <p><span style="color: #ffc600">btn.onmouseover</span> and <span style="color: salmon">btn.onmouseout</span> —
+            The color will change when the mouse pointer is moved so it begins
+            hovering over the button, or when it stops hover over the button and moves off it, respectively.</p>
+    </section>
+    <h3 class="quote">addEventListener() and removeEventListener()</h3>
+    <p>The newest type of event mechanism is defined in the Document Object Model (DOM) Events Specification,
+        which provides browsers with a new function — addEventListener(). This functions in a similar way to the event
+        handler properties</p>
+    <pre>
+        var btn = document.querySelector('button');
+        function bgChange() {
+  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  document.body.style.backgroundColor = rndCol;
+}
+
+btn.addEventListener('click', bgChange);
+    </pre>
+    <p>So inside the addEventListener() function, we specify two parameters — the name of the event we want to register
+        this handler for, and the code that comprises the handler function we want to run in response to it. Note that
+        it is perfectly appropriate to put all the code inside the addEventListener() function, in an anonymous
+        function, like this:
+    </p>
+    <pre>
+        btn.addEventListener('click', function() {
+        var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        document.body.style.backgroundColor = rndCol;
+        });
+    </pre>
+    <p>This mechanism has some advantages over the older mechanisms.</p>
+    <p>A counterpart function is removeEventListener(), which removes a previously added listener. For example, this would
+        remove the listener set in the first code block in this section:</p>
+    <pre>
+        btn.removeEventListener('click', bgChange);
+    </pre>
+    <h3 class="quote">Using monitorEvents()</h3>
+    <p>There are times when we want to know what is happening on the page and what triggers the content. For example, I
+        want to monitor the first empty tile on a Google Chrome's starting page...</p>
+    <p><span style="color: green">Note: we can't use <span style="color: #bc3315">monitorEvents()</span> in the .js, but only in
+        the console dev tools</span>
+    </p>
+    <pre>
+        let x = document.getElementsByClassName("mv-empty-tile");
+
+        let z = x[0];
+
+        monitorEvents(z);
+    </pre>
+    <p>Or div with id #mv-tiles</p>
+    <pre>
+        var x = document.getElementById('mv-tiles');
+        monitorEvents(x);
+    </pre>
+    <p>The output I get in the console:</p>
+    <pre>
+        pointermove PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0…}
+mousemove MouseEvent {isTrusted: true, screenX: 348, screenY: 306, clientX: 28, clientY: 90…}
+pointermove PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0…}
+mousemove MouseEvent {isTrusted: true, screenX: 348, screenY: 305, clientX: 28, clientY: 89…}
+pointermove PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0…}
+mousemove MouseEvent {isTrusted: true, screenX: 348, screenY: 300, clientX: 28, clientY: 84…}
+pointermove PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0…}
+mousemove MouseEvent {isTrusted: true, screenX: 348, screenY: 298, clientX: 28, clientY: 82…}
+pointermove PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0…}
+    </pre>
+    <p>We can also center on a specific event by typing:</p>
+    <pre>
+monitorEvents(document.body, "click");
+    </pre>
+    <p>And when clicked:</p>
+    <pre>
+        click MouseEvent {isTrusted: true, screenX: 227, screenY: 371, clientX: 186, clientY: 251…}
+         click MouseEvent {isTrusted: true, screenX: 439, screenY: 319, clientX: 398, clientY: 199…}
+         click MouseEvent {isTrusted: true, screenX: 585, screenY: 310, clientX: 544, clientY: 190…}
+         click MouseEvent {isTrusted: true, screenX: 1090, screenY: 420, clientX: 1049, clientY: 300…}
+    </pre>
+    <p>Events are passed to functions as a parameter:</p>
+    <pre>
+function itDoesThings(events){
+        }
+    </pre>
+    <h3 class="quote">onload</h3>
+    <p>The GlobalEventHandlers mixin is an event handler for the load event of a Window, XMLHttpRequest which fires when
+        the resource has loaded.</p>
+    <pre>
+        window.onload = funcRef;
+    </pre>
+    <p>funcRef is the handler function to be called when the window’s load event fires.
+    </p>
+    <p>The load event fires at the end of the document loading process. At this point, all of the objects in the
+        document are in the DOM, and all the images, scripts, links and sub-frames have finished loading.</p>
+    <h3 class="quote">ontouchstart</h3>
+    <p><span style="color: #bc3315">This is an experimental technology!</span></p>
+    <pre>var startHandler = someElement.ontouchstart;</pre>
+    <p><strong>startHandler</strong><br>
+        The touchstart event handler for element someElement.</p>
+    <hr>
+    <h3 class="quote">Functional page with animation and transition</h3>
+    <h4 style="text-align: center"><a href="events.html"><span
+            style="font-family: 'Vollkorn SC', serif; font-size: larger"><i class="em em-musical_score"></i>Piano Player<i
+            class="em em-musical_keyboard"></i></span></a></h4>
+
+</main>
+</body>
+</html>

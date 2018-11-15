@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <title>HTML5 Tags - Video, Audio, and Canvas</title>
+</head>
+<body onload="draw()">
+<header><a href="index.html">Back</a></header>
+<main>
+    <section class="topic">
+        <div class="date">February 13 2018</div>
+        <h2>Topic#10</h2>
+        <h3 class="quote">HTML5: video and audio</h3>
+        <p>One of the biggest uses for Flash, Silverlight, and similar technologies is to get a multimedia item to play.
+            With HTML5
+            supporting the new video and audio controls, those technologies are now relegated to being used for fallback
+            status. The
+            browser can now natively display the controls, and the content can be manipulated through JavaScript. Don't
+            let the
+            codec confusion scare you away. You can specify multiple sources for content, so you can make sure that your
+            multimedia
+            will play regardless of what codecs the user's browser supports.</p>
+        <p>Using audio tag example looks like it:</p>
+        <pre>
+            &lt;audio controls&gt;<br> &lt;source src="audio.mp3" type="audio/mp3"&gt;<br> &lt;/audio&gt;
+        </pre>
+        <p>Using video tag example looks like it:</p>
+        <pre>&lt;video controls&gt;<br>&lt;source src="video.mp4" type="video/mp4"&gt;<br> &lt;/video&gt;
+        </pre>
+        <p>
+            Video tag has a set of different attributes to control videos:
+        </p>
+        <p>
+            <strong>width and height</strong><br>
+            You can control the video size either with these attributes or with CSS. In both cases, videos maintain
+            their native width-height ratio — known as the aspect ratio. If the aspect ratio is not maintained by the
+            sizes you set, the video will grow to fill the space horizontally, and the unfilled space will just be given
+            a solid background color by default.<br>
+            <strong>autoplay</strong><br>
+            This attribute makes the audio or video start playing right away while the rest of the page is loading. You
+            are advised not to use autoplaying video (or audio) on your sites, because users can find it really
+            annoying.<br>
+            This attribute makes the video (or audio) start playing again whenever it finishes. This can also be
+            annoying, so only use if really necessary.<br>
+            <strong>muted</strong><br>
+            This attribute causes the media to play with the sound turned off by default.<br>
+            <strong>poster</strong><br>
+            This attribute takes as its value the URL of an image, which will be displayed before the video is played.
+            It is intended to be used for a splash or advertising screen.<br>
+            <strong>preload</strong><br>
+            this attribute is used in the element for buffering large files. It can take one of 3 values:
+            "none" does not buffer the file,
+            "auto" buffers the media file,
+            "metadata" buffers only the metadata for the file.
+        </p>
+        <video controls width="400" height="400"
+               autoplay loop muted
+               poster="poster.png">
+            <source src="videos/chopin.mp4" type="video/mp4">
+        </video>
+        <h3 class="quote">HTML5: canvas</h3>
+        <p>The &lt;canvas&gt; tag gives HTML a bitmapped surface to work with, much like what you would use with GDI+ or
+            the .NET
+            Image object. While
+            &lt;canvas&gt; isn't perfect (layers need to be replicated by using multiple canvas objects stacked on top
+            of
+            each other, for example), it is a great way to build charts and graphs, which have been a
+            traditional weak spot in HTML, as well as custom graphics. And that is just a start!
+        </p>
+        <p>The &lt;canvas&gt; element is not supported in some older browsers, but is supported in recent versions of
+            all major
+            browsers. The default size of the canvas is 300 px × 150 px (width × height). But custom sizes can be
+            defined using the HTML height and width property. In order to draw graphics on the canvas we use a
+            JavaScript context object, which creates graphics on the fly.
+        </p>
+        <pre>&lt;canvas width="150" height="150">&lt;/canvas></pre>
+        <p>The
+            &lt;canvas> element can be styled just like any normal image (margin, border, background…). These rules,
+            however, don't affect the actual drawing on the canvas.
+        </p>
+        <p>The
+            &lt;canvas> element creates a fixed-size drawing surface that exposes one or more rendering contexts, which
+            are
+            used to create and manipulate the content shown.
+        </p>
+        <p>The canvas is initially blank. To display something, a script first needs to access the rendering context and
+            draw on it. The
+            &lt;canvas> element has a method called getContext(), used to obtain the rendering context and its drawing
+            functions. getContext() takes one parameter, the type of context. For 2D graphics, such as those covered by
+            this tutorial, you specify "2d" to get a CanvasRenderingContext2D.></p>
+        <pre>var canvas = document.getElementById('tutorial');
+                var ctx = canvas.getContext('2d');</pre>
+        <p>The first line in the script retrieves the node in the DOM representing the
+            &lt;canvas> element by calling the document.getElementById() method. Once you have the element node, you can
+                access the drawing context using its getContext() method.
+        </p>
+        <p>Using programming logic it is also possible to create games</p>
+        <canvas style=" padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;" id="gameCanvas" width="300" height="400"></canvas>
+        <p>For the more secluded game experience => <a href="e-tennis.html">Electronic Tennis</a></p>
+    </section>
+</main>
+<script src="scripts/topic10/eTennis.js"></script>
+</body>
+</html>

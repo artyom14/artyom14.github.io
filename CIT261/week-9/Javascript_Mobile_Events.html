@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script>src="magictouch.js"</script>
+</head>
+<body>
+    <h3>Javascript Events</h3>
+    <p>Source: <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">W3 Schools - HTML DOM Events</a></p>
+    <p id="event">Use buttons below to change my text.</p>
+    <button onclick="document.getElementById('event').innerHTML='onClick button used';">onClick</button>
+    <button ondblclick="document.getElementById('event').innerHTML='onDblClick button used';">onDblClick</button>
+    <button onmouseover="document.getElementById('event').innerHTML='onMouseOver button used';">onMouseOver</button>
+    <hr />
+    <img onload="loadUp(this)" border="0" src="mario-loading.gif" alt="Loading"  width="512" height="384">
+    <hr />
+    <br />
+    <img onmouseenter="grow(this)" onmouseleave="normal(this)" border="0" src="Tanooki.jpg" alt="Mario" width="64" height="84">
+
+    <p>
+        The onmouseenter event function, grow(), is triggered when mouse hovers over Mario.<br />
+        The onmouseleave event function, normal(), is triggered when mouse leaves Mario.
+    </p>
+
+    <script>
+        function grow(x) {
+            x.style.height = "168px";
+            x.style.width = "128px";
+        }
+        function normal(x) {
+            x.style.height = "84px";
+            x.style.width = "64px";
+        }
+        function loadUp(x) {
+            sleep_s(10); //trying to immidate the loading 
+            alert("Page loading complete!");
+            x.src = "smallmario.png";
+            x.width = "64";
+            x.height = "84";
+        }
+        function sleep_s(secs) {
+            secs = (+new Date) + secs * 1000;
+            while ((+new Date) < secs);
+        }
+    </script>
+    <hr />
+
+
+    <h3>Javascript Events for Mobile Devices</h3>
+    <p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events">MDN Web Docs - Touch Events</a></p>
+    <p>
+        <strong>Description:</strong> The touch events interfaces are relatively low-level APIs that can be used to support application specific multi-touch interactions
+        such as a two-finger gesture. <br />A multi-touch interaction starts when a finger (or stylus) first touches the contact surface. <br />
+        Other fingers may subsequently touch the surface and optionally move across the touch surface. <br />The interaction ends when the fingers are removed from the surface.
+        During this interaction, an application receives touch events during the start, move and end phases.
+    </p>
+    <p>With a touch screen or stylus, touch Mario to trigger the grow() function and release to trigger the normal() function.</p>
+    <img ontouchstart="grow(this)" ontouchend="normal(this)" border="0" src="Tanooki.jpg" alt="Mario" width="64" height="84">
+
+</body>
+</html>
