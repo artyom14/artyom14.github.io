@@ -1,0 +1,22 @@
+
+@media only screen and (min-width: 64em ) {
+    .Small {
+        display: none;
+    }
+    .Medium {
+        display: none;
+    }
+    .Large {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    button { display: none; }
+    section.gallery {
+        grid-template-columns: repeat(3, 32%);
+        grid-gap: 0%;
+}
+    section.gallery figure:hover{
+        box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.4);
+    }
+}
