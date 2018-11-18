@@ -1,0 +1,49 @@
+.flip3d {
+    width: 240px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    text-align:center;
+    line-height:200px;
+}
+
+.flip3d > .front {
+    position: absolute;
+    -ms-transform: perspective(600px) rotateY(0deg);
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    background: #ff0000;
+    color:white;
+    width: 240px;
+    height: 200px;
+    border-radius: 3px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+
+.flip3d > .back {
+    position: absolute;
+    -ms-transform: perspective(600px) rotateY(0deg);
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    background: #80BFFF;
+    width: 240px;
+    height: 200px;
+    border-radius: 3px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+
+.flip3d:visited > .front {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3d:visited > .back {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
