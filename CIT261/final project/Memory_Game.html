@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8">
+ <title>variables</title>
+  <meta name="description" content="CIT 261: Artem karpikov">
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/memory_game.css" />
+    <script src="JS/memory_game.js"></script>
+</head>
+<body>
+    <h1>😜 Mario Emoji Memory Game 🎮</h1>
+    <p>
+        <span id="moves">0</span><span> Moves | Time: </span>
+        <span id="timer">0</span> <span>secs | </span>
+        <span id="restart" ontouchend="clearInterval(nowTime); newBoard();" onclick="clearInterval(nowTime); newBoard();">Restart</span>
+    </p>
+    <div class="flip3d" id="memory_board"></div>
+</body>
+</html>
