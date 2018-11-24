@@ -7,11 +7,14 @@ body {
     align-content: center;
 }
 
-.header {
+header {
+        display: flex;
+            justify-content: space-around;
+                align-items: center;
+                    text-align: center;
     background-color: #3590F3;
     padding: 20px;
     text-align: center;
-	    display: inline-block;
     font-size: 20px;
     color: #F1E3F3;
 }
@@ -22,9 +25,10 @@ header > img {
     vertical-align: middle;
 }
     .headertext{
-    display: inline-block;
+            display: inline-block;
     vertical-align: middle;
     }
+
 header h1 {
     font-size: 2em;
 }
