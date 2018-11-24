@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+	    <head>
+    <meta charset="utf-8">
+    <title>Preston-City Weather Bureau</title>
+    <meta name="author" content="Artem Karpikov">
+    <meta name="description" content="Weather Town Page ">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+	     <img src="images/weather.png" alt="The weather site logo">
+        
+        <div class="headertext">
+        <h1> Weather Bureau</h1>
+        <div class="subheading">Where the 7-Day Weather Forecasts Comes First</div>
+        </div>
+        <img id = "sunnyimage" src="images/Sunny.png" alt="current condititon">
+        <div class="currentconditions">
+    </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleHam()">&#9776;</button>
+       <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+ 
+             <h2>Home</h2>
+            <section class="townsDisplay">
+            </section>
+
+        </main>
+    
+        <footer>
+    
+            <section class="bottom">
+                <img src="images/antique-black-classic-747114.jpg" alt="contact" class="contactImg">
+                <div class="contact">
+                    <p><span>PeekOutside</span><br>123 Home Dr<br> DisneyWorld, Florida 12345<br><br>999.999.9999<br>Contact@PeekOutside.com</p>
+                </div>
+                <div class="map">
+
+                        <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=disney%20world&t=&z=13&ie=UTF8&iwloc=&output=embed"  ></iframe>
+
+                </div>
+    
+            </section>
+    
+        <section class="footer-bar">
+            <h2>&copy;2018 | All Rights Reserved | Weather Bureau | <br> <a href="http://www.byui.edu/online"> </a> BYU-Idaho Online Learning <br><span id="currentdate">Current Date Placeholder </span></h2>
+        </section>
+    
+        </footer>
+    
+        <script type="text/javascript" src="./js/currentdate.js"></script>
+        <script type="text/javascript" src="./js/indexpage.js"></script>
+
+    </body>
+
+</html>
