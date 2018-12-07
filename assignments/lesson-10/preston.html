@@ -43,30 +43,7 @@
     <img class="Small" src="images/preston-small.jpg" alt="trees and sky">
     <main>
         <h2>Preston City</h2>
-        <section class="weather summary">
-            <div class="highlow">
-                <h3>Weather Summary</h3>
-                <p>High: 90 F</p>
-                <p>Low: 66 F</p>
-                <p>Preciptation: 0%</p>
-                <p>Wind Speed: 5mph SW</p>
-                <p id="windchill">Wind Chill: </p>
-            </div>
-            <div class="current">
-            <h3>Current Weather</h3>
-                <p>Sunny</p>
-             <img src="images/Sunny.png"  alt="Sunny Day" class="Tinyimg">
-            </div>
-        </section>
-
-        <section class="forcast">
-         <h6> The Town of Preston </h6>  
-        <button type="button" onclick="UpdateInfo()">Update</button>
-        <span>
-            <b>Last updated:</b> <span id="date"></span>
-        </span>
-        <br><br>           
-	            <div class="today">
+    <div class="today">
                 <section class="weathersummary">
                     <h3>Weather Summary</h3>
                     <div class="weatherdetails">
@@ -82,6 +59,12 @@
                         <p class="value"><span id="windChill"></span> &deg;F</p>
                     </div>
                 </section>
+                
+                <picture>
+                    <source media="(min-width: 780px)" srcset="images/daily-large.jpg">
+                    <source media="(max-width: 779px)" srcset="images/daily-small.jpg">
+                    <img alt="todays weather conditions">
+                </picture>
             </div>
     
             <section class="forecast">
