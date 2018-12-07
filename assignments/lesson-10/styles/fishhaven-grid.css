@@ -29,6 +29,12 @@ header {
     grid-area: header;
 }
 
+header > img {
+    width: 150px;
+    height: auto;
+	align-content: center;
+    vertical-align: middle;
+}
 
 header section p {
     font-style: italic;
