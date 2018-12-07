@@ -11,7 +11,7 @@ var section = document.querySelector('section.townsDisplay');
     
 
     function displayImage(){
-        var imagesArray = ["./images/image01.jpg", "./images/image02.jpg", "./images/image03.jpg", "./images/image04.jpg", "./images/image05.jpg", "./images/image06.jpg"];
+        var imagesArray = ["images/image01.jpg", "images/image02.jpg", "images/image03.jpg", "images/image04.jpg", "images/image05.jpg", "images/image06.jpg"];
         var num = Math.floor(Math.random() * (imagesArray.length)); 
         return imagesArray[num];
     }
