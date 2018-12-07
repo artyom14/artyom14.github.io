@@ -1,0 +1,79 @@
+
+body {
+    background-color: royalblue;
+}
+header {
+    text-align: center;
+    display: inline-block;
+    }    
+
+header > img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+}
+    
+    .headertext{
+    display: inline-block;
+    vertical-align: middle;
+    }
+  th
+currentconditions{
+    display: inline-block;
+    margin: 1rem 0 1rem 5rem;
+    padding: 5px;
+    vertical-align: middle;
+    border: 1px solid black; 
+    background-color: blue; 
+}
+h1 {
+    text-shadow: 2px 1px #222222;
+}
+
+span, span#date {
+    font-size: 12px;
+    font-family: "Arial";
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    background-color: white;
+}
+
+tr.condition {
+    height: 124px;
+}
+
+tr.temperature, tr.windspeed {
+    height: 50px;
+    font-weight: bold;
+}
+
+th:hover, td:hover {
+    background-color: grey;
+}
+
+th {
+    font-size: 12pt;
+    font-family: "Arial";
+    color: #222222;
+    text-align: left;
+    vertical-align: top;
+    padding: 5px;
+    width: 190px;
+    height: 50px;
+    border: solid 1px grey;
+}
+
+td {
+    width: 200px;
+    font-family: "Arial";
+    border: solid grey 1px;
+}
+
+tr.temperature td span {
+    font-size: 24px;
+}

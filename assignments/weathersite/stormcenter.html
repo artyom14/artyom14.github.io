@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Weather Bureau</title>
+        <meta name="author" content="Artem Karpikov">
+        <meta name="description" content="Storm Center">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+
+    </head>
+
+    <body>
+        <header>
+	     <img src="images/weather.png" alt="The weather site logo">
+      <div class="headertext">
+        <h1>Weather Bureau</h1>
+        <div class="subheading">Where the 7-Day Weather Forecasts Comes First</div>
+        </div>
+		<img id = "sunnyimage" src="images/Sunny.png" alt="current condititon">
+        </header>
+
+
+        <nav>
+            <button onclick="toggleHam()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings">Soda Springs</a></li>
+                <li><a href="fishhaven">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+
+            </ul>
+        </nav>
+        <img class="Large" src="images/preston-large.jpg" alt="trees and sky">
+        <img class="Medium" src="images/preston-medium.jpg" alt="trees and sky">
+        <img class="Small" src="images/preston-small.jpg" alt="trees and sky">
+        <main>
+            <h1>Storm Report</h1>
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>Storm Center</legend>
+                        <label class="one">Storm Date<input type="date"></label>
+                        <label class="one">Type of Storm<input type="text" name="storm" list="storm">
+                            <datalist id="storm">
+                                <option value="Flash Flood"></option>
+                                <option value="Hail"></option>
+                                <option value="Hurricane"></option>
+                                <option value="Thunderstorm"></option>
+                                <option value="Tornado"></option>
+                            </datalist>
+                        </label>
+                        <label class="one" for="rating">Rating (1 to 10)
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                        </label>
+                        <label class="one">
+                            <select name="City">
+                                <option value="">Select Region &#9662;</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend> class="one">Are you in danger?</legend>
+                        <div>Level of Danger</div>
+                        <label><input type="radio" name="person" value="yes">Yes</label>
+                        <label><input type="radio" name="person" value="no">No</label>
+                        <label><input type="radio" name="person" value="maybe">Maybe</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label class="two">First Name*<input type="text" name="fname" required></label>
+                        <label class="two">Last Name*<input type="text" name="lname" required></label>
+                        <label class="two">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="two">Zip Code* <input type="number" name="zipcode" placeholder="123451234" required></label>
+                        <label class="two">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    </fieldset>
+                    <input type="submit" value="Enter Report" class="submitBtn">
+                </form>
+
+
+        </main>
+        <footer>
+            <section class="contact">
+                <h2>Contact Info:</h2>
+                Weather Bureau<br>777.999.888<br>777 Main St.<br>Anytown,US 99999
+            GoogleMap
+            </section>
+
+            <section class="footer-bar">
+                <h2>&copy;2018 | All Rights Reserved |Weather Bureau | <br> <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning </a><br><span id="currentdate">Current Date Placeholder</span></h2>
+            </section>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/storm.js"></script>
+    </body>
+</html>
