@@ -1,65 +1,48 @@
+@media only screen and (min-width: 780px) and (max-width:949px){
 
-@media only screen and (min-width: 37.5em) {
-
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
-
-   nav button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
-
-    nav ul {
-        overflow: hidden;
+    
+    section.gallery{
+        grid-template-columns: auto auto;
     }
-    nav ul li {
-        float: left;
-        background-color: antiquewhite;
-        padding: 10px;
-        margin: 0;
-        word-wrap: normal;
-    }
-    nav ul li a {
-        font-size: 1.3rem;
+    body{
+        max-width: 780px;
     }
 
-    section.forecast {
-        display: block;
-        border: 5px solid #3590F3;
-        font-size: 1.3rem;
-        margin-top: 10px;
-    }  /* show the 10-day forecast with the medium view and up */
 
-    .forecast th {
-        text-align: center;
-        background-color: antiquewhite;
-        padding: 12px;
-
+    form{
+        max-width: 650px;
+        display: grid;
+        grid-template-columns: 10em 1fr;
     }
-    .forecast td {
-        background-color: #3590F3;
-        color: white;
-        padding: 15px;
+    input{
+        margin-bottom: 2em;
     }
-
-    table {
-        margin: auto;
-        margin-bottom: 20px;
+    label{
+        width: 8em;
+        padding-right: 1em;
+        text-align: right;
     }
-    nav ul.hide{
-        display: inline-block;
+    select{
+        grid-column: 2;
+        margin-bottom: 1em;
     }
-    .Small {
-        display: none;
+    form p {
+        grid-column: 1;
+        text-align: right;
     }
-    .Medium {
-        width: 100%;
-        height: auto;
+    .radioSelection{
+        grid-column: 2;
+        margin: 2em 1em;;
     }
-    .Large {
-        display: none;
+    textarea{
+        grid-column: 2;
+        
     }
-    .hamburger {
-        display: none;
+    input[type="submit"]{
+        grid-column: 2;
     }
-    section.gallery {
-        grid-template-columns: repeat(2, 50%);
-        grid-gap: 0%;
+    
+    section.townsDisplay{
+        grid-template-columns: auto auto auto;
     }
 }
