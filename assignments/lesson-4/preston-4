@@ -7,7 +7,6 @@
     <meta name="description" content="Weather Town Page ">
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -162,7 +161,6 @@
             <h2>&copy;2018 | All Rights Reserved | Weather Bureau | <br> <a href="http://www.byui.edu/online"> </a> BYU-Idaho Online Learning <br><span id="currentdate">Current Date Placeholder </span></h2>
         </section>
     </footer>
-    <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
  </body>
 </html>
