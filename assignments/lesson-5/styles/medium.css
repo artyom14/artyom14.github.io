@@ -1,0 +1,48 @@
+@media only screen and (min-width: 780px) and (max-width:949px){
+
+    
+    section.gallery{
+        grid-template-columns: auto auto;
+    }
+    body{
+        max-width: 780px;
+    }
+
+
+    form{
+        max-width: 650px;
+        display: grid;
+        grid-template-columns: 10em 1fr;
+    }
+    input{
+        margin-bottom: 2em;
+    }
+    label{
+        width: 8em;
+        padding-right: 1em;
+        text-align: right;
+    }
+    select{
+        grid-column: 2;
+        margin-bottom: 1em;
+    }
+    form p {
+        grid-column: 1;
+        text-align: right;
+    }
+    .radioSelection{
+        grid-column: 2;
+        margin: 2em 1em;;
+    }
+    textarea{
+        grid-column: 2;
+        
+    }
+    input[type="submit"]{
+        grid-column: 2;
+    }
+    
+    section.townsDisplay{
+        grid-template-columns: auto auto auto;
+    }
+}

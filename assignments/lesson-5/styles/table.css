@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+table {
+    font-family: Ubuntu, sans-serif;
+}
+td {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+
+}
+table tr:nth-child(even) {
+    background-color:  #628ca6;
+
+}
+table tr:nth-child(odd) {
+    background-color: #7fb9c2;
+
+}
+table th{
+    background-color: #628ca6;
+    color: white;
+}
+thead {
+    background-color: #628ca6;
+    color: black;
+}
+table style {
+    width: 100%;
+    max-width: 20rem;
+}
