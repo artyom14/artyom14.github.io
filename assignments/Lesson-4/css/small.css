@@ -1,0 +1,164 @@
+/* Phone View */
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roof runners active Font Family';
+    color: #000000;
+    font-weight: 300;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.logo {
+    display: flow-root;
+    border-style: solid;
+    border-radius: 25px;
+    width:100px;
+    box-shadow:0px 0px 15px;
+    border:1px solid #000;
+}
+
+header {
+    width: 100%;
+    background-color: #052989;
+    font-family: 'Minya Nouvelle', cursive;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 6px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.summary, .forecast, .article, .contact {
+    display: block;
+    margin: 10px auto;
+    background-color: #052989;
+    border: 2px dashed white;
+    text-align: center;
+    line-height: 4rem;
+}
+
+#JScript {
+    font-size: 0.7rem;
+    text-align: center;
+    color: #white;   
+}
+
+footer {
+    max-width:900px;
+    background-color: #052989;
+    font-family: 'Roof runners active Font Family', sans-serif;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    justify-content: center;
+    box-shadow: inset 0 0 6px;
+    border-radius: 10px;
+    text-align: center;
+    color: #c1e1ea;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: auto;
+}
+footer a{
+    color: #0B8066;
+}
+.headings {
+    margin: 0 0 0 17px;
+}
+
+.slogan {
+    margin-left: 20px;
+    color: #c1e1ea;
+    font-family: 'Roof runners active Font Family', sans-serif;
+    font-size: 0.7rem;
+    text-shadow: 2px 2px black;
+}
+
+ul {
+    margin: 0;
+}
+
+nav {
+    font-family: 'Roof runners active Font Family', sans-serif;
+    background-color: #5CAED0;
+    border:1px solid #000;
+    box-shadow: inset 0 0 6px;
+}
+
+.navigation {
+    padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #c1e1ea;
+	font-family: 'Minya Nouvelle', cursive;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.navigation a:hover {
+    background-color: #c1e1ea;
+    color: #0B8066;
+    border-radius:10px;
+    box-shadow: inset 0 0 6px;
+}
+
+.responsive li {
+	display: block;
+}
+
+a {
+    color: #0B8066;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c1e1ea;
+}
+
+h1 {
+    color: #5caed0;
+    text-align: center;
+    font-family: 'Minya Nouvelle', cursive;
+    text-shadow: 2px 2px white;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+h2 {
+    max-width:900px;
+    font-family: 'Minya Nouvelle', cursive;
+    font-size: 1.3rem;
+    line-height: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+h4 {
+    color: #c1e1ea;
+    text-align: center;
+    font-family: 'Minya Nouvelle', cursive;
+    text-shadow: 2px 2px white;
+    padding: 10px;
+    font-size: .9rem;
+    font-weight: bold;
+}

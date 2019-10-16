@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<title>Preston Town| Artem Karpikov| BYU-Idaho</title>	
+		<meta name="description" content="Assignment portal page for Artem Karpikov in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat%7cYeseva+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/small.css">
+	    <link rel="stylesheet" href="css/middle.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src ="js/JScript.js" defer></script>
+        <script src ="js/hamburgermenu.js"></script>
+	</head>
+    <body onload="UpdateDates()">
+
+        <header>
+            <img class="logo" src="images/weather.png" alt="Weather Site - Think Green Logo">
+            <section class="headings">
+                <h1>Weather Bureau</h1>
+                <div class="slogan">Where the 7-Day Weather Forecasts Comes First</div>
+            </section>
+        </header>
+    
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-4.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class="summary">weather summary</div>
+            <div class="forecast">5 Day Forecast</div>
+            <div class="article">Article</div>
+            <div class="contact">Contact Information</div>
+        </main>
+
+            <footer>
+                <div class="footer">
+                    <small>
+&copy;2018 || Artem Karpikov || Location: Finland ||   
+    <a href="http://www.byui.edu/online"> <br>BYU-Idaho Online Learning</a>
+	</small>
+        
+                    <br>
+        
+                    <small id="JScript">
+                        <span id="currentdate"></span>
+                    </small>
+                </div>
+            </footer>
+    </body>
