@@ -1,0 +1,402 @@
+*  { margin: 0; box-sizing: border-box; }
+body {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(68, 65, 65);
+    font-size:1rem;
+    font-weight: 300;
+    margin:0 auto;
+    background:whitesmoke;
+}
+.top-banner{
+  background:#0A1F32;
+  padding:10px;
+  text-align:center; 
+  color:whitesmoke; 
+  font-weight:600;
+  display:none;
+}
+header{
+    padding:1.5rem;
+    background-color: #B6D3EC;
+    color: whitesmoke;
+    margin:0 auto;
+    text-align:center;
+}
+header picture img{
+    display:inline-block;
+}
+header h1{
+    font-weight:400;
+    background:#B6D3EC;
+    color:#5B6976;
+    font-size: 1.8rem;
+    margin:0;
+}
+header h2{
+    font-weight:300;
+    background:#B6D3EC;
+    color:#5B6976;
+    text-align:center;
+    font-size: 1.2rem;
+    margin:0;
+}
+.herodiv {position: relative; margin:10px auto;}
+.herodiv img{
+    margin:0 auto;
+    width:100%;
+}
+.stats {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+	background: radial-gradient(#0A1F32,rgb(26, 85, 139));
+	box-shadow: 0 0 30px #0A1F32;
+    opacity: .8;
+    color:#fff;
+    font-weight:700; 
+    font-size:.8rem;
+    text-align:left;
+    display: block;
+    padding:1rem;
+}
+.stats h2{
+    text-align:left;
+    padding-bottom:.5rem;
+    border-bottom:1px solid #fff;
+    color:#fff;
+    margin:0;
+    font-weight:700; 
+    font-size:.8rem;
+}
+.stats p{
+    text-align:left;
+    display: block;
+    margin:0;
+    text-align:right;
+    font-weight:700;
+    font-size:.8rem;
+    padding:.2rem;
+}
+.stats p span{
+    text-align:left;
+    color: goldenrod;
+    font-weight:700; 
+}
+nav {
+	margin: 0 auto;
+    background-color: #E4F0FB;
+    text-align: center;
+    font-size: 0.95rem;
+}
+.navigation {
+	list-style: none;
+	text-align: center;
+    padding: 0;
+    overflow: hidden;
+}
+.navigation li:first-child{
+    display: block;
+    background:#36485A;
+}
+.navigation li:first-child a{
+color:whitesmoke;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+    font-size: 1rem;
+    font-weight:bolder;
+    color:#85AFD2;
+}
+.navigation a:hover {
+	background-color:#36485A;
+}
+.navigation li .active{
+    background:#9DC2E0;
+    color:whitesmoke;
+}
+main {
+    margin:0 auto;
+    font-size: 0.8rem;
+    background:white;
+    padding:10px;
+}
+main section{
+    padding:10px;
+    margin:0;
+}
+main section h2{
+    font-weight:bold;
+    color:#36485A;
+    text-align:center;
+}
+main section .contentbox{
+    display:block;
+    margin:10px 20px;
+    border:1px dashed #85AFD2;
+    padding:15px;
+    background:#E4F0FB;
+    color: #36485A;
+    font-style:italic;
+    font-size:1rem;
+}
+main section h3{
+    font-size:1.2rem;
+    margin: 1rem 0;
+    border-bottom:1px solid #bbb;
+    font-weight:bolder;
+}
+main section h4{
+    font-size:1.2rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+main a{
+    color:rgb(68, 65, 65);
+    text-decoration:none;
+}
+main section picture img{
+    display:block;
+    margin:0 auto;
+    width:300px;
+    height:300px;
+    max-width:300px;
+}
+main section p{
+    font-size:1.8rem;
+    text-align:left;
+    padding:30px 20px;
+}
+main section span a{
+    color:#0A1F32;
+    font-size:1rem;
+    font-weight:bold;
+}
+main section ul li{
+    font-size:1rem;
+}
+footer{
+    padding:1rem;
+    text-align: center;
+    background:#E4F0FB;
+    color:rgb(115, 163, 202);
+    margin:0 auto;
+    font-size: .9rem;
+}
+footer p{
+    background:none;
+}
+footer a{
+    color: rgb(71, 95, 119);
+}
+#currentDate{
+    font-weight: 600;
+}
+.w3validator{
+text-align:center;
+margin:1rem auto;
+}
+.w3validator img{
+    border:0;
+    width:88px;
+    height:31px;
+}
+.primary-5 { background-color: #FFF }
+.primary-1 { background-color: #E4F0FB }
+.primary-2 { background-color: #CDE3F5 }
+.primary-0 { background-color: #B6D3EC }
+.primary-3 { background-color: #9DC2E0 }
+.primary-4 { background-color: #85AFD2 }
+.color-table {
+	border-collapse:collapse;
+	border:none;
+    border-spacing:0;
+    width:100%;
+	}
+.color-table td.sample {
+    padding: 20px;
+    width:100%;
+    display:inline-block;
+	text-align:center;
+	border: 1px solid white;
+	white-space:nowrap;
+	}
+.color-table .black {margin-top:0.2em; color:black }
+
+.header, .primary, .footer, .heading1, .heading2, .heading3, .ptext{
+    padding:20px;
+    border-radius:10px;
+    display:inline-block;
+    width:100%;
+}
+.font{
+    font-family: 'Titillium Web', sans-serif;
+    font-size:3rem;
+    text-align:center;
+}
+.font a{
+    color:black;
+}
+.font a:hover{
+    color:#0A1F32;
+    background:#85AFD2;
+    padding:10px;
+    border-radius:10px;
+}
+.header{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:400;
+    font-size:3rem;
+    background:#B6D3EC;
+    color:#5B6976;
+}
+.primary{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:500;
+    font-size:1.2rem;
+    background:#E4F0FB;
+    color:#93AFD2;
+}
+.footer{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:300;
+    font-size:1rem;
+    background:#E4F0FB;
+    color:#85AFD7;
+}
+.heading1{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:700;
+    font-size:3rem;
+    background:#FFF;
+    color:#85B9E5;
+}
+.heading2{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:600;
+    font-size:2rem;
+    background:#FFF;
+    color:#85B6E1;
+}
+.heading3{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:500;
+    font-size:1.5rem;
+    background:#FFF;
+    color:#85AFD2;
+}
+    
+.ptext{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:400;
+    font-size:1rem;
+    background:#FFF;
+}
+.full-article {
+    display: none;
+}
+
+.full-article.displayed {
+    display: unset;
+}
+
+.disp-full-artcile.hide {
+    display: none;
+}
+
+.disp-full-artcile > button {
+    color: blue;
+
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25em;
+}
+
+.disp-full-artcile>button:hover {
+    color: grey;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+  .responsive li {
+	display: block;
+}
+section:nth-child(2){
+    display: none;
+}
+section:nth-child(3){
+    background:#e4f0fb;
+    border:1px solid #ccc;
+    margin:20px 20px;
+}
+section:nth-child(3) img{
+    display:block;
+    box-shadow: 0 0 10px #0A1F32;
+    width:75%;
+    margin:10px auto;
+}
+section:nth-child(3) h3{
+    font-style:italic;
+    font-size:1rem;
+    border:none;
+    margin:10px 0;
+    text-align:center;
+}
+section:nth-child(3) p{
+    margin:10px;
+}
+section:nth-child(4){
+    background:#E4F0FB;
+    border:1px solid #ccc;
+    margin:10px;
+}
+section:nth-child(4) .location .map{
+    display:block;
+    box-shadow: 0 0 10px #0A1F32;
+    margin:10px auto;
+    width:100%;
+}
+section:nth-child(4) h2{
+    margin:10px;
+}
+.contact-content {
+    text-align: center;
+    font-size:1.5rem;
+
+    padding-bottom: 3em;
+}
+.contact-icons {
+    text-align: center;
+}
+
+.map-container {
+	width:300px; 
+	height:200px; 
+
+    display: none;
+    margin: auto;
+}
+.contact-address-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.25em;
+}
+
+    section:nth-child(4) p {
+        text-align:center;
+
+        padding:0;
+        }
+        .social{
+			    text-align: center;
+
+            width:32px;
+        }
