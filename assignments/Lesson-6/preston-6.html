@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+       	 <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Preston-City Weather Bureau</title>
+        <meta name="description"
+            content="Continued the Town Page Build for Artem Karpikov Student || Where the 7-Day Weather Forecasts Comes First">
+        <link
+            href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/small.css">
+        <link rel="stylesheet" type="text/css" href="css/middle.css">
+        <link rel="stylesheet" type="text/css" href="css/large.css">
+		        <link rel="stylesheet" type="text/css" href="css/table.css">
+
+				<script type="text/javascript" src="js/hamburger.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+				    <script src="js/toggle-read-more.js" defer></script>
+
+    </head>
+
+    <body onload="UpdateDates()">
+        <div class="top-banner">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <header>
+            <picture>
+                <img class="logo" src="images/weather.png" alt="Weather Bureau Logo">
+            </picture>
+            <h1>Preston-City Weather Bureau</h1>
+            <h2>Where the 7-Day Weather Forecasts Comes First</h2>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-6.html" class="active">Preston</a></li>
+                <li><a href="#sodasptrings">Soda Springs</a></li>
+                <li><a href="#fishhaven">Fish Haven</a></li>
+                <li><a href="#stormcenter">Storm Center</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+		<div class="city">
+		
+<h2>Preston Idaho</h2>
+</div>
+                   <picture>
+    <source media="(min-width: 701px)" srcset="images/preston-large.jpg">
+
+<source media="(max-width: 350px)" srcset="images/preston-small.jpg">
+  <source media="(max-width: 700px)" srcset="images/preston-medium.jpg">
+  <img class="herophoto" src="images/preston-large" alt="preston">
+                   </picture>
+			            <section>
+
+
+    <div class="stats">
+        <h2>Weather Summary</h2>
+<p>Currently: <span id="weatherDesc"></span></p>
+                                <p>Temperature: <span id="currentTemp"></span> &deg;F</p>
+                                <p>Humidity: <span id="humidity"></span>%</p>
+                                <p>Wind Speed: <span id="windSpeed"></span> MPH</p>
+                                <p>Wind Direction: <span id="windDirection"></span></p>
+                                <p>Wind Chill: <span id="windChill"></span>&deg;</p> 
+    </div>
+            </section>
+                        <section class="forecast">
+                    <h2>5 Day Forecast</h2>
+                <table>
+                    <thead>
+                    <tr>
+                    <th><span id="dayone"></span></th>
+                    <th><span id="daytwo"></span></th>
+                    <th><span id="daythree"></span></th>
+                    <th><span id="dayfour"></span></th>
+                    <th><span id="dayfive"></span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                                        <td><img src="#" id="weather_icon1"  alt="Weather Image"><br><span id="dayonetemp"></span>&deg;F</td>
+                                        <td><img src="#" id="weather_icon2"  alt="Weather Image"><br><span id="daytwotemp"></span>&deg;F</td>
+                                        <td><img src="#" id="weather_icon3"  alt="Weather Image"><br><span id="daythreetemp"></span>&deg;F</td>
+                                        <td><img src="#" id="weather_icon4"  alt="Weather Image"><br><span id="dayfourtemp"></span>&deg;F</td>
+                                        <td><img src="#" id="weather_icon5"  alt="Weather Image"><br><span id="dayfivetemp"></span>&deg;F</td>
+                    </tr>
+					  </tbody>
+                </table>
+            </section>
+            <section>
+			            
+        <div class = "article">
+
+                <img src="images/Trick-or-Treat.jpg" alt="TRICK OR TREAT picture" >
+                    <p><h2>HALLOWEEN TRICK OR TREAT</h2>
+        <p>Come join the community for a spooky-fun activity for the entire family!<br>
+        Main Street Businesses will be providing treats, activities and photo opportunities! <br>
+        Bring your entire family for a free and safe Halloween night! <br>
+                    </p>  
+					<div class="disp-full-artcile"><button onclick="toggleFullArticle()">read when...</button></div>
+                <div class="full-article">
+                    <p>
+                     October 31, 2019<br>
+					4:30-6:00<br>
+Preston Main Street<br>
+(From Stokes to Big J’s)
+                    </p>
+                </div>
+       </div>
+	         
+
+</section>
+						<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<br>
+			<br>
+			<br>
+			 <div class="contact-content">
+                <h2>Preston-City Weather Bureau</h2>
+				                        </div>
+			<section>
+          
+           
+
+						  <div class="map-container"><iframe width="300" height="200" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiExIE4gMXN0IEUsIFByZXN0b24sIElEIDgzMjYzLCBVU0EiMBIuChQKEgnH6-Fn6fdUhxFYly81YikWVRABKhQKEglN_XSI7vdUhxEaWu_fON9fCg&key=AIzaSyBZjWHsS4Dfd2OvfjrXG39ly_x5kcFvcWA"
+                    allowfullscreen></iframe></div>
+<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+                        <div class="contact-address">
+                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9">
+                                <p class="adress">1 North First St<br>
+                                Preston, ID 83263<br>
+								 ☎️ 111-777-9991<br>
+								Weather@Bureau.com
+								</p>
+								
+                            </a>
+                        </div>
+                   
+				
+						<br>
+						<br>
+
+                <div class="contact-icons">
+                   						   <a href = "https://twitter.com/?lang=en" target="_blank"><img class = "social" src="images/twitter-icon.png" alt="twitter icon"></a>                    
+
+						   <a href = "https://www.facebook.com" target="_blank"> <img class = "social" src="images/facebook-icon.png" alt="facebook icon"></a>
+						   <a href = "https://www.youtube.com/" target="_blank"><img class = "social" src="images/youtube.png" alt="youtube icon"></a>
+						   <a href = "https://www.whatsapp.com/" target="_blank"><img class = "social" src="images/WhatsApp-icon.png" alt="WhatsApp Icon"></a>
+                           <a href = "https://www.pinterest.com/" target="_blank"><img class = "social" src="images/pinterest-icon.png" alt="Pinterest Icon"></a>
+                   
+                    </div>
+
+        </section>
+			
+        </main>
+        <footer>
+            <p>&copy; <span id="copyrightdate"></span> || Artem Karpikov || Location: Finland || ; <br> 
+                    <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+                    <br><span id="currentDate"></span>
+                </p>
+        </footer>
+        <p class="w3validator">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+        </p>
+    <script type="text/javascript" src="js/weather.js"></script>
+        <script type="text/javascript" src="js/windchill.js"></script>
+        <script type="text/javascript" src="js/eventlister.js"></script>
+		<script type="text/javascript" src="js/preston.js"></script>
+		<script src="scripts/map.js"></script>
+                <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+                <script src="scripts/wayfinding.js"></script>
+    </body>
+
+    </html>
