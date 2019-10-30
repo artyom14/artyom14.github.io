@@ -68,7 +68,7 @@ picture .herophoto img{
 picture .herophoto img {position: relative; margin:10px auto;}
 picture .herophoto img{
     margin:0 auto;
-    width:100%;
+    width:40%;
 }
 .stats {
     position: absolute;
@@ -195,7 +195,7 @@ main section picture img{
     max-width:300px;
 }
 main section p{
-    font-size:1.8rem;
+    font-size:0.8rem;
     text-align:center;
     padding:20px 20px;
 }
