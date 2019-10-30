@@ -43,7 +43,11 @@
         font-size:1rem;
         padding:.8rem;
     }
-
+main section p{
+    font-size:1.8rem;
+    text-align:center;
+    padding:20px 20px;
+}
 .table {
     display:flex;
     border:1px solid #ccc;
