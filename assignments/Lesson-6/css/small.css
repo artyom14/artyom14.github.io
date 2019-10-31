@@ -65,16 +65,15 @@ header h2{
     font-size: 1.4rem;
     margin:0;
 }
-picture .herophoto img{
-    position: relative;
-    display: block;
-    padding: 0;
-}
+
 
 picture .herophoto img {position: relative; margin:10px auto;}
 picture .herophoto img{
+	 position: relative;
+    display: block;
     margin:0 auto;
-    width:30%;
+    padding: 0;
+    width:auto;
 }
 .stats {
     position: absolute;
