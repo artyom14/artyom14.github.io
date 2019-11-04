@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');   
+th{
+font-family: Ubuntu, sans-serif;
+font-size: 1.5em;
+text-align: center;
+
+}
+tfoot{
+font-family: Ubuntu, sans-serif;
+font-size: .8em;
+text-align: center;
+}
+table {
+  font-family: Ubuntu, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+  border: 1px solid #dddddd;
+  box-shadow: 8px 8px 5px #628ca6;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(1) {
+  background-color: #7fb9c2;
+}
+tr:nth-child(2) {
+  background-color: #628ca6;
+  color: white;
+}
