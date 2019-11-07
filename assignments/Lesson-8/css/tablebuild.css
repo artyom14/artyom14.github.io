@@ -1,0 +1,89 @@
+*  { margin: 0; box-sizing: border-box; }
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(68, 65, 65);
+    font-size:1rem;
+    font-weight: 300;
+    margin:0 auto;
+    background:whitesmoke;
+}
+header{
+  padding:1.5rem;
+  margin:0 auto;
+  text-align:center;
+}
+header h1{
+  font-weight:400;
+  color:#5B6976;
+  margin:0;
+}
+.stylized{
+  width:248px;
+  box-shadow: 8px 8px 12px #628ca6;
+  margin: 0 auto;
+}
+  table {
+     margin: 0 auto;
+     width: 250px;
+     border-spacing: 0;
+     border-collapse: collapse;
+     font-size:.9rem;
+
+  }
+  table, caption, th, td {
+    border: solid 1px #ccc;
+  }
+  caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .5rem;
+    background-color: #7fb9c2;
+    border-bottom: none;
+    color:#000;
+  }
+  th, td {
+    font-weight:normal;
+    padding: 5px;
+    text-align: center;
+  }
+  thead th {
+      color: #FFF;
+      font-weight: bold;
+      background-color: #628ca6;
+  }
+  tbody tr:nth-child(5) {
+    font-style: italic;
+  }
+  tbody td:hover {
+      background-color: #628ca6;
+      border: none;  
+  }
+  tbody td {
+    font-style: normal;
+  }
+  tr:nth-of-type(odd) {
+      background-color: #e7f0ed;
+  }
+  tr:nth-of-type(even) {
+      background-color: #e7ffed ;
+  }
+  tfoot {
+    font-size: .7rem;
+  }
+  tfoot td {
+      background-color: #7fb9c2;
+  }
+  .w3validator{
+    text-align:center;
+    }
+    .w3validator a{text-decoration:none}
+    footer{
+        padding:1rem;
+        text-align: center;
+        color:rgb(115, 163, 202);
+        margin:0 auto;
+        font-size: .9rem;
+    }
+    footer a{
+        color: rgb(71, 95, 119);
+    }
