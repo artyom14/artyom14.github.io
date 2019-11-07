@@ -1,14 +1,14 @@
 *  { margin: 0; box-sizing: border-box; }
 body {
     font-family: 'Ubuntu', sans-serif;
-    color: rgb(68, 65, 65);
+    color: black;
     font-size:1rem;
     font-weight: 300;
     margin:0 auto;
     background:whitesmoke;
 }
 header{
-  padding:1.5rem;
+  padding:1.9rem;
   margin:0 auto;
   text-align:center;
 }
@@ -18,8 +18,8 @@ header h1{
   margin:0;
 }
 .stylized{
-  width:248px;
-  box-shadow: 8px 8px 12px #628ca6;
+  width:250px;
+  box-shadow: 10px 10px 20px #628ca6;
   margin: 0 auto;
 }
   table {
@@ -68,22 +68,21 @@ header h1{
       background-color: #e7ffed ;
   }
   tfoot {
-    font-size: .7rem;
+    font-size: 1rem;
   }
   tfoot td {
       background-color: #7fb9c2;
   }
-  .w3validator{
-    text-align:center;
-    }
-    .w3validator a{text-decoration:none}
+
     footer{
+		    text-align:center;
+
         padding:1rem;
         text-align: center;
-        color:rgb(115, 163, 202);
+        color:black;
         margin:0 auto;
-        font-size: .9rem;
+        font-size: 1rem;
     }
     footer a{
-        color: rgb(71, 95, 119);
+        color: blue;
     }
