@@ -17,7 +17,7 @@ body {
 }
 header{
     padding:1.5rem;
-    background-color: #B6D3EC;
+    background-color: #052989;
     color: whitesmoke;
     margin:0 auto;
     text-align:center;
@@ -26,20 +26,35 @@ header picture img{
     display:inline-block;
 }
 header h1{
-    font-weight:400;
-    background:#B6D3EC;
-    color:#5B6976;
-    font-size: 1.8rem;
+ font-weight:400;
+    background:#052989;
+	font-family: 'Minya Nouvelle', cursive;
+    color:#5caed0;
+	text-shadow: 2px 2px white;
+    font-size: 1.9rem;
     margin:0;
+}
+
+.logo {
+	    display:inline-block;
+
+    border-style: solid;
+    border-radius: 25px;
+    width: 100px;
+    box-shadow: 0px 0px 15px;
+    border: 1px solid #000
 }
 header h2{
     font-weight:300;
-    background:#B6D3EC;
-    color:#5B6976;
+    background:#052989;
+	font-family: 'Minya Nouvelle', cursive;
+    color:#5caed0;
+	text-shadow: 2px 2px white;
     text-align:center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin:0;
 }
+
 .herodiv {position: relative; margin:10px auto;}
 .herodiv img{
     margin:0 auto;
