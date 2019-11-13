@@ -27,14 +27,14 @@ header h1{
      width: 250px;
      border-spacing: 0;
      border-collapse: collapse;
-     font-size:1.5rem;
+     font-size:.9rem;
 
   }
   table, caption, th, td {
     border: solid 1px #ccc;
   }
   caption {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: .5rem;
     background-color: #7fb9c2;
