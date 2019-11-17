@@ -1,0 +1,88 @@
+*  { margin: 0; box-sizing: border-box; }
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-size:1rem;
+    font-weight: 300;
+    margin:0 auto;
+    background:whitesmoke;
+}
+header{
+  padding:1.9rem;
+  margin:0 auto;
+  text-align:center;
+}
+header h1{
+  font-weight:400;
+  color:#5B6976;
+  margin:0;
+}
+.stylized{
+  width:250px;
+  box-shadow: 10px 10px 20px #628ca6;
+  margin: 0 auto;
+}
+  table {
+     margin: 0 auto;
+     width: 250px;
+     border-spacing: 0;
+     border-collapse: collapse;
+     font-size:.9rem;
+
+  }
+  table, caption, th, td {
+    border: solid 1px #ccc;
+  }
+  caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .5rem;
+    background-color: #7fb9c2;
+    border-bottom: none;
+    color:#000;
+  }
+  th, td {
+    font-weight:normal;
+    padding: 5px;
+    text-align: center;
+  }
+  thead th {
+      color: #FFF;
+      font-weight: bold;
+      background-color: #628ca6;
+  }
+  tbody tr:nth-child(5) {
+    font-style: italic;
+  }
+  tbody td:hover {
+      background-color: #628ca6;
+      border: none;  
+  }
+  tbody td {
+    font-style: normal;
+  }
+  tr:nth-of-type(odd) {
+      background-color: #e7f0ed;
+  }
+  tr:nth-of-type(even) {
+      background-color: #e7ffed ;
+  }
+  tfoot {
+    font-size: 1rem;
+  }
+  tfoot td {
+      background-color: #7fb9c2;
+  }
+
+    footer{
+		    text-align:center;
+
+        padding:1rem;
+        text-align: center;
+        color:black;
+        margin:0 auto;
+        font-size: 1rem;
+    }
+    footer a{
+        color: blue;
+    }
