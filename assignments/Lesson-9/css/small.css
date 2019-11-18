@@ -502,10 +502,10 @@ width:auto;
             margin-top:10px;
         }
         input[name="fullname"]:invalid, input[name="phone"]:invalid, input[name="zipcode"]:invalid{
-            border:2px dashed red;
+            border:2px solid blue;
           }
           input[name="fullname"]:valid, input[name="phone"]:valid, input[name="zipcode"]:valid{
-            border:2px dashed green;
+            border:2px solid blue;
           }
         
         .stormForm input[type="radio"]{
