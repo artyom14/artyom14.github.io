@@ -165,13 +165,18 @@ main a{
     color:rgb(68, 65, 65);
     text-decoration:none;
 }
-main section picture img{
-    display:block;
-    margin:0 auto;
-    width:auto;
-    height:auto;
-    max-width:100%;
+
+section .article img{
+    float:right;
+    width:300px;
+    margin:10px;
 }
+.container {
+    margin: 0 auto;
+    width:100%;
+    display:grid; 
+    grid-template-columns: 1fr 1fr;
+}     
 main section p{
     font-size:1rem;
     text-align:left;
