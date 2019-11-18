@@ -54,7 +54,7 @@
     }
     footer{
         background:white;
-        max-width: 1200px;
+        max-width: auto;
     }
     footer p{
         background:#E4F0FB;
