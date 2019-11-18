@@ -442,6 +442,23 @@ width:auto;
 
 
 
+   section figure{
+            margin:20px auto;
+            border:1px solid #666;
+            display:block;
+            max-width:100%;
+            width:max-content;
+        }
+        section figure:hover{box-shadow: 0 0 50px #666;}
+        /* rounded corners - boxmodel */
+        section figure figcaption{
+            border-top:1px solid #666;
+            padding:5px;
+            text-align:left;
+            background: #ddd;
+            font-style:italic;
+            display: block;
+        }
         .stormForm,
         .thanks {
             padding:30px;
@@ -455,7 +472,6 @@ width:auto;
             background: #F8F8F8;
             border-radius: 6px;
             margin-bottom: 15px;
-
         }
         .stormForm h1,
         .thanks h1{
@@ -485,6 +501,12 @@ width:auto;
             border: none;
             margin-top:10px;
         }
+        input[name="fullname"]:invalid, input[name="phone"]:invalid, input[name="zipcode"]:invalid{
+            border:2px dashed red;
+          }
+          input[name="fullname"]:valid, input[name="phone"]:valid, input[name="zipcode"]:valid{
+            border:2px dashed green;
+          }
         
         .stormForm input[type="radio"]{
             box-sizing: border-box;
@@ -543,11 +565,26 @@ width:auto;
             background: #333;
             box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
         }
-        input#severity{
-            width:80%;
-            vertical-align: middle;
+        input[type="range"]{
+            width:50%;
         }
 
 
-
-
+   section:nth-child(2){
+            background:#E4F0FB;
+            border:1px solid #ccc;
+            margin:10px;
+        }
+        section:nth-child(2) .location .map{
+            display:none;
+        }
+        section:nth-child(2) h2{
+            margin:10px;
+        }
+            section:nth-child(2) p {
+                text-align:center;
+                padding:0;
+                }
+                .social-icon{
+                    width:32px;
+                }
