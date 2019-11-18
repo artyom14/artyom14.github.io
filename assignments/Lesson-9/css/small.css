@@ -46,9 +46,9 @@ header h2{
     margin:0;
 }
 .herodiv {position: relative; margin:10px auto;}
-.herodiv img{
-    margin:0 auto;
-    width:100%;
+    picture .herophoto  {		
+     width:400px;
+	    margin:0 auto;
 }
 .stats {
     position: absolute;
