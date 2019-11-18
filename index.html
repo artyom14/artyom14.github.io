@@ -1,118 +1,36 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-       	 <meta charset="UTF-8">   
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Preston-City Weather Bureau</title>
-        <meta name="description"
-            content="Continued the Town Page Build for Artem Karpikov Student || Where the 7-Day Weather Forecasts Comes First">
-        <link
-            href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/small.css">
-        <link rel="stylesheet" type="text/css" href="css/middle.css">
-        <link rel="stylesheet" type="text/css" href="css/large.css">
-		        <link rel="stylesheet" type="text/css" href="css/table.css">
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=500, initial-scale=1">
+    <title>CIT 230 Assignment Portal | Artem Karpikov| BYU-Idaho</title>
+	<meta name="description" content="Assignment portal page for Artem Karpikov Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+  <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+   <header>
+     <h1> Artem Karpikov </h1>
+	 <img src="images/profile.jpg" alt="My test image">
+  </header>
+  <main>
+  <h2>CIT 230 - Assignment Portal</h2>
+  <ul>
+	    <li>Lesson 02: <a href="assignments/Lesson-2/design-principles.html">Design Principles </a></li>
+	    <li>Lesson 03 - <a href="assignments/Lesson-3/Website-Planning-Document.html">Website Planning Document</a></li>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		    <script src="js/main.js"></script>
-    <script src="js/town.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/webfontload.js"></script>
-    <script src="https://cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
-    <script>
-    webshims.setOptions('forms-ext', {types: 'date'});
-    webshims.polyfill('forms forms-ext');
-    </script>
+	    <li>Lesson 04 - <a href="assignments/Lesson-4/preston-4.html">Preston Town Page</a></li>
+	    <li>Lesson 05 - <a href="assignments/Lesson-5/preston-5.html">Preston Town Page Continued</a></li>
+            <li>Lesson 06 - <a href="assignments/Lesson-6/preston-6.html">Responsive Images and Font</a></li>
+            <li>Lesson 07 - <a href="assignments/Lesson-7/gallery-7.html">The Gallery Page</a></li>
+	              <li>Lesson 07 - <a href="assignments/Lesson-7/lazyload.html">Progressive Loading of Images</a></li>
+	              <li>Lesson 08 - <a href="assignments/Lesson-8/tablebuild.html">Stylized Table </a>&#124;   <a href="assignments/Lesson-8/stormcenter.html">Storm Center Page </a> </li>
+	              <li>Lesson 09 - <a href="assignments/Lesson-9/WorkingwithJSON.html"> Working with JSON data and the Fetch API  </a>&#124; </a>&#124; </a>&#124;   <a href="assignments/Lesson-9/index.html">The Weather Site Home Page </a> </li>
 
-    </head>
-
-    <body>
-        
-        <header>
-            <picture>
-                <img class="logo" src="images/weather.png" alt="Weather Bureau Logo">
-            </picture>
-            <h1>Weather Bureau</h1>
-            <h2>Where the 7-Day Weather Forecasts Comes First</h2>
-        </header>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a href="index.html class="active">Home</a></li>
-                <li><a href="preston-9.html">Preston</a></li>
-                <li><a href="#sodasptrings">Soda Springs</a></li>
-                <li><a href="#fishhaven">Fish Haven</a></li>
-                <li><a href="stormcenter">Storm Center</a></li>
-                <li><a href="gallery-9.html">Gallery</a></li>
-            </ul>
-        </nav>
-        <main>
-		<div class="towns">
-		
-</div>
-          
-		  
-		  
-			<section>
-          
-           
-						  <div class="map-container"><iframe width="300" height="200" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiExIE4gMXN0IEUsIFByZXN0b24sIElEIDgzMjYzLCBVU0EiMBIuChQKEgnH6-Fn6fdUhxFYly81YikWVRABKhQKEglN_XSI7vdUhxEaWu_fON9fCg&key=AIzaSyBZjWHsS4Dfd2OvfjrXG39ly_x5kcFvcWA"
-                    allowfullscreen></iframe></div>
-<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-                        <div class="contact-address">
-                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9">
-                                <p class="adress">1 North First St<br>
-                                Preston, ID 83263<br>
-								 ☎️ 111-777-9991<br>
-								Weather@Bureau.com
-								</p>
-								
-                            </a>
-                        </div>
-                   
-				
-						<br>
-						<br>
-
-                <div class="contact-icons">
-                   						   <a href = "https://twitter.com/?lang=en" target="_blank"><img class = "social" src="images/twitter-icon.png" alt="twitter icon"></a>                    
-
-						   <a href = "https://www.facebook.com" target="_blank"> <img class = "social" src="images/facebook-icon.png" alt="facebook icon"></a>
-						   <a href = "https://www.youtube.com/" target="_blank"><img class = "social" src="images/youtube.png" alt="youtube icon"></a>
-						   <a href = "https://www.whatsapp.com/" target="_blank"><img class = "social" src="images/WhatsApp-icon.png" alt="WhatsApp Icon"></a>
-                           <a href = "https://www.pinterest.com/" target="_blank"><img class = "social" src="images/pinterest-icon.png" alt="Pinterest Icon"></a>
-                   
-                    </div>
-
-        </section>
-			
-        </main>
-        <footer>
-            <p>&copy; <span id="copyrightdate"></span> || Artem Karpikov || Location: Finland || ; <br> 
-                    <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
-                    <br><span id="currentDate"></span>
-                </p>
-        </footer>
-        <p class="w3validator">
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
-            </a>
-        </p>
-    		<script src="scripts/map.js"></script>
-                <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-                <script src="scripts/wayfinding.js"></script>
-    </body>
-
-    </html>
+ </ul>
+  </main>
+  <footer>
+  &copy; 2019 - Artem Karpikov - Location: Finland
+  <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+  </footer>
+  </body>
+</html>
