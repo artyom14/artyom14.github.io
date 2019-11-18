@@ -54,7 +54,9 @@
     }
     footer{
         background:white;
-        max-width: auto;
+        max-width: 100%;
+	            text-align:center;
+
     }
     footer p{
         background:#E4F0FB;
