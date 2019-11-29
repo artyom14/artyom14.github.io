@@ -87,6 +87,10 @@ header h2{
     color: goldenrod;
     font-weight:700; 
 }
+
+	section.forecast {   
+display:none;
+}
 nav {
 	margin: 0 auto;
     background-color: #E4F0FB;
