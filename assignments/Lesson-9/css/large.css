@@ -226,7 +226,7 @@ section:nth-child(4) .location .map{
         font-weight:bold;
         background:grey;
         color:#93AFD2;
-		font-family:Roof runners active bold;
+		font-family: 'Roof runners active', bold;
     }
 	
 	section.forecast {   
