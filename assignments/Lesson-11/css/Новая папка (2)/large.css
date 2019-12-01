@@ -1,0 +1,108 @@
+@media only screen and (min-width: 60em){
+    #icon{
+        width: 90px;
+        margin: .3em .7em 0 .3em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    footer{
+        width: 80%;
+    }
+    main{
+        width: 75%;
+    }
+    .summary{
+        position: absolute;
+        top: 2em;
+        left: 2em;
+        background-color: rgba(60, 232, 226, 0.7);
+    }
+    .gridContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    form fieldset{
+        padding: 2rem;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card img{
+        width: 100%;
+    }
+    .card section{
+        display: block;
+    }
+    .card span{
+        width: 100%
+    }
+    .townEvent{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .townEvent img{
+        width: 100%;
+    }
+    .townEvent section{
+        display: block;
+    }
+    .townEvent span{
+        width: 100%
+    }
+    .fishtownEvent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .fishtownEvent img{
+        width: 100%;
+    }
+    .fishtownEvent section{
+        display: block;
+    }
+    .fishtownEvent span{
+        width: 100%
+    }
+}
+/*
+@media only screen and (min-width: 60em){
+    #icon{
+        width: 90px;
+        margin: .3em .7em 0 .3em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    footer{
+        width: 80%;
+    }
+    main{
+        width: 75%;
+    }
+    .summary{
+        position: absolute;
+        top: 2em;
+        left: 2em;
+        background-color: rgba(60, 232, 226, 0.7);
+    }
+    .gridContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    form fieldset{
+        padding: 2rem;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card img{
+        width: 100%;
+    }
+    .card section{
+        display: block;
+    }
+    .card span{
+        width: 100%
+    }
+}
+*/ 

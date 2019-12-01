@@ -1,0 +1,713 @@
+body {
+    font-family: "Varela Round", sans-serif;
+    margin: 0 auto;
+    padding: .5em;
+    background-image: url("../images/vote.jpg")
+    /*background-color: #3ce8e2;*/
+}
+h1, h2, h3{
+    font-family: "Anton", sans-serif;
+}
+h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+h3{
+    font-size: 1.6em;
+    margin: 0;
+    padding: .5em;
+    padding-bottom: 0;
+    text-align: center;
+    border-bottom: 3px solid #36454f;
+}
+header,
+footer {
+    background-color: #f2da3c;
+    padding: .3em;
+}
+footer{
+    margin: auto;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+	background-color: #36454f;
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li a {
+	display: block;
+	color: #f2da3c;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+    background-color: rgb(60, 232, 226);
+    color: black;
+}
+main{
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.navigation li {
+    display: none;
+}
+.responsive li {
+	display: block;
+}
+nav li:first-child {
+    display: block;
+}
+nav li:first-child a {
+    text-align: right;
+}
+.moto{
+    font-style: italic;
+}
+#icon{
+   width: 52px;
+   float: left;
+   margin: .2em .7em 0 .4em;
+   background-color: #3ce8e2;
+}
+.hdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hdiv #htext {
+    display: flex;
+    flex-flow: column nowrap;
+}
+p{
+    margin: .2em;
+}
+.active a{
+    font-weight: bold;
+    color: black;
+    background-color: #91f2ff;
+}
+.hero{
+    position: relative;
+    display: block;
+    padding: 0;
+}
+.herophoto{
+    width: 100%;
+}
+.summary{
+    position: absolute;
+    top: .4em;
+    left: .4em;
+    background-color: rgba(60, 232, 226, 0.8);
+}
+.grid{
+    display: grid;
+    margin: .2em;
+    grid-template-columns: 1fr 1fr;
+    padding: .2em;
+    grid-gap: .2em;
+}
+.condition{
+    text-align: right;
+}
+.value{
+    text-align: left;
+}
+.griditem{
+    margin-top: 0;
+    padding: .2em;
+    align-self: center;
+    margin: 0 auto;
+    border-bottom: 3px solid #36454f;
+    background-color: #f2da3c;
+}
+.fiveday{
+    display: none;
+}
+.article{
+    background-color: #98db59;
+    overflow: auto;
+}
+.atricletext{
+    display: block;
+    margin: 0 auto;
+    padding: 1.5em;
+    padding-bottom: 0;
+}
+.articlephoto{
+    display: none;
+}
+.articlephotosmall{
+    width: 100%;
+}
+.map{
+    display: none;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36454f;
+}
+.contactinformation{
+    color: #f2da3c;
+}
+#pancakes{
+    text-align: center;
+    color: #f2da3c;
+    background-color: #36454f;
+    line-height: 3em;
+    font-style: italic;
+}
+.none{
+    display: none;
+}
+/*-----------gallery-----------*/
+.gridContainer{
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+main img[data-src] {
+    filter: blur(0.2em);
+}
+.gridPicture{
+    filter: blur(0em);
+    transition: filter 0.5s;
+    width: 100%
+}
+.caption{
+    text-align: center;
+    background-color: whitesmoke;
+}
+figure:hover{
+    box-shadow: 0 5px 8px 0;
+}
+figure{
+    margin:0 auto;
+    background-color: whitesmoke;
+}
+#ratingvalue {
+    margin: 0 1rem;
+}
+/* ---------form---------*/
+form fieldset{
+    margin: 2rem 0 2rem 0;
+    border: 1px solid #36454f;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: whitesmoke;
+    width: 100%;
+    box-sizing: border-box;
+}
+form legend{
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #36454f;
+    border-radius: 3px;
+    padding: .8rem;
+    max-width: 20rem;
+    background-color: #91f2ff;
+    width: 100%;
+    box-sizing: border-box;
+}
+form label.sbs, form textarea.sbs{
+    display: block;
+    padding: .8rem 0;
+    width: 100%;
+
+}
+.submitBtn{
+    border: none;
+    background-color: #36454f;
+    color: #f2da3c;
+    border-radius: 3px;
+    padding: .8rem 1.5rem;
+    margin: 1rem 0 1rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required{
+    border-left: red solid 5px;
+}
+form label.top input:required:valid{
+    border-left: green solid 5px;
+}
+.solid{
+    display: block;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: .2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+.big{
+    font-size: 1.1rem;
+}
+.noTextDecoration{
+    text-decoration: none;
+}
+.return{
+    display: block;
+    border: none;
+    background-color: #36454f;
+    border-radius: 3px;
+    padding: .8rem 1.5rem;
+    margin: 1rem 0 1rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    text-align: center;
+    color: #f2da3c;
+}
+/*-------------towns we cover----------------*/
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    background-color: #f2da3c;
+}
+.card section span{
+    text-align: center;
+    align-items: center;
+}
+h4{
+    font-size: 1.3em;
+    margin-bottom: 3px;
+}
+.card img{
+    width: 100%;
+}
+.card section{
+    display: flex;
+    flex-flow: column;
+    
+}
+.card section:nth-child(1){
+    order: 3;
+}
+.card section p{
+    line-height: 1.5rem;
+}
+.card section i{
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+.townEvent{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    background-color: #f2da3c;
+}
+.townEvent section span{
+    text-align: center;
+    align-items: center;
+}
+.townEvent img{
+    width: 100%;
+}
+.townEvent section{
+    display: flex;
+    flex-flow: column;
+}
+.fishtownEvent{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    background-color: #f2da3c;
+}
+.fishtownEvent section span{
+    text-align: center;
+    align-items: center;
+}
+.fishtownEvent img{
+    width: 100%;
+}
+.fishtownEvent section{
+    display: flex;
+    flex-flow: column;
+}
+.terms{
+    background-color: whitesmoke;
+    padding: .5em;
+}
+/* 
+body {
+    font-family: "Varela Round", sans-serif;
+    margin: 0 auto;
+    padding: .5em;
+    background-image: url("../images/vote.jpg")
+    /*background-color: #3ce8e2;
+}
+h1, h2, h3{
+    font-family: "Anton", sans-serif;
+}
+h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+h3{
+    font-size: 1.6em;
+    margin: 0;
+    padding: .5em;
+    padding-bottom: 0;
+    text-align: center;
+    border-bottom: 3px solid #36454f;
+}
+header,
+footer {
+    background-color: #f2da3c;
+    padding: .3em;
+}
+footer{
+    margin: auto;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+	background-color: #36454f;
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li a {
+	display: block;
+	color: #f2da3c;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+    background-color: rgb(60, 232, 226);
+    color: black;
+}
+main{
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.navigation li {
+    display: none;
+}
+.responsive li {
+	display: block;
+}
+nav li:first-child {
+    display: block;
+}
+nav li:first-child a {
+    text-align: right;
+}
+.moto{
+    font-style: italic;
+}
+#icon{
+   width: 52px;
+   float: left;
+   margin: .2em .7em 0 .4em;
+   background-color: #3ce8e2;
+}
+.hdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hdiv #htext {
+    display: flex;
+    flex-flow: column nowrap;
+}
+p{
+    margin: .2em;
+}
+.active a{
+    font-weight: bold;
+    color: black;
+    background-color: #91f2ff;
+}
+.hero{
+    position: relative;
+    display: block;
+    padding: 0;
+}
+.herophoto{
+    width: 100%;
+}
+.summary{
+    position: absolute;
+    top: .4em;
+    left: .4em;
+    background-color: rgba(60, 232, 226, 0.8);
+}
+.grid{
+    display: grid;
+    margin: .2em;
+    grid-template-columns: 1fr 1fr;
+    padding: .2em;
+    grid-gap: .2em;
+}
+.condition{
+    text-align: right;
+}
+.value{
+    text-align: left;
+}
+.griditem{
+    margin-top: 0;
+    padding: .2em;
+    align-self: center;
+    margin: 0 auto;
+    border-bottom: 3px solid #36454f;
+    background-color: #f2da3c;
+}
+.fiveday{
+    display: none;
+}
+.article{
+    background-color: #98db59;
+    overflow: auto;
+}
+.atricletext{
+    display: block;
+    margin: 0 auto;
+    padding: 1.5em;
+    padding-bottom: 0;
+}
+.articlephoto{
+    display: none;
+}
+.articlephotosmall{
+    width: 100%;
+}
+.map{
+    display: none;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36454f;
+}
+.contactinformation{
+    color: #f2da3c;
+}
+#pancakes{
+    text-align: center;
+    color: #98db59;
+    background-color: #36454f;
+    line-height: 3em;
+    font-style: italic;
+}
+.none{
+    display: none;
+}
+.gridContainer{
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+main img[data-src] {
+    filter: blur(0.2em);
+}
+.gridPicture{
+    filter: blur(0em);
+    transition: filter 0.5s;
+    width: 100%
+}
+.caption{
+    text-align: center;
+    background-color: whitesmoke;
+}
+figure:hover{
+    box-shadow: 0 5px 8px 0;
+}
+figure{
+    margin:0 auto;
+    background-color: whitesmoke;
+}
+#ratingvalue {
+    margin: 0 1rem;
+}
+/* ---------form---------*/
+/*
+form fieldset{
+    margin: 2rem 0 2rem 0;
+    border: 1px solid #36454f;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: whitesmoke;
+    width: 100%;
+    box-sizing: border-box;
+}
+form legend{
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #36454f;
+    border-radius: 3px;
+    padding: .8rem;
+    max-width: 20rem;
+    background-color: #91f2ff;
+    width: 100%;
+    box-sizing: border-box;
+}
+form label.sbs, form textarea.sbs{
+    display: block;
+    padding: .8rem 0;
+    width: 100%;
+
+}
+.submitBtn{
+    border: none;
+    background-color: #36454f;
+    color: #f2da3c;
+    border-radius: 3px;
+    padding: .8rem 1.5rem;
+    margin: 1rem 0 1rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required{
+    border-left: red solid 5px;
+}
+form label.top input:required:valid{
+    border-left: green solid 5px;
+}
+.solid{
+    display: block;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: .2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+.big{
+    font-size: 1.1rem;
+}
+.noTextDecoration{
+    text-decoration: none;
+}
+.return{
+    display: block;
+    border: none;
+    background-color: #36454f;
+    border-radius: 3px;
+    padding: .8rem 1.5rem;
+    margin: 1rem 0 1rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    text-align: center;
+    color: #f2da3c;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    background-color: #f2da3c;
+}
+.card section span{
+    text-align: center;
+    align-items: center;
+}
+h4{
+    font-size: 1.3em;
+    margin-bottom: 3px;
+}
+.card img{
+    width: 100%;
+}
+.card section{
+    display: flex;
+    flex-flow: column;
+    
+}
+.card section:nth-child(1){
+    order: 3;
+}
+.card section p{
+    line-height: 1.5rem;
+}
+.card section i{
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+*/s

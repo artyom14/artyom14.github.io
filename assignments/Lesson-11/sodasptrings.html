@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+       	 <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Idaho Weather Bureau</title>
+        <meta name="description"
+            content="Continued the Town Page Build for Artem Karpikov Student || Where the 7-Day Weather Forecasts Comes First">
+        <link
+            href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/small.css">
+        <link rel="stylesheet" type="text/css" href="css/middle.css">
+        <link rel="stylesheet" type="text/css" href="css/large.css">
+		        <link rel="stylesheet" type="text/css" href="css/table.css">
+
+				<script src="js/hamburger.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+				    <script src="js/toggle-read-more.js" defer></script>
+
+    </head>
+
+    <body onload="UpdateDates()">
+        <div class="top-banner">
+            Saturday = Sodasprings Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <header>
+            <picture>
+                <img class="logo" src="images/weather.png" alt="Weather Bureau Logo">
+            </picture>
+            <h1>Idaho Weather Bureau</h1>
+            <h2>Where the 7-Day Weather Forecasts Comes First</h2>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="menu.html" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-11.html" >Preston</a></li>
+                <li><a href="sodasprings.html" class="active">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-11.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+		<div class="city">
+		
+<h2>Soda springs Idaho</h2>
+</div>
+                   <picture>
+    <source media="(min-width: 701px)" srcset="images/sodasprings-large.jpg">
+
+<source media="(max-width: 500px)" srcset="images/sodasprings-small.jpg">
+  <source media="(max-width: 700px)" srcset="images/sodasprings-medium.jpg">
+  <img class="herophoto" src="images/sodasprings-large" alt="sodasprings">
+                   </picture>
+			            <section>
+
+
+    <div class="stats">
+        <h2>Weather Summary</h2>
+<p>Currently: <span id="weatherDesc"></span></p>
+                                <p>Temperature: <span id="currentTemp"></span> &deg;F</p>
+                                <p>Humidity: <span id="humidity"></span>%</p>
+                                <p>Wind Speed: <span id="windSpeed"></span> MPH</p>
+                                <p>Wind Direction: <span id="windDirection"></span></p>
+                                <p>Wind Chill: <span id="windChill"></span>&deg;</p> 
+    </div>
+            </section>
+                        <section class="forecast">
+                    <h2>5 Day Forecast</h2>
+                <table>
+                    <thead>
+                    <tr>
+                    <th><span id="dayone"></span></th>
+                    <th><span id="daytwo"></span></th>
+                    <th><span id="daythree"></span></th>
+                    <th><span id="dayfour"></span></th>
+                    <th><span id="dayfive"></span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                                        <td><img src="#" id="weather_icon1"  alt="Weather Image"><br><span id="dayonetemp"></span>&deg;F</td>
+                                        <td><img src="#" id="weather_icon2"  alt="Weather Image"><br><span id="daytwotemp"></span>&deg;F</td>
+                                        <td><img src="#" id="weather_icon3"  alt="Weather Image"><br><span id="daythreetemp"></span>&deg;F</td>
+                                        <td><img src="#" id="weather_icon4"  alt="Weather Image"><br><span id="dayfourtemp"></span>&deg;F</td>
+                                        <td><img src="#" id="weather_icon5"  alt="Weather Image"><br><span id="dayfivetemp"></span>&deg;F</td>
+                    </tr>
+					  </tbody>
+                </table>
+            </section>
+            <section>
+			            
+        <div class = "articleSP">
+		
+                    <p><h3>George Romero Caught Grilling Again!</h3>
+					                <span>by Bilbo Baggins</span>
+
+
+                <img src="images/grilling.jpg" alt="TRICK OR TREAT picture" >
+		
+        <p>It's always a hoot to have an awesome cook-out on a fall day. We've been having
+                    State-Wide contests on who can grill up the best Slab-O-Meat for the past seventeen
+                    years and we've yet to have seen anyone worth mentioning swing by until now! The Famous,
+                    The Amazing, The Miracoulous, GEORGE ROMERO has finally came all the way to our nick of
+                    the woods to grill us up a masterpiece on his (patented) George Romero Grill!</p>  <br>
+                    
+					<div class="disp-full-artcile"><button onclick="toggleFullArticle()">continue...</button></div>
+                <div class="full-article">
+                    <p>
+                    Of course, we're not sponsored or anything - by golly would we like to be! Regardless, it's always a
+                    wonder to see what this godsend can make! No one would have guessed that he would have started
+                    out with his one-and-only George Romero Grilling Sauce and George Romero Grilling Utensils
+                    to set up his Slab-O-Meat for the Great Grillout. 
+                    </p>
+                </div>
+       </div>
+	         
+
+</section>
+						<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<br>
+			<br>
+			<br>
+			 <div class="contact-content">
+                <h2>Soda Spring Weather Bureau</h2>
+				                        </div>
+			<section>
+          
+           
+
+						  <div class="map-container"><iframe width="500" height="400" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.9129898669!2d-111.62379160316786!3d42.661470635268834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1574819662686!5m2!1sen!2sus"  allowfullscreen=""
+                    ></iframe></div>
+<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+                        <div class="contact-address">
+                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9">
+                                <p class="adress">7777 North First St<br>
+                                Soda Spring, ID 99999<br>
+								 ☎️ 111-777-9991<br>
+								Weather@Bureau.com
+								</p>
+								
+                            </a>
+                        </div>
+                   
+				
+						<br>
+						<br>
+
+                <div class="contact-icons">
+                   						   <a href = "https://twitter.com/?lang=en" target="_blank"><img class = "social" src="images/twitter-icon.png" alt="twitter icon"></a>                    
+
+						   <a href = "https://www.facebook.com" target="_blank"> <img class = "social" src="images/facebook-icon.png" alt="facebook icon"></a>
+						   <a href = "https://www.youtube.com/" target="_blank"><img class = "social" src="images/youtube.png" alt="youtube icon"></a>
+						   <a href = "https://www.whatsapp.com/" target="_blank"><img class = "social" src="images/WhatsApp-icon.png" alt="WhatsApp Icon"></a>
+                           <a href = "https://www.pinterest.com/" target="_blank"><img class = "social" src="images/pinterest-icon.png" alt="Pinterest Icon"></a>
+                   
+                    </div>
+
+        </section>
+			
+        </main>
+        <footer>
+            <p>&copy; <span id="copyrightdate"></span> || Artem Karpikov || Location: Finland || ; <br> 
+                    <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+                    <br><span id="currentDate"></span>
+                </p>
+        </footer>
+        <p class="w3validator">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+        </p>
+    <script src="js/weatherapiSP.js"></script>
+
+        <script  src="js/windchill.js"></script>
+        <script  src="js/eventlister.js"></script>
+		<script src="js/SP.js"></script>
+		<script src="scripts/map.js"></script>
+                <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+                <script src="scripts/wayfinding.js"></script>
+    </body>
+
+    </html>

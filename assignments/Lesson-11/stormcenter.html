@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+       	 <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Preston-City Weather Bureau</title>
+        <meta name="description"
+            content="Continued the Town Page Build for Artem Karpikov Student || Where the 7-Day Weather Forecasts Comes First">
+        <link
+            href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/small.css">
+        <link rel="stylesheet" type="text/css" href="css/middle.css">
+        <link rel="stylesheet" type="text/css" href="css/large.css">
+		        <link rel="stylesheet" type="text/css" href="css/table.css">
+
+				<script src="js/hamburger.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+				    <script src="js/toggle-read-more.js" defer></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="https://cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+
+    </head>
+
+    <body onload="UpdateDates()">
+        <div class="top-banner">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <header>
+            <picture>
+                <img class="logo" src="images/weather.png" alt="Weather Bureau Logo">
+            </picture>
+            <h1>Preston-City Weather Bureau</h1>
+            <h2>Where the 7-Day Weather Forecasts Comes First</h2>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-11.html">Preston</a></li>
+                <li><a href="sodasptrings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="gallery-11.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+
+<div class="stormForm2">
+ <h1>Storm Report</h1>
+        </div>
+		
+       <div class="stormForm">
+                          
+                    <form method="get" action="thanks.html">
+        
+                        <div class="section">
+                            <span>1</span>Personal Information</div>
+                        <div class="subsection">
+                            <label>Full Name:<input type="text" name="fullname" placeholder="" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
+                            <label>Email:<input type="email" name="email" placeholder="email@email.com"  autocomplete="off"></label>
+                            <label>Phone Number:<input type="tel" name="phone" required autocomplete="off"></label>
+                            <label>ZIP Code:<input type="text" name="zipcode" pattern="^\d{5,6}(?:[-\s]\d{4})?$" required autocomplete="off"></label>
+                        </div>
+        
+                        <div class="section">
+                            <span>2</span>Storm Report</div>
+                        <div class="subsection">
+                            <label>Storm Date:<input type="date" name="date"></label>
+        
+                            <label>Storm Type:<input type="text" name="stormtype" list="storm">
+        
+                        <datalist id="storm">
+                            <option value = "Flash Flood"></option>
+                            <option value = "Hail"></option>
+                            <option value = "Hurricane"></option>
+                            <option value = "Thunderstorm"></option>
+                            <option value = "Tornado"></option>
+                            </datalist>
+        
+                        </label>
+        
+                            <label>Storm Severity<br>
+                            1 <input type="range" id="severity" value="5" min="1" max="10" step="1" list="sevsettings"> 10
+                            <datalist id="sevsettings">
+                                <option>1</option>   <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </datalist>
+                        </label>
+                            <label>
+                        Storm Region:
+                            <select name="region">
+                            <option value="select" disabled selected>Select Region...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Sugar City">Sugar City</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                            </select></label>
+                            <label>
+                                Are You In Danger:</label>
+        
+                            <label><input type="radio" name="dangerLevel" value="yes"><span class="radiotext">Yes</span></label>
+                            <label><input type="radio" name="dangerLevel" value="maybe"><span class="radiotext">Maybe</span></label>
+                            <label><input type="radio" name="dangerLevel" value="no"><span class="radiotext">No</span></label>
+                        </div>
+                        <div class="section">
+                            <span>3</span>Additional Information</div>
+                        <div class="subsection">
+                            <label>
+                        Comments:
+                            <textarea name="additionalInfo"></textarea>
+        
+                        </label>
+                        </div>
+        
+                        <input type="submit" value="Send" class="submitButton">
+        
+                    </form>
+                </div>
+				
+				
+				
+			
+        </main>
+        <footer>
+            <p>&copy; <span id="copyrightdate"></span> || Artem Karpikov || Location: Finland || ; <br> 
+                    <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+                    <br><span id="currentDate"></span>
+                </p>
+        </footer>
+        <p class="w3validator">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+        </p>
+    <script src="js/weather.js"></script>
+
+        <script  src="js/windchill.js"></script>
+        <script  src="js/eventlister.js"></script>
+		<script src="js/preston.js"></script>
+		<script src="scripts/map.js"></script>
+                <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+                <script src="scripts/wayfinding.js"></script>
+    </body>
+
+    </html>

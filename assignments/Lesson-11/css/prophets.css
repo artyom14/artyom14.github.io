@@ -1,0 +1,102 @@
+*  { margin: 0; box-sizing: border-box; }
+body {
+    font-family: 'Roof runners active Font Family', sans-serif;
+    color: #052989;
+    font-size:1rem;
+    font-weight: 300;
+    margin:0 auto;
+    background:rgb(205, 225, 251);
+}
+header{
+    margin:0;
+    padding:0;
+}
+h1 {
+	
+	    font-weight:400;
+    background:#052989;
+    color: black;
+	    font-family: 'Roof runners active Font Family', sans-serif;
+
+    font-size: 1.8rem;
+    margin:0;
+
+    text-align: center;
+    display: block;
+    padding:10px;
+}
+h1:hover{
+    text-shadow:0px 0px 1px #333;
+    cursor:pointer;
+}
+.box {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin:10px;
+    
+}
+.box section{
+    transition:all 0.4s ease-in-out;
+}
+.box section:hover{
+    background:rgb(150, 171, 204);
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);
+    border-radius:5px;
+}
+.box h2 {
+    position: absolute;
+    opacity:0.2;
+	color: #333;
+	font-size: 50px;
+	margin: 0 20px;
+	float: right;
+}
+.box h2:hover{
+    transition:all 0.4s ease-in-out;
+    border-radius:50px;
+    color:whitesmoke;
+    cursor:pointer;
+}
+.box h3 {
+color: #333;
+margin:10px auto;
+font-size:1.5rem;
+}
+
+.box p {
+    font-size:1rem;
+    color:#333;
+    font-weight: 600;
+}
+.box img {
+    box-shadow: 0px 0px 10px 2px #333;
+    margin:30px auto;
+    display:block;
+    transition:all 0.5s ease-in-out;
+    border:0;
+}
+.box img:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+    border-radius:10px;
+    
+}
+img {width:200px;height:250px;}
+footer {
+    text-align: center;
+    color: #333;
+    margin:10px;
+}
+@media (min-width: 37.5em)
+{
+    .box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 60em)
+{
+    .box {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

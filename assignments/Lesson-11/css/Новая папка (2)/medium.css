@@ -1,0 +1,242 @@
+@media only screen and (min-width: 40em) {
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li{
+        display: block;
+    }
+    nav ul { 
+        display: flex;
+    }
+	nav ul li { 
+        flex: 1 1 100%;
+        white-space: nowrap;
+    }
+    footer{
+        width: 85%;
+    }
+    main{
+        width: 80%;
+    }
+    #icon{
+        width: 74px;
+        margin: .2em .5em 0 .3em;
+    }
+    h1{
+        font-size: 2.4em;
+    }
+    .fiveday{
+        display: block;
+    }
+    .forecastgrid{
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: .2em;
+        width: 60%;
+    }
+    .day, .weathericon, .temp{
+        display: grid;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        align-items: center;
+        background-color: rgba(60, 232, 226, 0.7);
+    }
+    .day{
+        color:#f2da3c;
+        background-color: #36454f;
+    }
+    .temp{
+        background-color: #f2da3c;
+        
+    }
+    .articlephoto{
+        display: block;
+        float: right;
+        padding: 1em;
+        max-width: 95%;
+    }
+    .articlephotosmall{
+        display: none;
+    }
+    .summary{
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        background-color: rgba(60, 232, 226, 0.7);
+    }
+    .atricletext{
+        padding: 1.5em;
+    }
+    .contact{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .map{
+        display: block;
+        border: none;
+    }
+    .map, .contactinformation{
+        width: 48%;
+        flex: 1 0 15em;
+        padding: .5em;
+        color: #f2da3c;
+    }
+    .gridContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    form fieldset{
+        padding: 1.2rem;
+    }
+
+    .card section{
+        display: flex;
+        flex-flow: row;
+    }
+    .card section:nth-child(3){
+        flex-flow: row-reverse;
+    }
+    .card img{
+        width: 50%;
+    }
+    .card span{
+        width: 50%
+    }
+    .townEvent section{
+        display: flex;
+        flex-flow: row;
+    }
+    .townEvent section:nth-child(2){
+        flex-flow: row-reverse;
+    }
+    .townEvent img{
+        width: 50%;
+    }
+    .townEvent span{
+        width: 50%
+    }
+    .fishtownEvent section{
+        display: flex;
+        flex-flow: row;
+    }
+    .fishtownEvent section:nth-child(even){
+        flex-flow: row-reverse;
+    }
+    .fishtownEvent img{
+        width: 50%;
+    }
+    .fishtownEvent span{
+        width: 50%
+    }
+}
+/*
+@media only screen and (min-width: 40em) {
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li{
+        display: block;
+    }
+    nav ul { 
+        display: flex;
+    }
+	nav ul li { 
+        flex: 1 1 100%; 
+        white-space: nowrap;
+    }
+    footer{
+        width: 85%;
+    }
+    main{
+        width: 80%;
+    }
+    #icon{
+        width: 74px;
+        margin: .2em .5em 0 .3em;
+    }
+    h1{
+        font-size: 2.4em;
+    }
+    .fiveday{
+        display: block;
+    }
+    .forecastgrid{
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: .2em;
+        width: 60%;
+    }
+    .day, .weathericon, .temp{
+        display: grid;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        align-items: center;
+        background-color: rgba(60, 232, 226, 0.7);
+    }
+    .day{
+        color:#f2da3c;
+        background-color: #36454f;
+    }
+    .temp{
+        background-color: #f2da3c;
+    }
+    .articlephoto{
+        display: block;
+        float: right;
+        padding: 1em;
+        max-width: 95%;
+    }
+    .articlephotosmall{
+        display: none;
+    }
+    .summary{
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        background-color: rgba(60, 232, 226, 0.7);
+    }
+    .atricletext{
+        padding: 1.5em;
+    }
+    .contact{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .map{
+        display: block;
+        border: none;
+    }
+    .map, .contactinformation{
+        width: 48%;
+        flex: 1 0 15em;
+        padding: .5em;
+        color: #f2da3c;
+    }
+    .gridContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    form fieldset{
+        padding: 1.2rem;
+    }
+
+    .card section{
+        display: flex;
+        flex-flow: row;
+    }
+    .card section:nth-child(3){
+        flex-flow: row-reverse;
+    }
+    .card img{
+        width: 50%;
+    }
+    .card span{
+        width: 50%
+    }
+    
+}
+*/ 

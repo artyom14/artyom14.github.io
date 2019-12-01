@@ -1,0 +1,329 @@
+@media only screen and (min-width: 950px) {
+	
+	
+	    header picture{
+        display:inline;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        margin:0;
+        text-align:center;
+        display: inline;
+    }
+    header h2 {
+        margin:0;
+        font-size: 1.5rem;
+    }
+    main {
+        max-width:1200px;
+    }
+    main section h2 {
+        font-size: 1.5rem;
+    }
+
+    main section h3 {
+        font-size: 1.3rem;
+    }
+
+    main section h4 {
+        font-size: 1.3rem;
+    }
+    
+    /* Horizontal Menus */
+    /* Flex */
+    nav ul{
+        max-width: 1200px;
+        margin:0 auto;
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        font-weight:500;
+        background:#E4F0FB;
+        color:#93AFD2;
+    }
+    footer{
+        background:white;
+        max-width: 1200px;
+    }
+    footer p{
+        background:#E4F0FB;
+        padding:1rem;
+        border-top:1px solid #93AFD2;
+        border-bottom:1px solid #93AFD2;
+    }
+section:nth-child(4) .location .map{
+    float:left;
+    width:650px;
+    margin:10px;
+}
+.location {
+    overflow: auto;
+    display:table;
+}
+.contact-information{
+    display:table-cell;
+    vertical-align:middle;
+    width:100%;
+}
+.container {
+    margin: 0 auto;
+    width:100%;
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+}     
+        section figure{
+            width:auto;
+            max-width:max-content;
+            margin: 20px;
+        }
+		
+		
+		
+
+		picture .herophoto  {
+		
+		width:1250px;
+	}
+	
+	.gallery p:hover {
+        box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.58);
+        border-radius: 0px 0px 20px 20px;
+        background-color: rgba(60, 116, 166, 0.726);
+        color: white;
+    }
+
+    div.today{
+        background-size: 100% 340px;
+    }
+
+    input{
+        margin-bottom: 2em;
+    }
+   /* label{
+        width: 8em;
+        padding-right: 1em;
+        text-align: right;
+    }
+	*/
+    select{
+        grid-column: 2;
+        margin-bottom: 1em;
+    }
+    form p {
+        grid-column: 1;
+        text-align: right;
+    }
+    .radioSelection{
+        grid-column: 2;
+        margin: 2em 1em;;
+    }
+    textarea{
+        grid-column: 2;
+
+    }
+    input[type="submit"]{
+        grid-column: 2;
+    }
+    section.townsDisplay{
+        grid-template-columns: auto auto auto;
+    }
+   .townsDisplay article:hover{
+    background-color: rgba(60, 116, 166, 0.726);
+    color: white;
+    cursor: pointer;
+   }
+	
+	
+	
+	
+	
+	
+	
+	    nav button {
+        display: none;
+    }
+
+    nav ul.hide 
+    { display: block; }
+    
+    nav ul li {
+        display: inline-block;
+        margin: auto;  
+
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        border: none;        
+        padding: .6rem 1rem;
+    }
+
+    div.hero {
+        max-width: 1200px;
+        margin: auto;
+    }
+    header picture{
+        display:inline;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        margin:0;
+        text-align:center;
+        display: inline;
+    }
+    header h2 {
+        margin:0;
+        font-size: 1.5rem;
+    }
+    main{
+        max-width:1300px;
+    }
+    main section h2 {
+        font-size: 1.5rem;
+    }
+
+    main section h3 {
+        font-size: 1.3rem;
+    }
+
+    main section h4 {
+        font-size: 1.3rem;
+    }
+    
+    /* Horizontal Menus */
+    /* Flex */
+    nav ul{
+        max-width: 1200px;
+        margin:0 auto;
+
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        font-weight:bold;
+        background:grey;
+        color:#93AFD2;
+		font-family:Roof runners active bold;
+    }
+	
+	section.forecast {   
+
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        padding: 20px;        
+        text-align: center;        
+    }
+
+    section.forecast table { 
+
+        margin: auto auto 40px auto; 
+        width: 70%;             
+    }
+
+    section.forecast td,
+    section.forecast th {
+                      
+        border: 3px solid #ddd;
+        padding: .8rem;
+    }
+    section.forecast td img {
+        height: 50px;
+        width: 50px;
+    }
+    section.forecast th {
+        background-color: #74b3ce;
+        color: #fff;
+        padding: 1.3%;
+        font-size: 1.2rem;
+    }
+
+    section.forecast tbody {        
+        font-size: 1.5em;
+    }
+	
+	
+	
+	.disp-full-artcile>button {
+        font-size: 1.2em;
+    }
+    footer{
+        background:white;
+    }
+    footer p{
+        background:#E4F0FB;
+        padding:1rem;
+        border-top:1px solid #93AFD2;
+        border-bottom:1px solid #93AFD2;
+    }
+	.container {
+    margin: 0 auto;
+    width:100%;
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+}     
+        section figure{
+            width:auto;
+            max-width:max-content;
+            margin: 20px;
+        }
+	
+section:nth-child(4) .location .map{
+    float:left;
+    width:650px;
+    margin:10px;
+}
+.location {
+    overflow: auto;
+    display:table;
+}
+.contact-information{
+    display:table-cell;
+    vertical-align:middle;
+    width:100%;
+}
+    .map-container iframe {
+        width: 500px;
+        height: 350px;
+    }
+	  section p.adress {
+	  		        width: auto;
+
+	      font-size:1rem;
+color: grey;
+  }
+	section .contact-address { 
+		        width: 1200px;
+	}
+	section .contact-icons { 
+		        width: 1200px;
+	}
+	   main .towns{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        main .towns .box figure img{
+            width:100%;
+            height:250px;
+	
+}
