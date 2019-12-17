@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+<head>
+    <title>Temple Inn and Suites | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Final project Temple inn and suites site home page for Artem Karpikov CIT 230">
+    <link href= "css/normalize.css" rel="stylesheet">
+    <link href= "css/small.css" rel="stylesheet">
+    <link href= "css/medium.css" rel="stylesheet">
+    <link href= "css/large.css" rel="stylesheet">
+</head>
+<body>
+    <div class = "top">
+    <header>
+        <a href="index.html"><img id = icon src="images/temple.jpg" alt="Temple Inn and Suites Icon"></a>
+        <h1>Temple Inn and Suites</h1>
+        <div class = "moto">Come to a house of the Lord </div>     
+    </header>
+    <nav>
+        <ul class = "navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+			
+			<div class="subnav">
+  <button class="subnavbtn">Temples <i class="fa fa-caret-down"></i></button>
+               <div class="subnav-content">
+                 <a href="temples1.html">Ogden & IdahoFalls  </a>
+      <a href="temples2.html">Boise & Rexburg</a>
+    </div>
+	    </div>
+
+	
+            <li><a href= "reservations.html">Reservations</a></li>
+            <li><a href= "services.html">Services</a></li>
+            <li><a href= "contact.html">Contact</a></li>
+        </ul>
+		
+    </nav>
+    </div>
+    <main>
+        <div class = "quote">
+            <p><i>We're not just building a Temple here, the Lord is building us. </i> - Joseph Smith, Jr.</p>
+        </div>
+        <h2>Temples We Serve</h2>
+        <div class = "templegrid">
+            <section class = "Boise">
+                <img src = "images/Boise.jpg" alt = "photo of Boise Idaho Temple">
+                <h3>Boise Idaho Temple</h3>
+                <p>1211 S Cole Rd </p>
+                <p>Boise ID 83709-1871</p>
+                <br>
+                <p>(1) 208-322-4422</p>
+                <br>
+                <p><a href = "https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple?lang=eng" target="_blank" rel="noreferrer noopener">Link to Temple Info and Email</a></p>
+                <h4>Typical Schedule</h4>
+                <p>Baptism: Tuesday to Saturday 7:30am-9pm</p>
+                <p>Initiatory: Tuesday to Saturday 7:30am-9pm</p>
+                <p>Sealing: Tuesday to Saturday 7am-9pm</p>
+                <p>Endowment: Tuesday to Saturday 7am-7pm</p>
+                <p>Sessions start at 7AM are are held every 90 minutes.</p>
+                <p>There is also one early session Tuesdays at 6am.</p>
+                <h4>Services</h4>
+                <p>NO clothing rental available</p>  
+                <p>Distribution center nearby</p>
+				<p>No patron housing available</p>
+                <p>No cafeteria available</p>
+                <h4>Temple Closures</h4>
+                <div class = "Boiseclose"></div>
+                <h4>History</h4>
+                <p>Temple Announced: 31 March 1982</p>
+                <p>Groundbreaking: 18 December 1982</p>
+                <p>Dedication: 25 May 1984</p>
+				<p>Rededication: 18 November 2012</p>
+
+                <h4>Weather Summary</h4>
+                <p>Currently: &nbsp<span id = "bilcurrently"></span></p>
+                <p>Temperature: &nbsp<span id = "bilcurrentTemp"></span>° F</p>
+                <p>Humidity: &nbsp<span id = "bilhumidity"></span>%</p>
+                <p>Wind Speed: &nbsp<span id = "bilwindSpeed"></span>MPH</p>
+                <p>Wind Chill: &nbsp<span id = "bilwindChill"></span>° F</p>
+            </section>
+            <section class = "Rexburg">
+                <img src = "images/rexburg.jpg" alt = "photo of Rexburg Temple">
+                <h3>Rexburg Idaho Temple</h3>
+                <p>750 S 2nd E</p>
+                <p>Idaho Falls ID 83402-3410</p>
+                <br>
+                <p>(1) 208-656-0880</p>
+                <br>
+                <p><a href = "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple?lang=eng" target="_blank" rel="noreferrer noopener">Link to Temple Info and Email</a></p>
+                <h4>Typical Schedule</h4>
+                <p>Baptism: Tuesday to Saturday 7:30am-9pm</p>
+                <p>Initiatory: Tuesday to Saturday 7:30am-9pm</p>
+                <p>Sealing: Tuesday to Saturday 7am-9pm</p>
+                <p>Endowment: Tuesday to Saturday 7am-7pm</p>
+                <p>Sessions start at 7AM are are held every 90 minutes.</p>
+                <p>There is also one early session Tuesdays at 6am.</p>
+                <h4>Services</h4>
+                <p>Clothing rental available</p>  
+                <p>Distribution center nearby</p>
+                <p>No cafeteria available</p>
+                <h4>Temple Closures</h4>
+                <div class = "RexburgClose"></div>
+                <h4>History</h4>
+                <p>Temple Announced: 12 December 2003</p>
+                <p>Groundbreaking: 30 July 2005</p>
+                <p>Dedication: 10 February 2008</p>
+
+                <h4>Weather Summary</h4>
+                <p>Currently: &nbsp<span id = "biscurrently"></span></p>
+                <p>Temperature: &nbsp<span id = "biscurrentTemp"></span>° F</p>
+                <p>Humidity: &nbsp<span id = "bishumidity"></span>%</p>
+                <p>Wind Speed: &nbsp<span id = "biswindSpeed"></span>MPH</p>
+                <p>Wind Chill: &nbsp<span id = "biswindChill"></span>° F</p>
+            </section>
+        </div>
+        <div class = "contact">
+            <div class = "contactinformation">
+                <p>Temple Inn and Suites</p>
+                <p>1 North First St</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p>☎️ 111-777-9991</p>
+                <p>info@templeinn.com</p>
+            </div>
+						  <div class="mapdiv"><iframe width="350" height="250" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiExIE4gMXN0IEUsIFByZXN0b24sIElEIDgzMjYzLCBVU0EiMBIuChQKEgnH6-Fn6fdUhxFYly81YikWVRABKhQKEglN_XSI7vdUhxEaWu_fON9fCg&key=AIzaSyBZjWHsS4Dfd2OvfjrXG39ly_x5kcFvcWA"
+                    allowfullscreen></iframe></div>
+                      
+					  <div class="contact-icons">
+                   						   <a href = "https://twitter.com/?lang=en" target="_blank"><img class = "social" src="images/twitter-icon.png" alt="twitter icon"></a>                    
+
+						   <a href = "https://www.facebook.com" target="_blank"> <img class = "social" src="images/facebook-icon.png" alt="facebook icon"></a>
+						   <a href = "https://www.youtube.com/" target="_blank"><img class = "social" src="images/youtube.png" alt="youtube icon"></a>
+						   <a href = "https://www.whatsapp.com/" target="_blank"><img class = "social" src="images/WhatsApp-icon.png" alt="WhatsApp Icon"></a>
+                           <a href = "https://www.pinterest.com/" target="_blank"><img class = "social" src="images/pinterest-icon.png" alt="Pinterest Icon"></a>
+                   
+                    </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Temple Inn and Suites | Ogden, IdahoFalls, Billings and Bismarck Temples | <a class = "none" href = "resource.html">Resource Reference</a>
+        <br>
+        <span id="output"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src = "js/navigation.js"></script>
+    <script src = "js/currentday.js"></script>
+    <script src = "js/temples.js"></script>
+    <script>
+        WebFont.load({ google: { families: [
+       'Bree Serif', 'Questrial'
+        ]}});
+    </script>
+</body>
+</html>

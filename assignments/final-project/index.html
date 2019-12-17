@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+<head>
+    <title>Temple Inn and Suites | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Final project Temple inn and suites site home page for Artem Karpikov CIT 230">
+    <link href= "css/normalize.css" rel="stylesheet">
+    <link href= "css/small.css" rel="stylesheet">
+    <link href= "css/medium.css" rel="stylesheet">
+    <link href= "css/large.css" rel="stylesheet">
+</head>
+<body>
+    <div class = "top">
+    <header>
+        <a href="index.html"><img id = icon src="images/temple.jpg" alt="Temple Inn and Suites Icon"></a>
+        <h1>Temple Inn and Suites</h1>
+        <div class = "moto">Come to a house of the Lord</div>     
+    </header>
+	
+	
+<nav>
+        <ul class = "navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+			
+			<div class="subnav">
+  <button class="subnavbtn">Temples <i class="fa fa-caret-down"></i></button>
+               <div class="subnav-content">
+                 <a href="temples1.html">Ogden & IdahoFalls  </a>
+      <a href="temples2.html">Boise & Rexburg</a>
+    </div>
+	    </div>
+
+	
+            <li><a href= "reservations.html">Reservations</a></li>
+            <li><a href= "services.html">Services</a></li>
+            <li><a href= "contact.html">Contact</a></li>
+        </ul>
+		
+    </nav>
+	
+	
+	
+    </div>
+    <main>
+        <div class = "hero">
+                   <picture>
+    <source media="(min-width: 701px)" srcset="images/hero.jpg">
+
+<source media="(max-width: 500px)" srcset="images/hero450.jpg">
+  <source media="(max-width: 700px)" srcset="images/hero800.jpg">
+  <img class="herophoto" src="images/hero" alt="preston">
+                   </picture>
+
+            <div class = "tlist">
+                <h2 class = "theading">Temples We Serve</h2>
+                <div class = "tintro">
+                    <div class = "tname">The Ogden Utah Temple</div>
+                    <div class = "taddress">350 22nd St Ogden
+                        <br>
+                        UT 84401-1487
+                        </div>
+                    <div class = "tname">Idaho Falls Idaho Temple</div>
+                    <div class = "taddress">21000 Memorial Dr
+                        <br>
+                        Idaho Falls ID 83402-3410
+                        </div>
+                    <div class = "tname">Boise Idaho Temple</div>
+                    <div class = "taddress">1211 S Cole Rd
+                        <br>
+                        Boise ID 83709-1871
+                        </div>
+                    <div class = "tname">Rexburg Idaho Temple</div>
+                    <div class = "taddress">750 S 2nd E
+                        <br>
+                        Idaho Falls ID 83402-3410
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <div class = "article">
+        <h2 class = "articletitle">This is What We Do</h2>
+            <p class = "atricletext">
+                    As members of the Church of Jesus Christ of Latter-Day Saints we know what a challenge making it to the temple can be. We are here to help you have a good experience at the temple and offer services specifically for temple going individuals and families. Do you have to be a member to use our services? Of course not, but we offer a myriad of services designed by members for members.  Our goal is to help make forever families.  Consider us your ward or branch family while you are here. 
+            </p>
+        </div>
+        <div class = "contact">
+            <div class = "contactinformation">
+                <p>Temple Inn and Suites</p>
+                <p>1 North First St</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p>☎️ 111-777-9991</p>
+                <p>info@templeinn.com</p>
+            </div>
+						  <div class="mapdiv"><iframe width="350" height="250" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiExIE4gMXN0IEUsIFByZXN0b24sIElEIDgzMjYzLCBVU0EiMBIuChQKEgnH6-Fn6fdUhxFYly81YikWVRABKhQKEglN_XSI7vdUhxEaWu_fON9fCg&key=AIzaSyBZjWHsS4Dfd2OvfjrXG39ly_x5kcFvcWA"
+                    allowfullscreen></iframe></div>
+                      
+					  <div class="contact-icons">
+                   						   <a href = "https://twitter.com/?lang=en" target="_blank"><img class = "social" src="images/twitter-icon.png" alt="twitter icon"></a>                    
+
+						   <a href = "https://www.facebook.com" target="_blank"> <img class = "social" src="images/facebook-icon.png" alt="facebook icon"></a>
+						   <a href = "https://www.youtube.com/" target="_blank"><img class = "social" src="images/youtube.png" alt="youtube icon"></a>
+						   <a href = "https://www.whatsapp.com/" target="_blank"><img class = "social" src="images/WhatsApp-icon.png" alt="WhatsApp Icon"></a>
+                           <a href = "https://www.pinterest.com/" target="_blank"><img class = "social" src="images/pinterest-icon.png" alt="Pinterest Icon"></a>
+                   
+                    </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Temple Inn and Suites | Ogden, IdahoFalls, Billings and Bismarck Temples | <a class = "none" href = "resource.html">Resource Reference</a>
+        <br>
+        <span id="output"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src = "js/navigation.js"></script>
+    <script src = "js/currentday.js"></script>
+    <script>
+        WebFont.load({ google: { families: [
+       'Bree Serif', 'Questrial'
+        ]}});
+    </script>
+</body>
+</html>

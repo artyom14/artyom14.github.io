@@ -1,0 +1,57 @@
+@media only screen and (min-width: 40em) {
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li{
+        display: block;
+    }
+    nav ul { 
+        display: flex;
+    }
+	nav ul li { 
+        flex: 1 1 100%;
+        white-space: nowrap;
+    }
+    main{
+        width: 90%;
+    }
+    #icon{
+        width: 86px;
+    }
+    h1{
+        font-size: 2.4em;
+    }
+    .moto{
+        font-size: 1.2rem;
+    }
+    .tlist{
+        position: absolute;
+        top: .7rem;
+        right: .7rem;
+        background-color: rgba(63, 13, 18, 0.8);
+    }
+    .tname{
+        margin-top: .4rem;
+        font-size: 1.1rem;
+    }
+    .taddress{
+        font-size: .9rem;
+    }
+    .contactinformation, .social, .map{
+        width: 28%;
+        flex: 1 2 15em;
+    }
+    .contactinformation, .social{
+        font-size: 1.1rem;
+    }
+    .map{
+        display: block;
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .templegrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

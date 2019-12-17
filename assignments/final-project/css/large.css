@@ -1,0 +1,29 @@
+@media only screen and (min-width: 60em){
+    #icon{
+        width: 98px;
+    }
+    h1{
+        font-size: 3em;
+    }
+    main{
+        width: 85%;
+    }
+    .tlist{
+        position: absolute;
+        top: .7rem;
+        right: 5rem;
+    }
+    .tname{
+        margin-top: .6rem;
+        font-size: 1.3rem;
+    }
+    .taddress{
+        font-size: 1rem;
+    }
+    .map{
+        display: block;
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+    }
+}
