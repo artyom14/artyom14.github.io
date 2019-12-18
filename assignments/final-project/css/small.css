@@ -315,7 +315,7 @@ hr {
 
     padding: 10px;
 
-    color: #DED2A8
+    color: #5caed0
 
 }
 
@@ -340,9 +340,7 @@ textarea {
 }
 
 .reservation-form-fieldset {
-
-    color: #A0AC60;
-
+    color: #ac8033;
     padding-top: 10px;
 
     padding-bottom: 10px;
@@ -351,7 +349,7 @@ textarea {
 
     margin-bottom: 20px;
 
-    border: 2px solid #A0AC60;
+    border: 2px solid #ac8033;
 
     border-radius: 4px;
 
@@ -359,7 +357,7 @@ textarea {
 
 .reservation-form-class {
 
-    color: #A0AC60;
+    color: #ac8033;
 
     padding-left: 10px;
 
@@ -369,7 +367,7 @@ textarea {
 
 #submit-button {
 
-    background-color: #A0AC60;
+    background-color: #ac8033;
 
     color: #FFFFFF;
 
@@ -391,7 +389,7 @@ textarea {
 
 #submit-button:hover {
 
-    background-color: #A0AC60;
+    background-color: #ac8033;
 
     color: #534A3C;
 
