@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+<head>
+    <title>Temple Inn and Suites | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Final project Temple inn and suites site home page for Artem Karpikov CIT 230">
+    <link href= "css/normalize.css" rel="stylesheet">
+    <link href= "css/small.css" rel="stylesheet">
+    <link href= "css/medium.css" rel="stylesheet">
+    <link href= "css/large.css" rel="stylesheet">
+</head>
+<body>
+    <div class = "top">
+    <header>
+        <a href="index.html"><img id = icon src="images/temple.jpg" alt="Temple Inn and Suites Icon"></a>
+        <h1>Temple Inn and Suites</h1>
+        <div class = "moto">Come to a house of the Lord </div>     
+    </header>
+    <nav>
+        <ul class = "navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+			
+			<div class="subnav">
+  <button class="subnavbtn">Temples <i class="fa fa-caret-down"></i></button>
+               <div class="subnav-content">
+                 <a href="temples1.html">Ogden & IdahoFalls  </a>
+      <a href="temples2.html">Boise & Rexburg</a>
+    </div>
+	    </div>
+
+	
+            <li><a href= "reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href= "contact.html" class="current-page">Contact</a></li>
+        </ul>
+		
+    </nav>
+    </div>
+      <main>
+
+            <div class="contact-main-div">
+                                    
+                <h2>Contact Us</h2>
+
+                <hr>
+
+                <div class="contact-map-flex-div">
+
+                    <div class="contact2-information-div">
+        
+                        <p>We have booking agents available to speak to twenty-four hours a day, six days a week.
+                            If you have any questions about pricing, long-term accommodations, amenities, or anything else, our agents are more than happy to assist you.
+                            We always appreciate feedback about the quality of our hotels. If you encounter any problems during your stay please don't hesitate to reach out to us.</p>
+        
+                        <p>Temple Inn & Suites was founded in 2007 in Bethesda, MD. We started with a single hotel serving patrons of the Washington, D.C. Temple but have since expanded to four different locations all across the United States.
+                            We are dedicated to providing quality lodgings for temple patrons, and in maintaining an atmosphere of peace and reverence for all who stay at our hotels.
+                            Our corporate headquarters are still located in Bethesda, on the ground floor of our hotel, and less than 10 minutes from the Washington, D.C. Temple.</p>            
+
+                        <div><strong><img src="images/phone.png" alt="Telephone icon">&nbsp;&nbsp;Phone:</strong> <a href="tel:555-555-5555">555-555-5555</a></div>
+
+                        <address><strong><img src="images/location.png" alt="Location icon">&nbsp;&nbsp;Address:</strong> 4800 Montgomery Ln #300, Bethesda, MD 20814</address>
+
+                        <div class="contact-email-div"><strong><img src="images/envelope.png" alt="Envelope icon">&nbsp;&nbsp;Email:</strong> <a href="mailto:contact@templeinnandsuites.com">contact@templeinnandsuites.com</a></div>
+
+                    </div>
+
+                    <div class="contact-map-div">
+
+                        <iframe title="Map of our corporate office location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370329947!2d-77.0977258483213!3d38.98325594938187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1575511895627!5m2!1sen!2sus" style="border:0;" allowfullscreen=""></iframe>
+
+                    </div>
+
+                </div>
+
+                <h2 class="contact-form-heading">Let's Talk</h2>
+
+                <hr class="contact-form-hr">
+
+                <form class="reservation-form" method="GET" action="thanks.html">
+    
+                        <fieldset class="reservation-form-fieldset">
+    
+                            <legend class="reservation-form-class">Contact Information</legend>
+    
+                            <div class="reservation-form-input-div">
+    
+                                <label for="guest-full-name">*Full Name:</label>
+    
+                                <input pattern="[a-zA-Z ]{5,}" type="text" id="guest-full-name" name="guest-full-name" class="input-required" required>
+    
+                            </div>
+    
+                            <div class="reservation-form-input-div">
+                            
+                                <label for="guest-email">Email:</label>
+    
+                                <input type="email" id="guest-email" name="guest-email">
+    
+                            </div>
+    
+                            <div class="reservation-form-input-div">
+    
+                                <label for="guest-phone">*Phone:</label>
+    
+                                <input type="tel" id="guest-phone" name="guest-phone" class="input-required" required>
+    
+                            </div>
+    
+                        </fieldset>
+    
+                        <fieldset class="reservation-form-fieldset">
+    
+                            <legend class="reservation-form-class">Feedback</legend>
+    
+                            <div class="reservation-form-input-div">
+    
+                                <div>
+    
+                                    <label for="contact-message">*How Can We Help?</label>
+                                
+                                </div>      
+                                
+                                <br>
+    
+                                <div>
+    
+                                    <textarea rows="4" cols="38" id="contact-message" name="contact-message" required></textarea>
+    
+                                </div>
+    
+                            </div>
+                        
+                        </fieldset>
+    
+                        <input type="submit" value="Send" id="submit-button">
+    
+                    </form>
+
+            </div>
+
+
+        <div class = "contact">
+            <div class = "contactinformation">
+                <p>Temple Inn and Suites</p>
+                <p>1 North First St</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p>☎️ 111-777-9991</p>
+                <p>info@templeinn.com</p>
+            </div>
+						  <div class="mapdiv"><iframe width="350" height="250" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiExIE4gMXN0IEUsIFByZXN0b24sIElEIDgzMjYzLCBVU0EiMBIuChQKEgnH6-Fn6fdUhxFYly81YikWVRABKhQKEglN_XSI7vdUhxEaWu_fON9fCg&key=AIzaSyBZjWHsS4Dfd2OvfjrXG39ly_x5kcFvcWA"
+                    allowfullscreen></iframe></div>
+                      
+					  <div class="contact-icons">
+                   						   <a href = "https://twitter.com/?lang=en" target="_blank"><img class = "social" src="images/twitter-icon.png" alt="twitter icon"></a>                    
+
+						   <a href = "https://www.facebook.com" target="_blank"> <img class = "social" src="images/facebook-icon.png" alt="facebook icon"></a>
+						   <a href = "https://www.youtube.com/" target="_blank"><img class = "social" src="images/youtube.png" alt="youtube icon"></a>
+						   <a href = "https://www.whatsapp.com/" target="_blank"><img class = "social" src="images/WhatsApp-icon.png" alt="WhatsApp Icon"></a>
+                           <a href = "https://www.pinterest.com/" target="_blank"><img class = "social" src="images/pinterest-icon.png" alt="Pinterest Icon"></a>
+                   
+                    </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Temple Inn and Suites | Ogden, IdahoFalls, Boise and Rexburg Temples | <a class = "none" href = "resource.html">Resource Reference</a>
+        <br>
+        <span id="output"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src = "js/navigation.js"></script>
+    <script src = "js/currentday.js"></script>
+    <script src = "js/temples.js"></script>
+    <script>
+        WebFont.load({ google: { families: [
+       'Bree Serif', 'Questrial'
+        ]}});
+    </script>
+</body>
+</html>
