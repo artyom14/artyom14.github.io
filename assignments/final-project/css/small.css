@@ -189,6 +189,561 @@ p{
     font-size: 1.1rem;
     margin-bottom: .4rem;
 }
+
+
+hr {
+
+    height: 6px;
+
+    color: #A0AC60;
+
+    background-color: #A0AC60;
+
+    border-color: #A0AC60;
+
+    max-width: 30px;
+
+    margin-left: 0px;
+
+    border: 0px;
+
+}
+
+.temple-page-title {
+
+    margin-top: 60px;
+
+    max-width: 992px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+.tagline {
+
+    -webkit-animation: fade 3s;
+    -moz-animation: fade 3s;
+    -ms-animation: fade 3s;
+    -o-animation: fade 3s;
+    -animation: fade 3s;
+
+}
+
+@keyframes fade{
+
+    from { opacity: 0; }
+
+    to { opacity: 1; }
+    
+}
+
+@-moz-keyframes fade {
+
+    from { opacity: 0; }
+
+    to { opacity: 1; }
+
+}
+
+@-webkit-keyframes fade {
+
+    from { opacity: 0; }
+
+    to { opacity: 1; }
+
+}
+
+@-ms-keyframes fade {
+
+    from { opacity: 0; }
+
+    to { opacity: 1; }
+
+}
+
+@-o-keyframes fade {
+
+    from { opacity: 0; }
+
+    to { opacity: 1; }
+
+}
+
+.navigation li {
+
+    display: none; 
+
+}
+
+.navigation li:first-child {
+
+    display: block; 
+
+}
+
+.responsive li {
+
+    display: block;
+
+}
+
+.service-body-text {
+
+    max-width: 992px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    margin-bottom: 60px;
+
+}
+
+.reservation-body-text {
+
+    max-width: 992px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+.reservation-form-input-div {
+
+    padding: 10px;
+
+    color: #DED2A8
+
+}
+
+textarea {
+
+    width: 100%;
+
+}
+
+.reservation-form {
+
+    background-color: #534A3C;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-bottom: 60px;
+
+    font-size: 1.3em;
+
+}
+
+.reservation-form-fieldset {
+
+    color: #A0AC60;
+
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    border: 2px solid #A0AC60;
+
+    border-radius: 4px;
+
+}
+
+.reservation-form-class {
+
+    color: #A0AC60;
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+}
+
+#submit-button {
+
+    background-color: #A0AC60;
+
+    color: #FFFFFF;
+
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 10px;
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+#submit-button:hover {
+
+    background-color: #A0AC60;
+
+    color: #534A3C;
+
+}
+
+.reservation-body-text h2 {
+
+    margin-top: 60px; 
+
+}
+
+.service-body-text h2 {
+
+    margin-top: 60px; 
+
+}
+
+.weird-reservation-form-spacing {
+
+    margin-bottom: 60px;
+
+}
+
+#temple-entry-link:link {
+
+    color: #A0AC60;
+
+}
+
+#temple-entry-link:visited {
+
+    color: #A0AC60;
+
+}
+
+#temple-entry-link:hover {
+
+    color: #534A3C;
+    
+}
+
+#temple-entry-link:active {
+
+    color: #534A3C;
+    
+}
+
+.reservation-form-input-div input, .reservation-form-input-div select, .reservation-form-input-div textarea {
+
+    border-radius: 8px;
+
+}
+
+.reservation-quote {
+
+    font-size: 1.5em;
+
+}
+
+.reservation-quote-div {
+
+    max-width: 500px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    margin-bottom: 60px;
+
+    padding-left: 15px;
+
+    padding-right: 15px;
+
+}
+
+.contact-main-div {
+
+    max-width: 992px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+}
+
+address {
+
+    font-style: normal;
+
+}
+
+.contact-email-div {
+
+    margin-bottom: 60px;
+
+}
+
+.contact-map-div {
+
+    margin-bottom: 60px;
+
+    width: 100%;
+
+}
+
+.contact2-information-div {
+
+    width: 100%;
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+}
+
+.contact-map-flex-div {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.contact-main-div h2 {
+
+    margin-top: 60px;
+
+}
+
+.contact2-information-div p {
+
+    padding-right: 30px;
+
+}
+
+.contact-form-heading {
+
+    margin-top: 30px!important;
+
+}
+
+.contact-form-hr {
+
+    margin-bottom: 30px;
+
+}
+
+.contact2-information-div a:link {
+
+    color: #A0AC60;
+
+}
+
+.contact2-information-div a:visited {
+
+    color: #A0AC60;
+
+}
+
+.contact2-information-div a:hover {
+
+    color: #534A3C;
+
+}
+
+.contact2-information-div a:active {
+
+    color: #534A3C;
+
+}
+
+.service-body-text a:link {
+
+    color: #A0AC60;
+
+}
+
+.service-body-text a:visited {
+
+    color: #A0AC60;
+
+}
+
+.service-body-text a:hover {
+
+    color: #534A3C;
+
+}
+
+.service-body-text a:active {
+
+    color: #534A3C;
+
+}
+
+
+
+
+
+.services-flex-div {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.services-flex-text-div {
+
+    width: 100%;
+
+    background-color: #A0AC60;
+
+    color: #FFFFFF;
+
+    box-sizing: border-box;
+
+    padding: 50px;
+
+}
+
+.services-flex-image-div {
+
+    width: 100%;
+
+}
+
+.services-flex-image-div img {
+
+    width: 100%;
+
+}
+
+.service-body-text hr {
+
+    margin-bottom: 30px;
+
+}
+
+
+.thanks-body-div {
+
+    max-width: 992px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    margin-top: 100px;
+
+    margin-bottom: 300px;
+
+}
+
+.thanks-image-div {
+
+    max-width: 200px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+.thanks-image-div img {
+
+    width: 100%;
+
+}
+
+.thanks-text-div {
+
+    text-align: center;
+
+    font-size: 2em;
+
+}
+
+.centered-floating-text div:after {
+
+    content: ' \00bb';
+
+    opacity: 0;
+
+    top: 0;
+
+    right: -20px;
+
+    transition: 0.5s;
+
+}
+
+.centered-floating-text:hover div:after {
+
+    opacity: 1;
+
+    right: 0;
+
+}
+
+.about-text-div {
+
+    padding-left: 10px;
+    
+    padding-right: 10px;
+
+}
+
+.contact-information-div {
+
+    padding-left: 10px;
+    
+    padding-right: 10px;
+
+}
+
+.temple-page-title {
+
+    padding-left: 10px;
+
+}
+
+.service-body-text h2, .service-body-text hr {
+
+    margin-left: 10px;
+
+}
+
+.reservation-body-text h2, .reservation-body-text hr, .reservation-body-text p {
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+}
+
+.contact-main-div h2, .contact-main-div hr {
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+}
+
+
+
+
+
 .map{
     display: none;
 }
