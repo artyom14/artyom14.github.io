@@ -5,7 +5,7 @@ body {
     background-color: #E5E5E5;
 }
 h1, h2, h3{
-    font-family: 'Gotam', sans-serif;
+    font-family: 'Gotham', sans-serif;
 	font-style: bold;
 }
 h1{
@@ -23,7 +23,7 @@ header{
     background-color: #E5E5E5;
     padding: 1rem 1rem 2rem 1rem;
     border-radius: 5px;
-	font-family: 'Gotam', sans-serif;
+	font-family: 'Gotham', sans-serif;
 	font-style: bold;
 }
 footer{
@@ -37,7 +37,7 @@ footer{
     padding: 1.5rem;
     font-size: 1.1rem;
     border-radius: 5px;
-	font-family: 'Gotam', sans-serif;
+	font-family: 'Gotham', sans-serif;
 	font-style: bold;
 }
 nav {
@@ -54,8 +54,11 @@ nav ul {
 	overflow: hidden;
 }
 nav li a {
+	
 	display: block;
 	color: #f7fff7;
+	font-family: 'Gotham', sans-serif;
+	font-style: bold;
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
