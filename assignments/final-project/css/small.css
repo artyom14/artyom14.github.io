@@ -5,7 +5,8 @@ body {
     background-color: #E5E5E5;
 }
 h1, h2, h3{
-    font-family: 'Lato', serif;
+    font-family: 'Gotam', sans-serif;
+	font-style: bold;
 }
 h1{
     margin: 0;
@@ -22,6 +23,8 @@ header{
     background-color: #E5E5E5;
     padding: 1rem 1rem 2rem 1rem;
     border-radius: 5px;
+	font-family: 'Gotam', sans-serif;
+	font-style: bold;
 }
 footer{
     margin: auto;
@@ -34,6 +37,8 @@ footer{
     padding: 1.5rem;
     font-size: 1.1rem;
     border-radius: 5px;
+	font-family: 'Gotam', sans-serif;
+	font-style: bold;
 }
 nav {
 	background-color: #0A1F32;
