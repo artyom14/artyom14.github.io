@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+<head>
+    <title>Temple Inn and Suites | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Final project Temple inn and suites site home page for Artem Karpikov CIT 230">
+    <link href= "css/normalize.css" rel="stylesheet">
+    <link href= "css/small.css" rel="stylesheet">
+    <link href= "css/medium.css" rel="stylesheet">
+    <link href= "css/large.css" rel="stylesheet">
+</head>
+<body>
+    <div class = "top">
+    <header>
+        <a href="index.html"><img id = icon src="images/temple.jpg" alt="Temple Inn and Suites Icon"></a>
+        <h1>Temple Inn and Suites</h1>
+        <div class = "moto">Come to a house of the Lord </div>     
+    </header>
+    <nav>
+        <ul class = "navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+			
+			<div class="subnav">
+  <button class="subnavbtn">Temples <i class="fa fa-caret-down"></i></button>
+               <div class="subnav-content">
+                 <a href="temples1.html">Ogden & IdahoFalls  </a>
+      <a href="temples2.html">Boise & Rexburg</a>
+    </div>
+	    </div>
+
+	
+            <li><a href= "reservations.html" class="current-page">Reservations</a></li>
+            <li><a href="services.html" >Services</a></li>
+            <li><a href= "contact.html">Contact</a></li>
+        </ul>
+		
+    </nav>
+    </div>
+   
+    <main>
+
+            <div class="reservation-body-text">
+
+                <h2>Why Make a Reservation?</h2>
+
+                <hr class="weird-reservation-form-spacing">
+
+                <p>The Lord has commanded us to be prepared in all things.
+                    Temple Inn & Suites helps temple patrons to be prepared for their time in the temple by removing worries about accommodations, child care, and much more.
+                    We seek to promote a spirit of peace and reverence so that patrons will be in the right mindset before entering the House of the Lord.
+                    We believe that by preparing oneself mentally and physically, members of the church will find their visits to the temple more inspiring and enriching. The church has <a id="temple-entry-link" href="https://www.churchofjesuschrist.org/study/manual/preparing-to-enter-the-holy-temple/preparing-to-enter-the-holy-temple?lang=eng" target="_blank">provided additional aids</a> for use in preparing to enter the temple.</p>
+
+                <h2>Make Your Reservation</h2>
+
+                <hr class="weird-reservation-form-spacing">
+
+                <form class="reservation-form" method="GET" action="thanks.html">
+
+                    <fieldset class="reservation-form-fieldset">
+
+                        <legend class="reservation-form-class">Room Details</legend>
+
+                        <div class="reservation-form-input-div">
+
+                            <label for="hotel-location">*Location:</label>
+
+                            <select id="hotel-location" name="hotel-location" class="input-required" required>
+                                
+                                <option value="">Select a hotel location...</option>
+
+                                <option value="Gilbert">Gilbert</option>
+
+                                <option value="Ogden">Ogden</option>
+
+                                <option value="Manti">Manti</option>
+                                
+                                <option value="San Diego">San Diego</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="reservation-form-input-div">
+                            
+                            <label for="visit-start-date">Start Date:</label>
+
+                            <input type="date" id="visit-start-date" name="visit-start-date">
+
+                        </div>
+
+                        <div class="reservation-form-input-div">
+
+                            <label for="visit-end-date">End Date:</label>
+
+                            <input type="date" id="visit-end-date" name="visit-end-date">
+
+                        </div>
+
+                        <div class="reservation-form-input-div">
+
+                            <label for="number-of-rooms">*Number of Rooms:</label>
+
+                            <input type="number" min="1" max="5" id="number-of-rooms" name="number-of-rooms" class="input-required" required>
+
+                        </div>
+
+                        <div class="reservation-form-input-div">
+
+                            <label for="room-type">*Room Type:</label>
+
+                            <select id="room-type" name="room-type" class="input-required" required>
+
+                                <option value="">Select a room type...</option>
+
+                                <option value="Single Bedroom - Single Bed">1 Bedroom-1 Bed</option>
+
+                                <option value="Single Bedroom - Two Beds">1 Bedroom-2 Beds</option>
+
+                                <option value="Two Bedrooms - Two Beds">2 Bedrooms-2 Beds</option>
+
+                                <option value="Two Bedrooms - Two Beds - Kitchenette">2 Bedrooms-2 Beds-Kitchenette</option>
+
+                            </select>
+
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="reservation-form-fieldset">
+
+                        <legend class="reservation-form-class">Guest Information</legend>
+
+                        <div class="reservation-form-input-div">
+
+                            <label for="guest-full-name">*Full Name:</label>
+
+                            <input pattern="[a-zA-Z ]{5,}" type="text" id="guest-full-name" name="guest-full-name" class="input-required" required>
+
+                        </div>
+
+                        <div class="reservation-form-input-div">
+                        
+                            <label for="guest-email">Email:</label>
+
+                            <input type="email" id="guest-email" name="guest-email">
+
+                        </div>
+
+                        <div class="reservation-form-input-div">
+
+                            <label for="guest-phone">*Phone:</label>
+
+                            <input type="tel" id="guest-phone" name="guest-phone" class="input-required" required>
+
+                        </div>
+
+                        <div class="reservation-form-input-div">
+
+                            <label for="guest-state">Home State/Country:</label>
+
+                            <input type="text" id="guest-state" name="guest-state">
+
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="reservation-form-fieldset">
+
+                        <legend class="reservation-form-class">Other</legend>
+
+                        <div class="reservation-form-input-div">
+
+                            <div>
+
+                                <label for="special-accommodations">Special Requests:</label>
+                            
+                            </div>      
+                            
+                            <br>
+
+                            <div>
+
+                                <textarea rows="4" cols="38" id="special-accommodations" name="special-accommodations"></textarea>
+
+                            </div>
+
+                        </div>
+                    
+                    </fieldset>
+
+                    <input type="submit" value="Send" id="submit-button">
+
+                </form>
+
+                <div class="reservation-quote-div">
+                    <p class="reservation-quote">Organize yourselves; prepare every needful thing, and establish a house, even a house of prayer, a house of fasting, a house of faith, a house of learning, a house of glory, a house of order, a house of God;</p>
+                    <hr>
+                    <p class="reservation-quote">- Doctrine & Covenants 109:8</p>
+                </div>
+
+          </div>
+
+
+
+        </main>
+
+        <div class = "contact">
+            <div class = "contactinformation">
+                <p>Temple Inn and Suites</p>
+                <p>1 North First St</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p>☎️ 111-777-9991</p>
+                <p>info@templeinn.com</p>
+            </div>
+						  <div class="mapdiv"><iframe width="350" height="250" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiExIE4gMXN0IEUsIFByZXN0b24sIElEIDgzMjYzLCBVU0EiMBIuChQKEgnH6-Fn6fdUhxFYly81YikWVRABKhQKEglN_XSI7vdUhxEaWu_fON9fCg&key=AIzaSyBZjWHsS4Dfd2OvfjrXG39ly_x5kcFvcWA"
+                    allowfullscreen></iframe></div>
+                      
+					  <div class="contact-icons">
+                   						   <a href = "https://twitter.com/?lang=en" target="_blank"><img class = "social" src="images/twitter-icon.png" alt="twitter icon"></a>                    
+
+						   <a href = "https://www.facebook.com" target="_blank"> <img class = "social" src="images/facebook-icon.png" alt="facebook icon"></a>
+						   <a href = "https://www.youtube.com/" target="_blank"><img class = "social" src="images/youtube.png" alt="youtube icon"></a>
+						   <a href = "https://www.whatsapp.com/" target="_blank"><img class = "social" src="images/WhatsApp-icon.png" alt="WhatsApp Icon"></a>
+                           <a href = "https://www.pinterest.com/" target="_blank"><img class = "social" src="images/pinterest-icon.png" alt="Pinterest Icon"></a>
+                   
+                    </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Temple Inn and Suites | Ogden, IdahoFalls, Boise and Rexburg Temples | <a class = "none" href = "resource.html">Resource Reference</a>
+        <br>
+        <span id="output"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src = "js/navigation.js"></script>
+    <script src = "js/currentday.js"></script>
+    <script src = "js/temples.js"></script>
+    <script>
+        WebFont.load({ google: { families: [
+       'Bree Serif', 'Questrial'
+        ]}});
+    </script>
+</body>
+</html>
