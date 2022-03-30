@@ -5,7 +5,6 @@
  <title>variables</title>
   <meta name="description" content="Memory Game">
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <script src="JS/game.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS/game.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +30,7 @@ cards.forEach((card) => {
 
       if (firstSelection === secondSelection) {
         const correctCards = document.querySelectorAll(
-          ".card[animal='" + firstSelection + "']"
+          ".card[sign='" + firstSelection + "']"
         );
 
         correctCards[0].classList.add("checked");
