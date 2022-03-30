@@ -5,55 +5,13 @@
  <title>variables</title>
   <meta name="description" content="Memory Game">
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="JS/game.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS/game.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>   
- <script>
-  let counter = 0;
-let firstSelection = "";
-let secondSelection = "";
-
-const cards = document.querySelectorAll(".cards .card");
-cards.forEach((card) => {
-  card.addEventListener("click", () => {
-    card.classList.add("clicked");
-
-    if (counter === 0) {
-      firstSelection = card.getAttribute("sign");
-      counter++;
-    } else {
-      secondSelection = card.getAttribute("sign");
-      counter = 0;
-
-      if (firstSelection === secondSelection) {
-        const correctCards = document.querySelectorAll(
-          ".card[sign='" + firstSelection + "']"
-        );
-
-        correctCards[0].classList.add("checked");
-        correctCards[0].classList.remove("clicked");
-        correctCards[1].classList.add("checked");
-        correctCards[1].classList.remove("clicked");
-      } else {
-        const incorrectCards = document.querySelectorAll(".card.clicked");
-
-        incorrectCards[0].classList.add("shake");
-        incorrectCards[1].classList.add("shake");
-
-        setTimeout(() => {
-          incorrectCards[0].classList.remove("shake");
-          incorrectCards[0].classList.remove("clicked");
-          incorrectCards[1].classList.remove("shake");
-          incorrectCards[1].classList.remove("clicked");
-        }, 800);
-      }
-    }
-  });
-});
-  </script>
   <div class="container">
   <h2 class="heading"><strong>Эко-игра😜</strong></h2>
   <br>
