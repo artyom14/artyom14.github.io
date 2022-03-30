@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+ 
+}
+body{
+      background-image:url('https://i.ibb.co/hMTw4S2/2022-03-15-19-46-05.jpg');
+}
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  
+}
+
+h2{
+      font: 100px;
+  font-family: 'Roboto';
+  font-weight: 900;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+}
+
+.cards {
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+}
+
+.card {
+     
+  height: 110px;
+  width: 90px;
+  background-color: #49DC72;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  border: #16AF41 5px;
+  border-style: solid;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 80%;
+  max-height: 90px;
+  opacity: 0;
+  transition: 0.3s all ease;
+}
+
+.card.clicked {
+  background-color: white;
+  
+}
+
+.card.checked {
+  background-color: lightgreen;
+}
+
+.card.clicked img,
+.card.checked img {
+  opacity: 1;
+}
+
+.card.shake {
+  background-color: #f15f5f;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+
+a {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  text-decoration: none;
+    text-align: center;
+
+}
+
+.primary-btn {
+  background-image: -moz-linear-gradient(0deg, #14e831 0%, #14e831 100%);
+  background-image: -webkit-linear-gradient(0deg, #335ee7 0%, #14e831 100%);
+  background-image: -ms-linear-gradient(0deg, #14e831 0%, #14e831 100%);
+}
+
+.primary-btn {
+  line-height: 36px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.primary-btn {
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.primary-btn:hover {
+  background: transparent;
+  color: #235ee7;
+  border-color: #14e831;
+}
+.details{
+      text-align: center;
+}
