@@ -23,10 +23,10 @@ cards.forEach((card) => {
     card.classList.add("clicked");
 
     if (counter === 0) {
-      firstSelection = card.getAttribute("animal");
+      firstSelection = card.getAttribute("sign");
       counter++;
     } else {
-      secondSelection = card.getAttribute("animal");
+      secondSelection = card.getAttribute("sign");
       counter = 0;
 
       if (firstSelection === secondSelection) {
